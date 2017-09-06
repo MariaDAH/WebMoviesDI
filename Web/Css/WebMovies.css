@@ -1,0 +1,867 @@
+﻿@charset "UTF-8";
+
+* {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+
+    background-color: #f1f6fa;
+
+    color: #000000;
+    font-family: Segoe UI, Frutiger, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.5); /* Missing in IE */
+}
+
+body {
+	max-width: 800px;
+	height: auto; /* real browsers */
+	height: 100%; /* IE6: treaded as min-height*/
+	min-height: 100%; /* real browsers */
+
+    margin: 0px 5px;
+    border: 1px solid rgba(191, 191, 191, 0.65);
+    border-width: 0px 1px 0px 1px;
+    background: rgba(223, 231, 239, 0.65);
+
+    margin: 0px auto;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+a {
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+
+    text-decoration: none;
+    color: #000000;
+
+    outline: none;
+}
+
+a:hover, a:focus {
+    border: 1px dashed rgba(31, 31, 31, 0.3);
+}
+
+input, textarea {
+    box-shadow: 1px 1px 1px 1px rgba(191, 191, 191, 0.65);
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #ffffff;
+
+    font-style: italic;
+    font-weight: normal;
+}
+
+input[type=button], input[type=submit], input[type=reset], button {
+    padding: 3px 12px 5px 12px;
+
+    font-style: normal;
+    text-align: center;
+}
+input[type=checkbox] {
+    margin: 5px;
+}
+input[type=checkbox] + .checkboxSpan:after {
+    content: "";
+
+    display: inline-block;
+    overflow: hidden;
+
+    position: relative;
+    top: -1;
+    left: -23px;
+
+    width: 15px;
+    height: 15px;
+
+    box-shadow: 1px 1px 1px 1px rgba(191, 191, 191, 0.65);
+    border: 0px solid #ffffff;
+    border-radius: 2px;
+    padding: 0px;
+    background-color: #ffffff;
+
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    line-height: 75%;
+
+    pointer-events: none;
+    -moz-user-select: none;
+}
+input[type=checkbox]:checked + .checkboxSpan:after {
+    content: "✓";
+}
+.no-pointer-events .checkboxSpan:after {
+    content: none;
+}
+
+select {
+    box-shadow: 1px 1px 1px 1px rgba(191, 191, 191, 0.65);
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 4px 0px 4px 5px;
+    background-color: #ffffff;
+
+    font-style: italic;
+    font-weight: normal;
+
+    outline: none;
+    overflow: hidden;
+}
+select option {
+    padding-right: 10px;
+}
+
+select + .selectSpan:after {
+    content: "▼";
+
+    display: inline-block;
+    overflow: hidden;
+
+    position: relative;
+    top: 9px;
+    left: -26px;
+
+    margin-top: -9px;
+    border: 0px solid #ffffff;
+    border-radius: 0px 5px 5px 0px;
+    padding: 8px 7px 8px 7px;
+    background-color: #ffffff;
+
+    font-size: 50%;
+
+    pointer-events: none;
+    -moz-user-select: none;
+}
+.no-pointer-events .selectSpan:after {
+    content: none;
+}
+
+[disabled] {
+    opacity: 0.3;
+}
+
+sup, sub {
+    height: 0;
+    line-height: 1;
+    vertical-align: baseline;
+    position: relative;
+}
+
+sup {
+    bottom: 1ex;
+}
+
+sub {
+    top: .5ex;
+}
+
+/* Form ********************************************************************* */
+
+form > * {
+    margin: 10px 0px;
+}
+
+form .field {
+    position: relative;
+
+    width: 100%;
+    min-height: 30px;
+}
+
+form .field .label {
+    position: absolute;
+    right: 61%;
+
+    text-align: right;
+
+    font-weight: bold;
+}
+
+form .field .entry {
+    position: absolute;
+    left: 41%;
+
+    text-align: left;
+}
+
+form .button {
+    margin-top: 30px;
+}
+
+/* Miscellaneous ************************************************************ */
+
+.linkButton {
+    box-shadow: 1px 1px 1px 1px rgba(191, 191, 191, 0.65);
+    border: 1px solid rgba(0, 0, 0, 0.0);
+    border-radius: 5px;
+    padding: 3px 12px 5px 12px;
+    background-color: #ffffff;
+
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+}
+.linkButton:hover, .linkButton:focus {
+    border: 1px solid #ffffff;
+    border: 1px dashed rgba(0, 0, 0, 0.05);
+}
+
+.cloud {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+    height: 400px;
+
+    margin-left: 480px;
+    margin-top: -200px;
+
+    list-style: none;
+}
+
+.cloud a {
+    position: absolute;
+    text-decoration: none;
+    color: #666666;
+    border-width: 0px;
+}
+
+.searchText {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.searchSelect {
+    position: relative;
+    left: -5px;
+
+    width: 125px;
+
+    border-radius: 0px;
+
+    -moz-appearance: none;
+}
+
+.searchButton {
+    position: relative;
+    top: 19px;
+    left: -27px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding: 6px 5px 6px;
+}
+
+.orderBy {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+    opacity: 0.3;
+
+    font-size: 12px;
+}
+
+.validatorError {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+    color: #ff0000;
+
+    font-size: 14px;
+    z-index: 100;
+
+    pointer-events: none;
+    -moz-user-select: none;
+}
+
+.selected {
+    border: 1px solid #000000;
+    background-color: rgba(127, 127, 127, 0.2);
+}
+
+.promoted {
+    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.01) 100%);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+.demoted {
+    background-image: -moz-linear-gradient(top, rgba(127, 127, 127, 0.2) 0%, rgba(127, 127, 127, 0.2) 100%);
+    opacity: 0.5;
+}
+.reported {
+    color: #ff0000;
+}
+
+/* Header & Menu ************************************************************ */
+
+.header {
+    position: relative;
+
+    width: 800px;
+    height: 60px;
+
+    margin: 0px 0px 0px -5px;
+	box-shadow: 0px 0px 5px 5px rgba(191, 191, 191, 0.65);
+    border-width: 0px 1px 1px 1px;
+    border-radius: 0px 0px 5px 5px;
+    padding: 5px;
+	background-color: #097099;
+    background-image: url('/Images/logo_64.png');
+    background-position: 15px 5px;
+    background-size: 66px 60px;
+    background-repeat: no-repeat;
+
+    color: rgb(223, 231, 239);
+}
+
+.header a {
+    color: rgb(223, 231, 239);
+}
+.header a:hover {
+    border-color: rgba(223, 231, 239, 0.15);
+}
+.header a:focus {
+    border-color: rgba(223, 231, 239, 0.15);
+}
+
+.header .title {
+    position: relative;
+    top: 3px;
+    left: 80px;
+
+    font-size: 32px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.header .subtitle {
+    position: relative;
+    top: 20px;
+    left: -105px;
+
+    font-size: 15px;
+    font-style: italic;
+}
+
+.header .welcome {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    font-weight: bold;
+}
+
+.header .links {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+
+    font-size: 13px;
+    font-style: italic;
+}
+
+.menu {
+    position: relative;
+
+    box-shadow: 0px 0px 3px 3px rgba(191, 191, 191, 0.65);
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 0px 0px 5px 5px;
+    padding: 0px;
+
+    font-size: 12px;
+
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.menu > form {
+    width: 100%;
+}
+.menu * {
+    display: inline-block;
+
+    margin: 0px;
+    border: 0px;
+    box-shadow: none;
+    background: none;
+}
+.menu .searchTextBox {
+    width: 765px;
+    background: url("/Images/movie_16w.png") no-repeat 5px 5px;
+}
+.menu .searchText {
+    width: 100%;
+    padding-left: 25px;
+}
+.menu .searchButtonBox {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.menu .searchButton {
+    top: 0px;
+    left: 0px;
+
+    padding: 3px 5px;
+    background: none;
+}
+
+/* Main ********************************************************************* */
+
+.main {
+    position: relative;
+    margin: 10px;
+    border: 5px solid rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 3px 3px rgba(191, 191, 191, 0.65);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.5);
+
+    text-align: center;
+}
+
+.main .title {
+    margin: 0px auto;
+    padding: 3px;
+
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.main > .content {
+    padding: 30px 20px 40px;
+    border-width: 0px;
+    border-radius: 4px;
+    background-color: rgba(223, 231, 239, 1.0);
+}
+
+/* Movie ******************************************************************** */
+
+.main > .movie {
+    padding: 30px 20px 40px;
+    border-width: 0px;
+    border-radius: 4px;
+    background-color: rgba(9, 112, 153, 0.2);
+}
+.main > .movie .title {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    text-align: center;
+}
+.main > .movie .description {
+    font-style: italic;
+    text-align: left;
+}
+.main > .movie .price {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+.main > .movie .links {
+    position: absolute;
+    left: 0px;
+    bottom: -2px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Link ********************************************************************* */
+
+.main > .link {
+    padding: 30px 20px 40px;
+    border-width: 0px;
+    border-radius: 4px;
+    background-color: rgba(103, 162, 111, 0.2);
+}
+.main > .link > .description {
+    font-style: italic;
+    text-align: left;
+    margin-right: 10px;
+}
+.main > .link > .movie {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+
+    opacity: 0.5;
+}
+.main > .link > .reference {
+    position: absolute;
+    bottom: 25px;
+    left: 5px;
+
+    opacity: 0.5;
+}
+.main > .link > form > .rating {
+    position: absolute;
+    top: 55px;
+    right: 5px;
+}
+.main > .link > form > .rating > * {
+    margin: 0px;
+    padding: 1px 3px;
+}
+.main > .link > .favorite {
+    position: absolute;
+    top: 35px;
+    right: 5px;
+}
+.main > .link > .labels {
+    text-align: left;
+    margin-right: 10px;
+}
+.main > .link > .labels ul {
+    display: inline;
+}
+.main > .link > .labels ul > li {
+    display: inline;
+
+    padding-right: 10px;
+
+    list-style-type: none;
+}
+.main > .link > form > .control {
+    position: absolute;
+    top: -5px;
+    right: 5px;
+}
+
+/* Comment ****************************************************************** */
+
+.main > .comment {
+    position: relative;
+
+    padding: 30px 20px 40px;
+    border-width: 0px;
+    border-radius: 4px;
+    background-color: rgba(221, 160, 221, 0.2);
+}
+.main > .comment .movie {
+    position: absolute;
+    top: 35px;
+    left: 10px;
+
+    max-width: 200px;
+}
+.main > .comment .link {
+    position: absolute;
+    top: 65px;
+    left: 10px;
+
+    max-width: 200px;
+}
+.main > .comment .date {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+
+    max-width: 300px;
+    opacity: 0.5
+}
+.main > .comment .author {
+    position: absolute;
+    top: 35px;
+    right: 570px;
+
+    max-width: 200px;
+
+    text-align: right;
+
+    opacity: 0.5
+}
+.main > .comment .text {
+    margin-left: 200px;
+    border-radius: 0px 4px 4px 4px;
+    padding: 5px 10px;
+    background-color: #ffffff;
+
+    text-align: left;
+}
+.main > .comment .control {
+    position: absolute;
+    top: 35px;
+    right: 25px;
+}
+
+/* Favorite ***************************************************************** */
+
+.main > .favorite {
+    padding: 30px 20px 40px;
+    border-width: 0px;
+    border-radius: 4px;
+    background-color: rgba(253, 253, 150, 0.2);
+}
+
+/* Error ******************************************************************** */
+
+.main .error {
+    padding: 40px 20px;
+    border-width: 0px;
+    border-radius: 4px;
+    background-color: rgba(191, 0 , 0, 0.2);
+
+    color: #c00000;
+}
+
+/* List ********************************************************************* */
+
+.main .list {
+    padding: 0px;
+    border-width: 0px;
+    border-radius: 4px;
+}
+
+.main .list > * {
+    position: relative;
+
+    margin: 1px 0px;
+    padding: 10px 20px;
+    border-width: 0px;
+    background-color: rgba(223, 231, 239, 0.2);
+
+    display: block;
+}
+.main .list > :hover {
+    background-color: rgba(223, 231, 239, 0.5);
+}
+.main .list > :first-child {
+    border-radius: 4px 4px 0px 0px;
+}
+.main .list > :last-child {
+    border-radius: 0px 0px 4px 4px;
+}
+
+/* List > Movie ********************* */
+
+.main .list > .movie {
+    min-height: 30px;
+
+    background-color: rgba(9, 112, 153, 0.2);
+}
+.main .list > .movie:hover {
+    background-color: rgba(9, 112, 153, 0.5);
+}
+.main .list > .movie a {
+    border: 1px solid rgba(0, 0, 0, 0.0);
+}
+.main .list > .movie a:hover {
+    border: 1px dashed rgba(0, 0, 0, 0.05);
+}
+.main .list > .movie .title {
+    position: absolute;
+    left: 10px;
+}
+.main .list > .movie .description {
+    position: absolute;
+    bottom: 2px;
+    left: 2px;
+    color: #000000;
+    font-style: italic;
+    z-index: -1;
+}
+.main .list > .movie .price {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+}
+.main .list > .movie .links {
+    position: absolute;
+    bottom: 2px;
+    right: 10px;
+}
+
+/* List > Link ********************** */
+
+.main .list > .link {
+    min-height: 40px;
+
+    background-color: rgba(103, 162, 111, 0.2);
+}
+.main .list > .link:hover {
+    background-color: rgba(103, 162, 111, 0.5);
+}
+.main .list > .link a {
+    border: 1px solid rgba(0, 0, 0, 0.0);
+}
+.main .list > .link a:hover {
+    border: 1px dashed rgba(0, 0, 0, 0.05);
+}
+.main .list .link > .name {
+    margin-right: 40px;
+
+    text-align: left;
+}
+.main .list > .link > .description {
+    margin-right: 40px;
+
+    font-style: italic;
+    text-align: left;
+}
+.main .list > .link > .movie {
+    margin-right: 40px;
+
+    text-align: left;
+}
+.main .list > .link > .labels {
+    margin-right: 40px;
+
+    text-align: left;
+}
+.main .list > .link > .labels > * {
+    margin-right: 10px;
+}
+.main .list > .link > .reference {
+    opacity: 0.5;
+
+    text-align: left;
+}
+.main .list > .link > .favorite {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+
+    text-align: right;
+}
+.main .list > .link > .rating {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+
+    text-align: right;
+}
+.main .list > .link > .comments {
+    position: absolute;
+    top: 55px;
+    right: 10px;
+
+    text-align: right;
+}
+.main .list > .link > .control {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+
+    text-align: right;
+}
+
+/* List > Comment ******************* */
+
+.main .list > .comment {
+    background-color: rgba(221, 160, 221, 0.2);
+}
+.main .list > .comment:hover {
+    background-color: rgba(221, 160, 221, 0.5);
+}
+.main > .comment {
+    position: relative;
+
+    padding: 30px 20px 40px;
+    border-width: 0px;
+    border-radius: 4px;
+    background-color: rgba(221, 160, 221, 0.2);
+}
+.main .list > .comment .date {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+
+    max-width: 300px;
+    opacity: 0.5
+}
+.main .list > .comment .author {
+    position: absolute;
+    top: 5px;
+    right: 570px;
+
+    max-width: 200px;
+
+    text-align: right;
+
+    opacity: 0.5
+}
+.main .list > .comment .text {
+    margin-left: 200px;
+    border-radius: 0px 4px 4px 4px;
+    padding: 5px 10px;
+    background-color: #ffffff;
+
+    text-align: left;
+}
+.main .list > .comment .control {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+}
+
+/* List > Favorite ****************** */
+
+.main .list > .favorite {
+    background-color: rgba(253, 253, 150, 0.2);
+    text-align: left;
+}
+.main .list > .favorite:hover {
+    background-color: rgba(253, 253, 150, 0.5);
+}
+.main .list > .favorite .control {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: rgba(253, 253, 150, 0.2);
+}
+
+/* Main footer ************************************************************** */
+
+.main .links {
+    position: relative;
+    min-height: 20px;
+}
+.main .links .previous {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    box-shadow: none;
+    border: 0px;
+}
+.main .links .next {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+    box-shadow: none;
+    border: 0px;
+}
+
+.main > .footNote {
+    font-size: 13px;
+}
+
+/* Footer ******************************************************************* */
+
+.footer {
+	position: absolute;
+    width: 790px;
+	bottom: 0; /* stick to bottom */
+
+    box-shadow: 0px 0px 5px 5px rgba(191, 191, 191, 0.65);
+    border-width: 1px 1px 0px 1px;
+    border-radius: 5px 5px 0px 0px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.65);
+
+    font-size: 10px;
+    text-align: center;
+}

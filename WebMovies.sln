@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DDF23527-D84F-4D22-9E98-E1E4995A69B4}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		Lib\ModelUtil.dll = Lib\ModelUtil.dll
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+		WebMovies.vsmdi = WebMovies.vsmdi
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{441E8F10-4A13-4914-AABB-6A7830717D69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{D674BDAE-ABBA-4210-BEFC-BBA5BAE930FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Web\Web.csproj", "{BE4D14A3-5EC1-488B-BB8F-663C53419752}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Doc", "Doc\Doc.modelproj", "{73803022-7E65-4ED9-8198-84F0F2D37C5B}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = WebMovies.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{441E8F10-4A13-4914-AABB-6A7830717D69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{441E8F10-4A13-4914-AABB-6A7830717D69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{441E8F10-4A13-4914-AABB-6A7830717D69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{441E8F10-4A13-4914-AABB-6A7830717D69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D674BDAE-ABBA-4210-BEFC-BBA5BAE930FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D674BDAE-ABBA-4210-BEFC-BBA5BAE930FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D674BDAE-ABBA-4210-BEFC-BBA5BAE930FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D674BDAE-ABBA-4210-BEFC-BBA5BAE930FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE4D14A3-5EC1-488B-BB8F-663C53419752}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE4D14A3-5EC1-488B-BB8F-663C53419752}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE4D14A3-5EC1-488B-BB8F-663C53419752}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE4D14A3-5EC1-488B-BB8F-663C53419752}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73803022-7E65-4ED9-8198-84F0F2D37C5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73803022-7E65-4ED9-8198-84F0F2D37C5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73803022-7E65-4ED9-8198-84F0F2D37C5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73803022-7E65-4ED9-8198-84F0F2D37C5B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+EndGlobal

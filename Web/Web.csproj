@@ -1,0 +1,961 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BE4D14A3-5EC1-488B-BB8F-663C53419752}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Es.Udc.DotNet.WebMovies.Web</RootNamespace>
+    <AssemblyName>WebMovies.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.Unity, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.Unity.Interception, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.Unity.Interception.Configuration, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="ModelUtil, Version=2.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\ModelUtil.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Entity">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Css\WebMovies.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\calendar2_16.png" />
+    <Content Include="Images\calendar_16.png" />
+    <Content Include="Images\checkbox_16.png" />
+    <Content Include="Images\comments_16w.png" />
+    <Content Include="Images\comment_16w.png" />
+    <Content Include="Images\edit_16.png" />
+    <Content Include="Images\export_16.png" />
+    <Content Include="Images\flag2_16.png" />
+    <Content Include="Images\flag2_16w.png" />
+    <Content Include="Images\flag_16.png" />
+    <Content Include="Images\hand_contra_16.png" />
+    <Content Include="Images\hand_pro_16.png" />
+    <Content Include="Images\icon_16.ico" />
+    <Content Include="Images\import_16.png" />
+    <Content Include="Images\info_16.png" />
+    <Content Include="Images\link_16.png" />
+    <Content Include="Images\link_16w.png" />
+    <Content Include="Images\logo_16.png" />
+    <Content Include="Images\logo_24.png" />
+    <Content Include="Images\logo_32.png" />
+    <Content Include="Images\logo_48.png" />
+    <Content Include="Images\logo_64.png" />
+    <Content Include="Images\logo_72.png" />
+    <Content Include="Images\logo_256.png" />
+    <Content Include="Images\logo_400.png" />
+    <Content Include="Images\cart_16.png" />
+    <Content Include="Images\comments_16.png" />
+    <Content Include="Images\comment_16.png" />
+    <Content Include="Images\movie_16.png" />
+    <Content Include="Images\movie_16w.png" />
+    <Content Include="Images\next_16.png" />
+    <Content Include="Images\plus_16.png" />
+    <Content Include="Images\prev_16.png" />
+    <Content Include="Images\refresh_16.png" />
+    <Content Include="Images\reload_16.png" />
+    <Content Include="Images\star_16.png" />
+    <Content Include="Images\star_16w.png" />
+    <Content Include="Images\star_empty_16.png" />
+    <Content Include="Images\tag_16.png" />
+    <Content Include="Images\trash_16.png" />
+    <Content Include="Images\url_16.png" />
+    <Content Include="Images\user_16.png" />
+    <Content Include="Images\user_16w.png" />
+    <Content Include="Images\wand_16.png" />
+    <Content Include="Images\watch_16.png" />
+    <Content Include="Images\zoom_16.png" />
+    <Content Include="Images\zoom_16w.png" />
+    <Content Include="Pages\Comment\Comment.aspx" />
+    <Content Include="Pages\Comment\AddComment.aspx" />
+    <Content Include="Pages\Comment\RemoveComment.aspx" />
+    <Content Include="Pages\Comment\EditComment.aspx" />
+    <Content Include="Pages\Comment\ListComments.aspx" />
+    <Content Include="Pages\Favorite\AddFavorite.aspx" />
+    <Content Include="Pages\Favorite\EditFavorite.aspx" />
+    <Content Include="Pages\Favorite\RemoveFavorite.aspx" />
+    <Content Include="Pages\Favorite\Favorite.aspx" />
+    <Content Include="Pages\Favorite\ListFavorites.aspx" />
+    <Content Include="Pages\Link\AddLink.aspx" />
+    <Content Include="Pages\Link\EditLink.aspx" />
+    <Content Include="Pages\Link\RemoveLink.aspx" />
+    <Content Include="Pages\Link\ListLinks.aspx" />
+    <Content Include="Pages\Link\Link.aspx" />
+    <Content Include="Pages\Error\InternalError.aspx" />
+    <Content Include="Pages\MainPage.aspx" />
+    <Content Include="Pages\Movie\ListMovies.aspx" />
+    <Content Include="Pages\Movie\Movie.aspx" />
+    <Content Include="Pages\Movie\ListMoviesXmlToAsp.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Pages\Movie\MovieXml.aspx" />
+    <Content Include="Pages\Movie\ListMoviesXml.aspx" />
+    <Content Include="Pages\Movie\MovieXmlToAsp.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Pages\User\Authentication.aspx" />
+    <Content Include="Pages\User\ChangePassword.aspx" />
+    <Content Include="Pages\User\UpdateUserProfile.aspx" />
+    <Content Include="Pages\User\Register.aspx" />
+    <Content Include="Pages\User\Logout.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_GlobalResources\Common.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Common.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Common.es.designer.cs">
+      <DependentUpon>Common.es.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Common.gl.designer.cs">
+      <DependentUpon>Common.gl.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Common.fr.designer.cs">
+      <DependentUpon>Common.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Common.en-GB.designer.cs">
+      <DependentUpon>Common.en-GB.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Languages.designer.cs">
+      <DependentUpon>Languages.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Languages.en-GB.designer.cs">
+      <DependentUpon>Languages.en-GB.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Languages.es.designer.cs">
+      <DependentUpon>Languages.es.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Languages.fr.designer.cs">
+      <DependentUpon>Languages.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Languages.gl.designer.cs">
+      <DependentUpon>Languages.gl.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Countries.en-GB.designer.cs">
+      <DependentUpon>Countries.en-GB.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Countries.fr.designer.cs">
+      <DependentUpon>Countries.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Countries.gl.designer.cs">
+      <DependentUpon>Countries.gl.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Countries.es.designer.cs">
+      <DependentUpon>Countries.es.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Countries.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Countries.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Http\Application\ApplicationManager.cs" />
+    <Compile Include="Http\Session\SpecificCulturePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Http\Session\UserSession.cs" />
+    <Compile Include="Http\Session\SessionManager.cs" />
+    <Compile Include="Http\Util\CookiesManager.cs" />
+    <Compile Include="Pages\Comment\Comment.aspx.cs">
+      <DependentUpon>Comment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Comment\Comment.aspx.designer.cs">
+      <DependentUpon>Comment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Comment\AddComment.aspx.cs">
+      <DependentUpon>AddComment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Comment\AddComment.aspx.designer.cs">
+      <DependentUpon>AddComment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Comment\RemoveComment.aspx.cs">
+      <DependentUpon>RemoveComment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Comment\RemoveComment.aspx.designer.cs">
+      <DependentUpon>RemoveComment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Comment\EditComment.aspx.cs">
+      <DependentUpon>EditComment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Comment\EditComment.aspx.designer.cs">
+      <DependentUpon>EditComment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Comment\ListComments.aspx.cs">
+      <DependentUpon>ListComments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Comment\ListComments.aspx.designer.cs">
+      <DependentUpon>ListComments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Favorite\AddFavorite.aspx.cs">
+      <DependentUpon>AddFavorite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Favorite\AddFavorite.aspx.designer.cs">
+      <DependentUpon>AddFavorite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Favorite\EditFavorite.aspx.cs">
+      <DependentUpon>EditFavorite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Favorite\EditFavorite.aspx.designer.cs">
+      <DependentUpon>EditFavorite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Favorite\RemoveFavorite.aspx.cs">
+      <DependentUpon>RemoveFavorite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Favorite\RemoveFavorite.aspx.designer.cs">
+      <DependentUpon>RemoveFavorite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Favorite\Favorite.aspx.cs">
+      <DependentUpon>Favorite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Favorite\Favorite.aspx.designer.cs">
+      <DependentUpon>Favorite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Favorite\ListFavorites.aspx.cs">
+      <DependentUpon>ListFavorites.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Favorite\ListFavorites.aspx.designer.cs">
+      <DependentUpon>ListFavorites.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Link\AddLink.aspx.cs">
+      <DependentUpon>AddLink.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Link\AddLink.aspx.designer.cs">
+      <DependentUpon>AddLink.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Link\EditLink.aspx.cs">
+      <DependentUpon>EditLink.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Link\EditLink.aspx.designer.cs">
+      <DependentUpon>EditLink.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Link\RemoveLink.aspx.cs">
+      <DependentUpon>RemoveLink.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Link\RemoveLink.aspx.designer.cs">
+      <DependentUpon>RemoveLink.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Link\ListLinks.aspx.cs">
+      <DependentUpon>ListLinks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Link\ListLinks.aspx.designer.cs">
+      <DependentUpon>ListLinks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Link\Link.aspx.cs">
+      <DependentUpon>Link.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Link\Link.aspx.designer.cs">
+      <DependentUpon>Link.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Movie\ListMovies.aspx.cs">
+      <DependentUpon>ListMovies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Movie\ListMovies.aspx.designer.cs">
+      <DependentUpon>ListMovies.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Movie\Movie.aspx.cs">
+      <DependentUpon>Movie.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Movie\Movie.aspx.designer.cs">
+      <DependentUpon>Movie.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Movie\MovieXml.aspx.cs">
+      <DependentUpon>MovieXml.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Movie\MovieXml.aspx.designer.cs">
+      <DependentUpon>MovieXml.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Movie\ListMoviesXml.aspx.cs">
+      <DependentUpon>ListMoviesXml.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Movie\ListMoviesXml.aspx.designer.cs">
+      <DependentUpon>ListMoviesXml.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Util\AlphabeticalListItemTextComparer.cs" />
+    <Compile Include="Http\View\ApplicationObjects\Languages.cs" />
+    <Compile Include="Http\View\ApplicationObjects\Countries.cs" />
+    <Compile Include="Pages\Error\InternalError.aspx.cs">
+      <DependentUpon>InternalError.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Error\InternalError.aspx.designer.cs">
+      <DependentUpon>InternalError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MainPage.aspx.cs">
+      <DependentUpon>MainPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\MainPage.aspx.designer.cs">
+      <DependentUpon>MainPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\User\Authentication.aspx.cs">
+      <DependentUpon>Authentication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\User\Authentication.aspx.designer.cs">
+      <DependentUpon>Authentication.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\User\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\User\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\User\UpdateUserProfile.aspx.cs">
+      <DependentUpon>UpdateUserProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\User\UpdateUserProfile.aspx.designer.cs">
+      <DependentUpon>UpdateUserProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\User\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\User\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\User\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\User\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="WebMovies.Master.cs">
+      <DependentUpon>WebMovies.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebMovies.Master.designer.cs">
+      <DependentUpon>WebMovies.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{441E8F10-4A13-4914-AABB-6A7830717D69}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="WebMovies.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\WebMovies.Master.fr.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Common.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Common.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Common.es.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Common.es.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Common.gl.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Common.gl.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Common.fr.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Common.fr.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Common.en-GB.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Common.en-GB.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\WebMovies.Master.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\WebMovies.Master.en-GB.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\WebMovies.Master.es.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\WebMovies.Master.gl.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\App_LocalResources\MainPage.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\App_LocalResources\MainPage.aspx.en-GB.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\App_LocalResources\MainPage.aspx.es.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\App_LocalResources\MainPage.aspx.gl.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\App_LocalResources\MainPage.aspx.fr.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\User\App_LocalResources\UpdateUserProfile.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\User\App_LocalResources\Authentication.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\User\App_LocalResources\ChangePassword.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\User\App_LocalResources\Register.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\User\App_LocalResources\Authentication.aspx.fr.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\User\App_LocalResources\Authentication.aspx.es.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\User\App_LocalResources\Authentication.aspx.en-GB.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\User\App_LocalResources\Authentication.aspx.gl.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\User\App_LocalResources\ChangePassword.aspx.en-GB.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\User\App_LocalResources\ChangePassword.aspx.es.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\User\App_LocalResources\ChangePassword.aspx.fr.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\User\App_LocalResources\ChangePassword.aspx.gl.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\User\App_LocalResources\UpdateUserProfile.aspx.es.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\User\App_LocalResources\Register.aspx.es.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\User\App_LocalResources\Register.aspx.fr.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\User\App_LocalResources\UpdateUserProfile.aspx.fr.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\User\App_LocalResources\Register.aspx.gl.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\User\App_LocalResources\Register.aspx.en-GB.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\User\App_LocalResources\UpdateUserProfile.aspx.gl.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\User\App_LocalResources\UpdateUserProfile.aspx.en-GB.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\Error\App_LocalResources\InternalError.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\Error\App_LocalResources\InternalError.aspx.es.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\Error\App_LocalResources\InternalError.aspx.gl.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\Error\App_LocalResources\InternalError.aspx.en-GB.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\Error\App_LocalResources\InternalError.aspx.fr.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Countries.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Countries.Designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Countries.es.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Countries.es.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Countries.gl.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Countries.gl.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Countries.fr.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Countries.fr.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Countries.en-GB.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Countries.en-GB.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Languages.en-GB.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Languages.en-GB.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Languages.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Languages.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Languages.es.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Languages.es.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Languages.fr.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Languages.fr.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Languages.gl.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Languages.gl.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\Movie\App_LocalResources\ListMovies.aspx.es.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\Movie\App_LocalResources\ListMovies.aspx.en-GB.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\Movie\App_LocalResources\ListMovies.aspx.gl.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\Movie\App_LocalResources\ListMovies.aspx.fr.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\Movie\App_LocalResources\Movie.aspx.en-GB.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\Movie\App_LocalResources\Movie.aspx.es.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\Movie\App_LocalResources\Movie.aspx.fr.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\Movie\App_LocalResources\Movie.aspx.gl.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\Movie\App_LocalResources\ListMovies.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\Movie\App_LocalResources\ListMoviesXml.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\Movie\App_LocalResources\ListMoviesXml.aspx.en-GB.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\Movie\App_LocalResources\ListMoviesXml.aspx.es.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\Movie\App_LocalResources\ListMoviesXml.aspx.fr.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\Movie\App_LocalResources\ListMoviesXml.aspx.gl.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\Movie\App_LocalResources\Movie.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\Movie\App_LocalResources\MovieXml.aspx.en-GB.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\Movie\App_LocalResources\MovieXml.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\Movie\App_LocalResources\MovieXml.aspx.es.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\Movie\App_LocalResources\MovieXml.aspx.fr.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\Movie\App_LocalResources\MovieXml.aspx.gl.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\Comment\App_LocalResources\ListComments.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\Link\App_LocalResources\Link.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\Comment\App_LocalResources\Comment.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\Link\App_LocalResources\ListLinks.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\Comment\App_LocalResources\RemoveComment.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\Favorite\App_LocalResources\Favorite.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\Favorite\App_LocalResources\ListFavorites.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\Favorite\App_LocalResources\AddFavorite.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\Favorite\App_LocalResources\RemoveFavorite.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\Comment\App_LocalResources\AddComment.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\Comment\App_LocalResources\EditComment.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\Favorite\App_LocalResources\EditFavorite.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\Link\App_LocalResources\RemoveLink.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\Link\App_LocalResources\AddLink.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\Link\App_LocalResources\EditLink.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\Link\App_LocalResources\AddLink.aspx.en-GB.resx" />
+    <Content Include="Pages\Link\App_LocalResources\AddLink.aspx.es.resx" />
+    <Content Include="Pages\Link\App_LocalResources\AddLink.aspx.gl.resx" />
+    <Content Include="Pages\Link\App_LocalResources\AddLink.aspx.fr.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Pages\Link\App_LocalResources\EditLink.aspx.gl.resx" />
+    <Content Include="Pages\Link\App_LocalResources\EditLink.aspx.en-GB.resx" />
+    <Content Include="Pages\Link\App_LocalResources\EditLink.aspx.es.resx" />
+    <Content Include="Pages\Link\App_LocalResources\EditLink.aspx.fr.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Pages\Link\App_LocalResources\Link.aspx.es.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Pages\Link\App_LocalResources\Link.aspx.gl.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Pages\Link\App_LocalResources\Link.aspx.fr.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Pages\Link\App_LocalResources\Link.aspx.en-GB.resx" />
+    <Content Include="Pages\Link\App_LocalResources\ListLinks.aspx.fr.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Pages\Link\App_LocalResources\ListLinks.aspx.en-GB.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Pages\Link\App_LocalResources\ListLinks.aspx.gl.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Pages\Link\App_LocalResources\ListLinks.aspx.es.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Pages\Favorite\App_LocalResources\AddFavorite.aspx.en-GB.resx" />
+    <Content Include="Pages\Favorite\App_LocalResources\AddFavorite.aspx.es.resx" />
+    <Content Include="Pages\Favorite\App_LocalResources\AddFavorite.aspx.fr.resx" />
+    <Content Include="Pages\Favorite\App_LocalResources\AddFavorite.aspx.gl.resx" />
+    <Content Include="Pages\Link\App_LocalResources\RemoveLink.aspx.es.resx" />
+    <Content Include="Pages\Link\App_LocalResources\RemoveLink.aspx.fr.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Pages\Link\App_LocalResources\RemoveLink.aspx.gl.resx" />
+    <Content Include="Pages\Link\App_LocalResources\RemoveLink.aspx.en-GB.resx" />
+    <Content Include="Pages\Favorite\App_LocalResources\EditFavorite.aspx.en-GB.resx" />
+    <Content Include="Pages\Favorite\App_LocalResources\EditFavorite.aspx.fr.resx" />
+    <Content Include="Pages\Favorite\App_LocalResources\EditFavorite.aspx.es.resx" />
+    <Content Include="Pages\Favorite\App_LocalResources\EditFavorite.aspx.gl.resx" />
+    <Content Include="Pages\Favorite\App_LocalResources\ListFavorites.aspx.en-GB.resx" />
+    <Content Include="Pages\Favorite\App_LocalResources\ListFavorites.aspx.fr.resx" />
+    <Content Include="Pages\Favorite\App_LocalResources\ListFavorites.aspx.es.resx" />
+    <Content Include="Pages\Favorite\App_LocalResources\ListFavorites.aspx.gl.resx" />
+    <Content Include="Pages\Favorite\App_LocalResources\RemoveFavorite.aspx.fr.resx" />
+    <Content Include="Pages\Favorite\App_LocalResources\RemoveFavorite.aspx.gl.resx" />
+    <Content Include="Pages\Favorite\App_LocalResources\RemoveFavorite.aspx.es.resx" />
+    <Content Include="Pages\Favorite\App_LocalResources\RemoveFavorite.aspx.en-GB.resx" />
+    <Content Include="Pages\Comment\App_LocalResources\AddComment.aspx.en-GB.resx" />
+    <Content Include="Pages\Comment\App_LocalResources\AddComment.aspx.fr.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Pages\Comment\App_LocalResources\AddComment.aspx.gl.resx" />
+    <Content Include="Pages\Comment\App_LocalResources\AddComment.aspx.es.resx" />
+    <Content Include="Pages\Comment\App_LocalResources\EditComment.aspx.en-GB.resx" />
+    <Content Include="Pages\Comment\App_LocalResources\EditComment.aspx.fr.resx" />
+    <Content Include="Pages\Comment\App_LocalResources\EditComment.aspx.gl.resx" />
+    <Content Include="Pages\Comment\App_LocalResources\EditComment.aspx.es.resx" />
+    <Content Include="Pages\Comment\App_LocalResources\Comment.aspx.fr.resx" />
+    <Content Include="Pages\Comment\App_LocalResources\Comment.aspx.en-GB.resx" />
+    <Content Include="Pages\Comment\App_LocalResources\Comment.aspx.es.resx" />
+    <Content Include="Pages\Comment\App_LocalResources\Comment.aspx.gl.resx" />
+    <Content Include="Pages\Comment\App_LocalResources\RemoveComment.aspx.en-GB.resx" />
+    <Content Include="Pages\Comment\App_LocalResources\RemoveComment.aspx.fr.resx" />
+    <Content Include="Pages\Comment\App_LocalResources\RemoveComment.aspx.es.resx" />
+    <Content Include="Pages\Comment\App_LocalResources\RemoveComment.aspx.gl.resx" />
+    <Content Include="Pages\Comment\App_LocalResources\ListComments.aspx.en-GB.resx" />
+    <Content Include="Pages\Comment\App_LocalResources\ListComments.aspx.fr.resx" />
+    <Content Include="Pages\Comment\App_LocalResources\ListComments.aspx.es.resx" />
+    <Content Include="Pages\Comment\App_LocalResources\ListComments.aspx.gl.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2309</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

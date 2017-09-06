@@ -1,0 +1,7 @@
+﻿Cosas que quedan por hacer:
+- En añadir a favoritos no almacenas el nombre correcto de la peli (aunque como no se usa no se nota)
+- Editar favorito falta completamente: lo que hay que hacer es copiar Add, cambiar un par de textos, en page_load poner una parte de if (!IsCallback) e inicializar ahí los 2 campos y en lo del botón llamar a update en vez de a add
+- Favorite no hay que hacerlo
+- En la lista faltan los enlaces a editar
+
+PS: Title en inglés no lleva dos 't' :P

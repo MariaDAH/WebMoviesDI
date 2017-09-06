@@ -1,0 +1,12 @@
+﻿Cambios:
+
+MovieProxy
+ - He cambiado el nombre a los métodos para que sean iguales a los del servicio web: un proxy lo que hace es encapsular los métodos del otro lado, pero deberían llevar el mismo nombre
+ - He cambiado el valor de WebMovies_sourceAddress, ahora es localhost:8080/webshop . Esto debería ser así porque no tiene por qué estar en un directorio: por ejemplo, si tuviésemos webshop.com estaría en "webshop.com/xml" no en "webshop.com/webshop/xml"
+
+MovieService
+ - He borrado MovieDetailsBlock y ahora se usa el genérico ListBlock<MovieDetails> (del cual debería extender en vez de copiar su código)
+ - He añadido el control de errores al método que parsea el XML. Ahora lanza una excepción con el error si hay un tag <error> o un error interno si está mal formado. Esto sólo atañe a los errores en los XML, los errores lógicos siguen siendo lógicos.
+ - He cambiado la excepción MovieDetailXmlNotFound a XmlErrorException y la he ehcho descender de InternalErrorException. A nosotros nos interesa saber que es un error de funcnionamiento de nuestro sistema
+ - He cambiado el modo de acceso de GetElementsByTagName por SelectSingleNode. En los apuntes recomiendan usar un navegador y pero esta es una forma simplificada sin tener que invicar un navegador para un sólo elemento (nótese, que la sentencia se llama Select... igual que en el otro caso)
+ - He añadido unos alias a los nombres de los métodos para que resulten más claros. He incluido un método, que no se usa, para buscar los detalles de una película.

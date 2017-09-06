@@ -1,0 +1,36 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Es.Udc.DotNet.WebMovies.Web.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="WebMovies_providerInvariantName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">System.Data.SqlClient</Value>
+    </Setting>
+    <Setting Name="WebMovies_connectionString" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Data Source=localhost\SQLExpress; Initial Catalog=PracticaIS; Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="WebMovies_moviesPerPage" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="WebMovies_linksPerPage" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="WebMovies_commentsPerPage" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">4</Value>
+    </Setting>
+    <Setting Name="WebMovies_labelsPerCloud" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">12</Value>
+    </Setting>
+    <Setting Name="WebMovies_applicationURL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">localhost:2569</Value>
+    </Setting>
+    <Setting Name="WebShop_purchaseUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://localhost:8080/webshop/product/detail/</Value>
+    </Setting>
+    <Setting Name="WebMovies_demotedThreshold" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">-2</Value>
+    </Setting>
+    <Setting Name="WebMovies_promotedThreshold" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,121 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="WebMovies.master.cs" Inherits="Es.Udc.DotNet.WebMovies.Web.WebMovies" %>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/1999/xhtml http://www.w3.org/MarkUp/SCHEMA/xhtml11.xsd">
+
+  <head id="head" runat="server">
+    <title>WebMovies</title>
+    <link rel="stylesheet" type="text/css" href="~/Css/WebMovies.css" />
+    <link rel="shortcut icon" href="<%$ Resources: Common, icon %>" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  </head>
+
+  <body>
+    <div class="header">
+      <asp:HyperLink CssClass="title" ID="linkTitle" runat="server" NavigateUrl="~/Pages/MainPage.aspx" meta:resourcekey="lclPageTitle"/>
+      <span class="subtitle"><asp:Localize ID="lclPageSubtitle" runat="server" meta:resourcekey="lclPageSubtitle" /></span>
+      <div class="welcome">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder_Welcome" runat="server">
+          <asp:Label ID="lblGreeting" runat="server" meta:resourcekey="lblGreeting" />
+          <asp:HyperLink ID="lnkAuthenticate" runat="server" NavigateUrl="~/Pages/User/Authentication.aspx" meta:resourcekey="lnkAuthenticate" />
+          <asp:Label ID="lblDashWelcome" runat="server" meta:resourcekey="lblDash" />
+          <asp:HyperLink ID="lnkLogout" runat="server" NavigateUrl="~/Pages/User/Logout.aspx" meta:resourcekey="lnkLogout" />
+          <asp:HyperLink ID="lnkRegister" runat="server" NavigateUrl="~/Pages/User/Register.aspx" meta:resourcekey="lnkRegister" />
+        </asp:ContentPlaceHolder>
+      </div>
+      <div class="links">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder_Links" runat="server">
+          <asp:Label ID="lblWelcome" meta:resourcekey="lblWelcome" runat="server" />
+          <asp:HyperLink ID="lnkUpdate" NavigateUrl="~/Pages/User/UpdateUserProfile.aspx" meta:resourcekey="lnkUpdate" runat="server" />
+          <asp:Label ID="lblDashMenu1" meta:resourcekey="lblDash" runat="server" />
+          <asp:HyperLink ID="lnkLinks" meta:resourcekey="lnkLinks" runat="server" />
+          <asp:HyperLink ID="lnkReported" Visible="false" runat="server"><sub class="reported"><asp:Image ID="imgReported" meta:resourcekey="imgReported" runat="server" /><asp:Label Text="3" ID="lblReported" runat="server" /></sub></asp:HyperLink>
+          <asp:Label ID="lblDashMenu2" meta:resourcekey="lblDash" runat="server" />
+          <asp:HyperLink ID="lnkFavorites" meta:resourcekey="lnkFavorites" runat="server" />
+          <asp:Label ID="lblDashMenu3" meta:resourcekey="lblDash" runat="server" />
+          <asp:HyperLink ID="lnkComments" meta:resourcekey="lnkComments" runat="server" />
+        </asp:ContentPlaceHolder>
+      </div>
+    </div>
+
+    <div class="menu">
+      <asp:ContentPlaceHolder ID="ContentPlaceHolder_Menu" runat="server">
+        <form method="get" action="/Pages/Movie/ListMoviesXml.aspx">
+          <div class="searchTextBox"><input type="text" class="searchText" name="keywords" /></div>
+          <div class="searchButtonBox"><input type="image" class="searchButton" src="/Images/zoom_16.png" /></div>
+        </form>
+      </asp:ContentPlaceHolder>
+    </div>
+
+    <div class="main">
+      <div class="title">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder_Title" runat="server" />
+      </div>
+      <asp:ContentPlaceHolder ID="ContentPlaceHolder_Content" runat="server" />
+    </div>
+
+    <asp:ListView ID="CloudView" runat="server">
+      <LayoutTemplate>
+        <ul class="cloud">
+          <asp:PlaceHolder ID="itemPlaceholder" runat="server" />
+        </ul>
+      </LayoutTemplate>
+      <ItemTemplate>
+        <li><a href="/Pages/Link/ListLinks.aspx?label=<%# Eval("Text") %>" style="max-height: <%# Eval("Value") %>px"><%# Eval("Text") %></a></li>
+      </ItemTemplate>
+      <EmptyDataTemplate>
+      </EmptyDataTemplate>
+    </asp:ListView>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var element = $('.cloud a');
+            var offset = 0;
+            var stepping = -0.03;
+            var list = $('.cloud');
+            var $list = $(list);
+
+            $list.mousemove(function (e) {
+                var topOfList = $list.eq(0).offset().top;
+                var listHeight = $list.height();
+                stepping = (e.clientY - topOfList) / listHeight * 0.2 - 0.1;
+            });
+
+            for (var i = element.length - 1; i >= 0; i--) {
+                element[i].elemAngle = i * Math.PI * 2 / element.length;
+            }
+
+            setInterval(render, 20);
+
+            function render() {
+                for (var i = element.length - 1; i >= 0; i--) {
+                    var angle = element[i].elemAngle + offset;
+
+                    x = 120 + Math.sin(angle) * 30;
+                    y = 45 + Math.cos(angle) * 40;
+                    var max = parseInt($(element[i]).css('max-height'), 10);
+                    size = max - Math.sin(angle) * max;
+
+                    var elementCenter = $(element[i]).width() / 2;
+
+                    // var leftValue = (($list.width() / 2) * x / 100 - elementCenter) + "px"; // Centered and overlapping
+                    var leftValue = -60 + "px"; // Left aligned
+
+                    $(element[i]).css("fontSize", size + "px");
+                    $(element[i]).css("opacity", size / 100);
+                    $(element[i]).css("zIndex", size);
+                    $(element[i]).css("left", leftValue);
+                    $(element[i]).css("top", y + "%");
+                }
+                offset += stepping;
+            }
+        });
+    </script>
+
+    <div class="footer">
+      <asp:Localize ID="lclFooter" runat="server" meta:resourcekey="lclFooter" />
+    </div>
+  </body>
+
+</html>

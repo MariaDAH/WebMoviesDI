@@ -1,0 +1,136 @@
+﻿········10········20········30········40········50········60········70········80
+
+ 1. ¿Es necesario hacer updates en los DAO de las dependencias?
+    [SOLUCIONADO] No
+
+ 2. ¿Cambiar la fecha al editar?
+    [SOLUCIONADO] No, un campo de fecha de edición
+
+ 3. En la función de UpdateLinkDetails en MovieLinkService, se pasa como
+    parámetro el linkId, y el linkDetails, en el create de linkDetails también
+    aparece el linkId, lo tenemos doble. ¡Considero que puede quitarse de
+    LinkDetails el id!
+    [SOLUCIONADO] XxxDetails siempre es un Custom VO de retorno. Una entity nunca
+    se expone fuera de la interfaz, en vez de eso se manda un Details.
+
+ 4. ¿Separar el MovieLinkService en varios?
+    [SOLUCIONADO] Sí, pero no un servicio por entidad.
+
+ 5. Preguntar idea loca sobre los Blocks.
+    [SOLUCIONADO] Tenemos una solución cojonuda ya que nuestro ListBlock
+	extiende de List, con lo cual se puede usar como un List cualquiera, pero le
+	añadimos información significativa para usarlo como un Block.
+
+ 6. ¿Cómo hacer en los test con el Assert.AreEqual para las fechas?
+    [SOLUCIONADO] Redondeamos al milisegundo. Para eso hay que crear una nueva
+	fecha con el número de ciclos de la fecha entre el número de ciclos por
+	milisegundo. Tenemos un método trunk.
+
+ 7. Cambiar los nombres de los métodos de los servicios por algo más orientado al
+    caso de uso que realizan (no tan parecido a los DAOs). Por ejemplo,
+    AddRating() es más apropiado como RateComment().
+    [SOLUCIONADO] Hecho, tiene sentido.
+
+ 8. ¿Cómo va el .Include() en los DAOs?
+    [SOLUCIONADO] Tiene sentido cuando para las consultas se abre y cierra el
+	contexto. En nuestro caso es un singleton abierto permanentemente, por lo
+	tanto no es necesario ya que se puede vovler a consultar en cualquier
+	momento.
+
+ 9. ¿Por qué todos los métodos de los servicios de ejemplo llevan Transactional?
+    [SOLUCIONADO] Es para indicar que se ejecutan de modo transaccional con los
+	interceptores. Nuestro nivel de transacción es Serializable.
+
+10. Fusionar LabelService con LinkService y RatingService con CommentService.
+    [Descartado] Los servicios tienen sentido independientemente por
+	escalabilidad: Supongamos que los ratings se puedan aplicar a comentarios
+	también o que tanto etiquetas, favoritos, comentarios y valoraciones se
+	aplicasen a las películas; este cambio sería mucho más abordable si los
+	sistemas son independientes y se pueden ejecutarde forma más escalada.
+
+11. Agrupar métodos parecidos y hacer métodos de check repetitivos en una
+    librería estática.
+	[Descartado] Los métodos parecidos como tal ya no existen, cada uno tiene
+	entidad propia y una necesidad de ser; los checks estáticos no son una buena
+	solución.
+
+12. Cuando borramos un link, revisar sus labels para ver si hay que borrarlas
+    también.
+    [SOLUCIONADO] Por coherencia se ha añadido un método que es
+	RemoveLabelsForLink() en LabelService. Esto es para mantener la
+	independencia del servicio de etiquetas como un servicio adicional,
+	completamente independiente.
+
+13. Añadir DAOs para Country y Language.
+    [SOLUCIONADO] Hecho.
+
+14. IFavoriteServiceTest.RemoveFavoriteTest()
+	[SOLUCIONADO] Hecho.
+
+15. Revisar las anotaciones de exceptions
+    [SOLUCIONADO] Hecho.
+
+16. Reordenar las carpetas y servicios de model
+    [SOLUCIONADO] Hecho.
+
+17. Añadir los tests para RemoveLabelsForLink()
+    [SOLUCIONADO] Hecho.
+
+18. Revisar los tests.
+    [SOLUCIONADO] Hecho.
+
+19. Hacer una nueva versión de los tests que funcione.
+    [SOLUCIONADO] Hecho.
+
+20. Revisar los resources.
+    [SOLUCIONADO] Hecho.
+
+21. Revisar los accesos a las diferentes páginas.
+[!!!]
+    [Actualización] Funciona excepto que la página principal la primera vez
+	siempre pide autenticación.
+
+22. Añadir cache de los títulos en las búsquedas de la parte optativa
+    [SOLUCIONADO] Hecho.
+
+········10········20········30········40········50········60········70········80
+
+Extras
+
+ 1. Cambiar los valores de rating a enum.
+
+ 2. Añadir campo de desactivado y opción de borrar cuenta
+
+········10········20········30········40········50········60········70········80
+
+DAO genérico y excepciones
+Durante el desarrollo de la práctica se implementaron varias excepciones parecidas en que lo único que cambiaba era el tipo de entidad referida (NoMoreLinksException, NoMoreCommentsException, NoMoreFavoritesException, UserNotAuthorizedOnLink, UserNotAuthorizedOnComment...).
+También se detectó que las excepciones que descendían de InstanceException, sólamente podían referir su instanciación por el identificador, cuando en realidad en diversos casos en que una entidad fallaba a la hora de instanciarse era por alguna otra característica. Para ello, cada excepción encapsula una colección de un nuevo struct Property, par nombre-valor, los cuales se pueden introducir instanciándolas o de forma transparente en los constructores.
+Por tanto, las nuevas excepciones están parametrizadas según la entidad que refieren y las excepciones de ModelUtil se extendieron haciéndolas generícas y permitiendo indicar qué propiedades con qué valores eran las que se requerían para la instanciación.
+Para generar estas excepciones y para mantener la coherencia lógica, se creó un DAO genérico que extiende el de ModelUtil, captura las excepciones originales y lanza las nuevas. Adicionalmente en el GenericDao no se incluía una excepción cuando se intentaba actualizar una entidad que no existía y se consideró adecuado añadir esta característica.
+Así todos los DAOs de la práctica lanzan las excepciones extendidas sin codificación adicional en ellos y para los métodos añadidos existen las nuevas funcionalidades.
+De este modo, tanto un servicio que utilizase un DAO como cualquier otro sistema que accediese a un servicio seguirían sin percibir alteración en el comportamiento de la capa inferior, pero si se usaban las nuevas características podrían sacarles partido.
+Es de especial interés, el efecto en las pruebas, ya que permite controlar que una excepción esperada que originalmente era simplemente, por ejemplo, InstanceNotFoundException ahora es posible controlar si se debe a un User, Link o Favorite, cuando antes no era posible hacerlo de forma automática y permite una trazabilidad más dirigida.
+
+Bloques de datos
+Para devolver bloques de datos es adecuado además de la colección añadir información adicional como el índice en el cual empieza el bloque, si existen más elementos a continuación en la colección completa o el número total de elementos.
+Para ello se han extendido las clases List y Dictionary (pares clave-valor ordenados) de la API de Microsoft para añadirle esta información a través de propiedades, así como nuevos constructores para permitir añadir esta información de forma cómoda.
+De este modo para una llamada a un método que espere una List será transparente, ya que el objeto devuelto es una List, como es el caso del GridView; pero para una llamada que espere un ListBlock, puede explotar sus características adicionales.
+
+Nomenclatura
+En los DAO se siguen las siguientes normas de nombrado
+ - Create-: crea la entidad ignorando e inicializa la clave.
+ - Find-: recupera una entidad o una colección de ellas por la propiedad indicada, o su clave si no se especifica, y lanza una excepción de instanciación si no existe ninguna o si existe más de una.
+ - Exists-: devuelve un dato booleano indicando si existe entidad con el identificador o propiedad indicada.
+ - Count-: indica el número de entidades que existen en el sistema.
+ - Update-: actualiza la entidad y lanza una excepción en caso de que no exista.
+ - Remove-: elimina la entidad indicada y lanza una excepción si no existe.
+ - List-: recupera una bloque de elementos de la entidad, que estará vacío si no existe ningún elemento sin lanzar ninguna excepción.
+ - -ByProperties (WithEntities en el caso de Exists-): indica que la operación se realiza en aquellos elementos que respeten esos valores indicados para esa propiedad.
+ - -ForEntities: indica que la operación se realiza limitandola sobre las claves foráneas de esas entidades referidas.
+ - -All: indica que se aplica la operación a todas las entidades que maneja ese DAO.
+Para los servicios, los métodos están nombrados con lenguaje natural de forma lo más sencilla y clara posible, pero se cumplen las dos siguientes reglas para la firma:
+ - Todos los parámetros son tipos primitivos o una colección de ellos.
+ - Si la respuesta no es un tipo primitivo, nunca se devuelve una entidad, sino que será un custom value object con los datos relevantes.
+        /// <exception cref="InstanceNotFoundException&lt;Label&gt;"/>
+        /// <exception cref="DuplicateInstanceException&lt;Label&gt;"/>

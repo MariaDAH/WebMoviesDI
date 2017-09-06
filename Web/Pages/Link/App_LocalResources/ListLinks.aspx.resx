@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="imgAddComment.ImageUrl" xml:space="preserve">
+    <value>/Images/plus_16.png</value>
+  </data>
+  <data name="imgAddComments.AlternateText" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="imgAuthor.AlternateText" xml:space="preserve">
+    <value>Author</value>
+  </data>
+  <data name="imgAuthor.ImageUrl" xml:space="preserve">
+    <value>/Images/user_16.png</value>
+  </data>
+  <data name="imgByDate.AlternateText" xml:space="preserve">
+    <value>date</value>
+  </data>
+  <data name="imgByDate.ImageUrl" xml:space="preserve">
+    <value>/Images/calendar_16.png</value>
+  </data>
+  <data name="imgByRating.AlternateText" xml:space="preserve">
+    <value>rating</value>
+  </data>
+  <data name="imgByRating.ImageUrl" xml:space="preserve">
+    <value>/Images/hand_pro_16.png</value>
+  </data>
+  <data name="imgComments.AlternateText" xml:space="preserve">
+    <value>Comments</value>
+  </data>
+  <data name="imgComments.ImageUrl" xml:space="preserve">
+    <value>/Images/comments_16.png</value>
+  </data>
+  <data name="imgDate.AlternateText" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="imgDate.ImageUrl" xml:space="preserve">
+    <value>/Images/calendar2_16.png</value>
+  </data>
+  <data name="imgDescription.AlternateText" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="imgDescription.ImageUrl" xml:space="preserve">
+    <value>/Images/info_16.png</value>
+  </data>
+  <data name="imgLabel.AlternateText" xml:space="preserve">
+    <value>Label</value>
+  </data>
+  <data name="imgLabel.ImageUrl" xml:space="preserve">
+    <value>/Images/tag_16.png</value>
+  </data>
+  <data name="imgLabels.AlternateText" xml:space="preserve">
+    <value>Labels</value>
+  </data>
+  <data name="imgLabels.ImageUrl" xml:space="preserve">
+    <value>/Images/tag_16.png</value>
+  </data>
+  <data name="imgLink.AlternateText" xml:space="preserve">
+    <value>Link</value>
+  </data>
+  <data name="imgLink.ImageUrl" xml:space="preserve">
+    <value>/Images/link_16.png</value>
+  </data>
+  <data name="imgMovie.AlternateText" xml:space="preserve">
+    <value>Movie</value>
+  </data>
+  <data name="imgMovie.ImageUrl" xml:space="preserve">
+    <value>/Images/movie_16.png</value>
+  </data>
+  <data name="imgOrderBy.AlternateText" xml:space="preserve">
+    <value>Order by</value>
+  </data>
+  <data name="imgOrderBy.ImageUrl" xml:space="preserve">
+    <value>/Images/refresh_16.png</value>
+  </data>
+  <data name="imgRateDown.AlternateText" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="imgRateDown.ImageUrl" xml:space="preserve">
+    <value>/Images/hand_contra_16.png</value>
+  </data>
+  <data name="imgRateUp.AlternateText" xml:space="preserve">
+    <value>+</value>
+  </data>
+  <data name="imgRateUp.ImageUrl" xml:space="preserve">
+    <value>/Images/hand_pro_16.png</value>
+  </data>
+  <data name="imgReported.AlternaetText" xml:space="preserve">
+    <value>Reported</value>
+  </data>
+  <data name="imgReported.ImageUrl" xml:space="preserve">
+    <value>/Images/flag2_16.png</value>
+  </data>
+  <data name="imgUrl.AlternateText" xml:space="preserve">
+    <value>Url</value>
+  </data>
+  <data name="imgUrl.ImageUrl" xml:space="preserve">
+    <value>/Images/url_16.png</value>
+  </data>
+  <data name="imgUser.AlternateText" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="imgUser.ImageUrl" xml:space="preserve">
+    <value>/Images/user_16.png</value>
+  </data>
+  <data name="lblLabel.Text" xml:space="preserve">
+    <value>label</value>
+  </data>
+  <data name="lblMovie.Text" xml:space="preserve">
+    <value>movie</value>
+  </data>
+  <data name="lblUser.Text" xml:space="preserve">
+    <value>user</value>
+  </data>
+  <data name="lclFor.Text" xml:space="preserve">
+    <value>for</value>
+  </data>
+  <data name="lclLinks.Text" xml:space="preserve">
+    <value>Links</value>
+  </data>
+  <data name="lclNoLinks.Text" xml:space="preserve">
+    <value>No links were found</value>
+  </data>
+  <data name="lclReportedLinks.Text" xml:space="preserve">
+    <value>Reported links</value>
+  </data>
+  <data name="lnkAddLink.ImageUrl" xml:space="preserve">
+    <value>/Images/plus_16.png</value>
+  </data>
+  <data name="lnkAddLink.Text" xml:space="preserve">
+    <value>Add link</value>
+  </data>
+  <data name="lnkEditLink.ImageUrl" xml:space="preserve">
+    <value>/Images/edit_16.png</value>
+  </data>
+  <data name="lnkEditLink.Text" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="lnkFavorite.ImageUrl" xml:space="preserve">
+    <value>/Images/star_empty_16.png</value>
+  </data>
+  <data name="lnkFavorite.Text" xml:space="preserve">
+    <value>Add favorite</value>
+  </data>
+  <data name="lnkRemoveLink.ImageUrl" xml:space="preserve">
+    <value>/Images/trash_16.png</value>
+  </data>
+  <data name="lnkRemoveLink.Text" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="lnkReturn.Text" xml:space="preserve">
+    <value>Return</value>
+  </data>
+  <data name="lnkUnfavorite.ImageUrl" xml:space="preserve">
+    <value>/Images/star_16.png</value>
+  </data>
+  <data name="lnkUnfavorite.Text" xml:space="preserve">
+    <value>Remove favorite</value>
+  </data>
+  <data name="nppfListLinks.NextPageText" xml:space="preserve">
+    <value>&lt;img src="/Images/next_16.png" alt='►' /&gt;</value>
+  </data>
+  <data name="nppfListLinks.PreviousPageText" xml:space="preserve">
+    <value>&lt;img src="/Images/prev_16.png" alt='◄' /&gt;</value>
+  </data>
+</root>

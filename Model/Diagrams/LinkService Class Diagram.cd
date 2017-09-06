@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="LinkDetails es usada para recuperar todos los detalles de un link en un mismo objeto.No hay ningún tipo de asociación o herencia, simplemente se importa desde ILinkService.">
+    <Position X="12.556" Y="2.649" Height="1.333" Width="1.94" />
+  </Comment>
+  <Class Name="Es.Udc.DotNet.WebMovies.Model.Services.LinkService.LinkDetails">
+    <Position X="13" Y="4.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAgAAAEgAAAAAwAAQAgAIEBCQAAAAAAAAA=</HashCode>
+      <FileName>Services\LinkService\LinkDetails.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Es.Udc.DotNet.WebMovies.Model.Services.LinkService.LinkService">
+    <Position X="8.75" Y="5.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AEgiAAAAACCAAEBEIIAAAgAAAQIAAAQAQAAAAEAAAIA=</HashCode>
+      <FileName>Services\LinkService\LinkService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="LinkDao" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Es.Udc.DotNet.WebMovies.Model.Util.Dao.IGenericDao&lt;E, PK&gt;" Collapsed="true">
+    <Position X="6.5" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAABAAAAAAIAEAAAAAAAAEAAAA=</HashCode>
+      <FileName>Util\Dao\IGenericDao.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Es.Udc.DotNet.ModelUtil.Dao.IGenericDao&lt;E, PK&gt;" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="2" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="Es.Udc.DotNet.WebMovies.Model.Daos.LinkDao.ILinkDao">
+    <Position X="4.5" Y="3.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIEAAACAQAAAEAAAgQAAAAAIAAiQgADAEAA=</HashCode>
+      <FileName>Daos\LinkDao\ILinkDao.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Es.Udc.DotNet.WebMovies.Model.Daos.UserProfileDao.IUserProfileDao">
+    <Position X="7.75" Y="3.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Daos\UserProfileDao\IUserProfileDao.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

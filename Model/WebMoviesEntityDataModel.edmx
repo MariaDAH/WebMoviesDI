@@ -1,0 +1,778 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="WebMoviesEntityDataModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="WebMoviesEntityDataModelStoreContainer">
+          <EntitySet Name="Comment" EntityType="WebMoviesEntityDataModel.Store.Comment" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Country" EntityType="WebMoviesEntityDataModel.Store.Country" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Favorite" EntityType="WebMoviesEntityDataModel.Store.Favorite" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Label" EntityType="WebMoviesEntityDataModel.Store.Label" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Language" EntityType="WebMoviesEntityDataModel.Store.Language" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="LanguageCountry" EntityType="WebMoviesEntityDataModel.Store.LanguageCountry" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Link" EntityType="WebMoviesEntityDataModel.Store.Link" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="LinkLabel" EntityType="WebMoviesEntityDataModel.Store.LinkLabel" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Rating" EntityType="WebMoviesEntityDataModel.Store.Rating" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="UserProfile" EntityType="WebMoviesEntityDataModel.Store.UserProfile" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_Comment_LinkId" Association="WebMoviesEntityDataModel.Store.FK_Comment_LinkId">
+            <End Role="Link" EntitySet="Link" />
+            <End Role="Comment" EntitySet="Comment" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Comment_UsrId" Association="WebMoviesEntityDataModel.Store.FK_Comment_UsrId">
+            <End Role="UserProfile" EntitySet="UserProfile" />
+            <End Role="Comment" EntitySet="Comment" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Favorite_LinkId" Association="WebMoviesEntityDataModel.Store.FK_Favorite_LinkId">
+            <End Role="Link" EntitySet="Link" />
+            <End Role="Favorite" EntitySet="Favorite" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Favorite_UsrId" Association="WebMoviesEntityDataModel.Store.FK_Favorite_UsrId">
+            <End Role="UserProfile" EntitySet="UserProfile" />
+            <End Role="Favorite" EntitySet="Favorite" />
+          </AssociationSet>
+          <AssociationSet Name="FK_LanguageCountry_CountryCode" Association="WebMoviesEntityDataModel.Store.FK_LanguageCountry_CountryCode">
+            <End Role="Country" EntitySet="Country" />
+            <End Role="LanguageCountry" EntitySet="LanguageCountry" />
+          </AssociationSet>
+          <AssociationSet Name="FK_LanguageCountry_LanguageCode" Association="WebMoviesEntityDataModel.Store.FK_LanguageCountry_LanguageCode">
+            <End Role="Language" EntitySet="Language" />
+            <End Role="LanguageCountry" EntitySet="LanguageCountry" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Link_UsrId" Association="WebMoviesEntityDataModel.Store.FK_Link_UsrId">
+            <End Role="UserProfile" EntitySet="UserProfile" />
+            <End Role="Link" EntitySet="Link" />
+          </AssociationSet>
+          <AssociationSet Name="FK_LinkLabel_LabelId" Association="WebMoviesEntityDataModel.Store.FK_LinkLabel_LabelId">
+            <End Role="Label" EntitySet="Label" />
+            <End Role="LinkLabel" EntitySet="LinkLabel" />
+          </AssociationSet>
+          <AssociationSet Name="FK_LinkLabel_LinkId" Association="WebMoviesEntityDataModel.Store.FK_LinkLabel_LinkId">
+            <End Role="Link" EntitySet="Link" />
+            <End Role="LinkLabel" EntitySet="LinkLabel" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Rating_LinkId" Association="WebMoviesEntityDataModel.Store.FK_Rating_LinkId">
+            <End Role="Link" EntitySet="Link" />
+            <End Role="Rating" EntitySet="Rating" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Rating_UsrId" Association="WebMoviesEntityDataModel.Store.FK_Rating_UsrId">
+            <End Role="UserProfile" EntitySet="UserProfile" />
+            <End Role="Rating" EntitySet="Rating" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserProfile_Country" Association="WebMoviesEntityDataModel.Store.FK_UserProfile_Country">
+            <End Role="Country" EntitySet="Country" />
+            <End Role="UserProfile" EntitySet="UserProfile" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserProfile_Language" Association="WebMoviesEntityDataModel.Store.FK_UserProfile_Language">
+            <End Role="Language" EntitySet="Language" />
+            <End Role="UserProfile" EntitySet="UserProfile" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Comment">
+          <Key>
+            <PropertyRef Name="commentId" />
+          </Key>
+          <Property Name="commentId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="usrId" Type="bigint" Nullable="false" />
+          <Property Name="linkId" Type="bigint" Nullable="false" />
+          <Property Name="commentText" Type="varchar" Nullable="false" MaxLength="300" />
+          <Property Name="date" Type="datetime2" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Country">
+          <Key>
+            <PropertyRef Name="countryCode" />
+          </Key>
+          <Property Name="countryCode" Type="nchar" Nullable="false" MaxLength="2" />
+          <Property Name="countryName" Type="varchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Favorite">
+          <Key>
+            <PropertyRef Name="favoriteId" />
+          </Key>
+          <Property Name="favoriteId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="usrId" Type="bigint" Nullable="false" />
+          <Property Name="linkId" Type="bigint" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="120" />
+          <Property Name="description" Type="varchar" MaxLength="300" />
+          <Property Name="date" Type="datetime2" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Label">
+          <Key>
+            <PropertyRef Name="labelId" />
+          </Key>
+          <Property Name="labelId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="labelText" Type="varchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Language">
+          <Key>
+            <PropertyRef Name="languageCode" />
+          </Key>
+          <Property Name="languageCode" Type="nchar" Nullable="false" MaxLength="2" />
+          <Property Name="languageName" Type="varchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="LanguageCountry">
+          <Key>
+            <PropertyRef Name="languageCode" />
+            <PropertyRef Name="countryCode" />
+          </Key>
+          <Property Name="languageCode" Type="nchar" Nullable="false" MaxLength="2" />
+          <Property Name="countryCode" Type="nchar" Nullable="false" MaxLength="2" />
+        </EntityType>
+        <EntityType Name="Link">
+          <Key>
+            <PropertyRef Name="linkId" />
+          </Key>
+          <Property Name="linkId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="usrId" Type="bigint" />
+          <Property Name="movieId" Type="bigint" Nullable="false" />
+          <Property Name="name" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="url" Type="varchar" Nullable="false" MaxLength="150" />
+          <Property Name="description" Type="varchar" MaxLength="300" />
+          <Property Name="date" Type="datetime2" Nullable="false" />
+          <Property Name="reportRead" Type="bit" />
+        </EntityType>
+        <EntityType Name="LinkLabel">
+          <Key>
+            <PropertyRef Name="linkId" />
+            <PropertyRef Name="labelId" />
+          </Key>
+          <Property Name="linkId" Type="bigint" Nullable="false" />
+          <Property Name="labelId" Type="bigint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Rating">
+          <Key>
+            <PropertyRef Name="ratingId" />
+          </Key>
+          <Property Name="ratingId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="usrId" Type="bigint" Nullable="false" />
+          <Property Name="linkId" Type="bigint" Nullable="false" />
+          <Property Name="value" Type="int" Nullable="false" />
+          <Property Name="date" Type="datetime2" Nullable="false" />
+        </EntityType>
+        <EntityType Name="UserProfile">
+          <Key>
+            <PropertyRef Name="usrId" />
+          </Key>
+          <Property Name="usrId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="usrlogin" Type="varchar" Nullable="false" MaxLength="30" />
+          <Property Name="enPassword" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="firstName" Type="varchar" Nullable="false" MaxLength="30" />
+          <Property Name="lastName" Type="varchar" Nullable="false" MaxLength="60" />
+          <Property Name="email" Type="varchar" Nullable="false" MaxLength="120" />
+          <Property Name="language" Type="nchar" MaxLength="2" />
+          <Property Name="country" Type="nchar" MaxLength="2" />
+        </EntityType>
+        <Association Name="FK_Comment_LinkId">
+          <End Role="Link" Type="WebMoviesEntityDataModel.Store.Link" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Comment" Type="WebMoviesEntityDataModel.Store.Comment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Link">
+              <PropertyRef Name="linkId" />
+            </Principal>
+            <Dependent Role="Comment">
+              <PropertyRef Name="linkId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Comment_UsrId">
+          <End Role="UserProfile" Type="WebMoviesEntityDataModel.Store.UserProfile" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Comment" Type="WebMoviesEntityDataModel.Store.Comment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserProfile">
+              <PropertyRef Name="usrId" />
+            </Principal>
+            <Dependent Role="Comment">
+              <PropertyRef Name="usrId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Favorite_LinkId">
+          <End Role="Link" Type="WebMoviesEntityDataModel.Store.Link" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Favorite" Type="WebMoviesEntityDataModel.Store.Favorite" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Link">
+              <PropertyRef Name="linkId" />
+            </Principal>
+            <Dependent Role="Favorite">
+              <PropertyRef Name="linkId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Favorite_UsrId">
+          <End Role="UserProfile" Type="WebMoviesEntityDataModel.Store.UserProfile" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Favorite" Type="WebMoviesEntityDataModel.Store.Favorite" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserProfile">
+              <PropertyRef Name="usrId" />
+            </Principal>
+            <Dependent Role="Favorite">
+              <PropertyRef Name="usrId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_LanguageCountry_CountryCode">
+          <End Role="Country" Type="WebMoviesEntityDataModel.Store.Country" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="LanguageCountry" Type="WebMoviesEntityDataModel.Store.LanguageCountry" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Country">
+              <PropertyRef Name="countryCode" />
+            </Principal>
+            <Dependent Role="LanguageCountry">
+              <PropertyRef Name="countryCode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_LanguageCountry_LanguageCode">
+          <End Role="Language" Type="WebMoviesEntityDataModel.Store.Language" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="LanguageCountry" Type="WebMoviesEntityDataModel.Store.LanguageCountry" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Language">
+              <PropertyRef Name="languageCode" />
+            </Principal>
+            <Dependent Role="LanguageCountry">
+              <PropertyRef Name="languageCode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Link_UsrId">
+          <End Role="UserProfile" Type="WebMoviesEntityDataModel.Store.UserProfile" Multiplicity="0..1" />
+          <End Role="Link" Type="WebMoviesEntityDataModel.Store.Link" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserProfile">
+              <PropertyRef Name="usrId" />
+            </Principal>
+            <Dependent Role="Link">
+              <PropertyRef Name="usrId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_LinkLabel_LabelId">
+          <End Role="Label" Type="WebMoviesEntityDataModel.Store.Label" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="LinkLabel" Type="WebMoviesEntityDataModel.Store.LinkLabel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Label">
+              <PropertyRef Name="labelId" />
+            </Principal>
+            <Dependent Role="LinkLabel">
+              <PropertyRef Name="labelId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_LinkLabel_LinkId">
+          <End Role="Link" Type="WebMoviesEntityDataModel.Store.Link" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="LinkLabel" Type="WebMoviesEntityDataModel.Store.LinkLabel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Link">
+              <PropertyRef Name="linkId" />
+            </Principal>
+            <Dependent Role="LinkLabel">
+              <PropertyRef Name="linkId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Rating_LinkId">
+          <End Role="Link" Type="WebMoviesEntityDataModel.Store.Link" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Rating" Type="WebMoviesEntityDataModel.Store.Rating" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Link">
+              <PropertyRef Name="linkId" />
+            </Principal>
+            <Dependent Role="Rating">
+              <PropertyRef Name="linkId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Rating_UsrId">
+          <End Role="UserProfile" Type="WebMoviesEntityDataModel.Store.UserProfile" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Rating" Type="WebMoviesEntityDataModel.Store.Rating" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserProfile">
+              <PropertyRef Name="usrId" />
+            </Principal>
+            <Dependent Role="Rating">
+              <PropertyRef Name="usrId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserProfile_Country">
+          <End Role="Country" Type="WebMoviesEntityDataModel.Store.Country" Multiplicity="0..1" />
+          <End Role="UserProfile" Type="WebMoviesEntityDataModel.Store.UserProfile" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Country">
+              <PropertyRef Name="countryCode" />
+            </Principal>
+            <Dependent Role="UserProfile">
+              <PropertyRef Name="country" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserProfile_Language">
+          <End Role="Language" Type="WebMoviesEntityDataModel.Store.Language" Multiplicity="0..1" />
+          <End Role="UserProfile" Type="WebMoviesEntityDataModel.Store.UserProfile" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Language">
+              <PropertyRef Name="languageCode" />
+            </Principal>
+            <Dependent Role="UserProfile">
+              <PropertyRef Name="language" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Es.Udc.DotNet.WebMovies.Model" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="WebMoviesEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Comment" EntityType="Es.Udc.DotNet.WebMovies.Model.Comment" />
+          <EntitySet Name="Country" EntityType="Es.Udc.DotNet.WebMovies.Model.Country" />
+          <EntitySet Name="Favorite" EntityType="Es.Udc.DotNet.WebMovies.Model.Favorite" />
+          <EntitySet Name="Label" EntityType="Es.Udc.DotNet.WebMovies.Model.Label" />
+          <EntitySet Name="Language" EntityType="Es.Udc.DotNet.WebMovies.Model.Language" />
+          <EntitySet Name="Link" EntityType="Es.Udc.DotNet.WebMovies.Model.Link" />
+          <EntitySet Name="Rating" EntityType="Es.Udc.DotNet.WebMovies.Model.Rating" />
+          <EntitySet Name="UserProfile" EntityType="Es.Udc.DotNet.WebMovies.Model.UserProfile" />
+          <AssociationSet Name="LinkLabel" Association="Es.Udc.DotNet.WebMovies.Model.LinkLabel">
+            <End Role="Label" EntitySet="Label" />
+            <End Role="Link" EntitySet="Link" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Comment_LinkId" Association="Es.Udc.DotNet.WebMovies.Model.FK_Comment_LinkId">
+            <End Role="Link" EntitySet="Link" />
+            <End Role="Comment" EntitySet="Comment" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Comment_UsrId" Association="Es.Udc.DotNet.WebMovies.Model.FK_Comment_UsrId">
+            <End Role="UserProfile" EntitySet="UserProfile" />
+            <End Role="Comment" EntitySet="Comment" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Favorite_LinkId" Association="Es.Udc.DotNet.WebMovies.Model.FK_Favorite_LinkId">
+            <End Role="Link" EntitySet="Link" />
+            <End Role="Favorite" EntitySet="Favorite" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Favorite_UsrId" Association="Es.Udc.DotNet.WebMovies.Model.FK_Favorite_UsrId">
+            <End Role="UserProfile" EntitySet="UserProfile" />
+            <End Role="Favorite" EntitySet="Favorite" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Link_UsrId" Association="Es.Udc.DotNet.WebMovies.Model.FK_Link_UsrId">
+            <End Role="UserProfile" EntitySet="UserProfile" />
+            <End Role="Link" EntitySet="Link" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Rating_LinkId" Association="Es.Udc.DotNet.WebMovies.Model.FK_Rating_LinkId">
+            <End Role="Link" EntitySet="Link" />
+            <End Role="Rating" EntitySet="Rating" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Rating_UsrId" Association="Es.Udc.DotNet.WebMovies.Model.FK_Rating_UsrId">
+            <End Role="UserProfile" EntitySet="UserProfile" />
+            <End Role="Rating" EntitySet="Rating" />
+          </AssociationSet>
+          <AssociationSet Name="LanguageCountry" Association="Es.Udc.DotNet.WebMovies.Model.LanguageCountry">
+            <End Role="Country" EntitySet="Country" />
+            <End Role="Language" EntitySet="Language" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserProfile_Country" Association="Es.Udc.DotNet.WebMovies.Model.FK_UserProfile_Country">
+            <End Role="Country" EntitySet="Country" />
+            <End Role="UserProfile" EntitySet="UserProfile" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserProfile_Language" Association="Es.Udc.DotNet.WebMovies.Model.FK_UserProfile_Language">
+            <End Role="Language" EntitySet="Language" />
+            <End Role="UserProfile" EntitySet="UserProfile" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Comment">
+          <Key>
+            <PropertyRef Name="commentId" />
+          </Key>
+          <Property Name="commentId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="userId" Type="Int64" Nullable="false" />
+          <Property Name="linkId" Type="Int64" Nullable="false" />
+          <Property Name="text" Type="String" Nullable="false" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="date" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="UserProfile" Relationship="Es.Udc.DotNet.WebMovies.Model.FK_Comment_UsrId" FromRole="Comment" ToRole="UserProfile" />
+          <NavigationProperty Name="Link" Relationship="Es.Udc.DotNet.WebMovies.Model.FK_Comment_LinkId" FromRole="Comment" ToRole="Link" />
+        </EntityType>
+        <EntityType Name="Country">
+          <Key>
+            <PropertyRef Name="countryCode" />
+          </Key>
+          <Property Name="countryCode" Type="String" Nullable="false" MaxLength="2" Unicode="true" FixedLength="true" />
+          <Property Name="countryName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Languages" Relationship="Es.Udc.DotNet.WebMovies.Model.LanguageCountry" FromRole="Country" ToRole="Language" />
+          <NavigationProperty Name="UserProfiles" Relationship="Es.Udc.DotNet.WebMovies.Model.FK_UserProfile_Country" FromRole="Country" ToRole="UserProfile" />
+        </EntityType>
+        <EntityType Name="Favorite">
+          <Key>
+            <PropertyRef Name="favoriteId" />
+          </Key>
+          <Property Name="favoriteId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="userId" Type="Int64" Nullable="false" />
+          <Property Name="linkId" Type="Int64" Nullable="false" />
+          <Property Name="name" Type="String" MaxLength="120" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="description" Type="String" MaxLength="300" Unicode="false" FixedLength="false" Nullable="false" />
+          <Property Name="date" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="UserProfile" Relationship="Es.Udc.DotNet.WebMovies.Model.FK_Favorite_UsrId" FromRole="Favorite" ToRole="UserProfile" />
+          <NavigationProperty Name="Link" Relationship="Es.Udc.DotNet.WebMovies.Model.FK_Favorite_LinkId" FromRole="Favorite" ToRole="Link" />
+        </EntityType>
+        <EntityType Name="Label">
+          <Key>
+            <PropertyRef Name="labelId" />
+          </Key>
+          <Property Name="labelId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="text" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Links" Relationship="Es.Udc.DotNet.WebMovies.Model.LinkLabel" FromRole="Label" ToRole="Link" />
+        </EntityType>
+        <EntityType Name="Language">
+          <Key>
+            <PropertyRef Name="languageCode" />
+          </Key>
+          <Property Name="languageCode" Type="String" Nullable="false" MaxLength="2" Unicode="true" FixedLength="true" />
+          <Property Name="languageName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Countries" Relationship="Es.Udc.DotNet.WebMovies.Model.LanguageCountry" FromRole="Language" ToRole="Country" />
+          <NavigationProperty Name="UserProfiles" Relationship="Es.Udc.DotNet.WebMovies.Model.FK_UserProfile_Language" FromRole="Language" ToRole="UserProfile" />
+        </EntityType>
+        <EntityType Name="Link">
+          <Key>
+            <PropertyRef Name="linkId" />
+          </Key>
+          <Property Name="linkId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="movieId" Type="Int64" Nullable="false" />
+          <Property Name="userId" Type="Int64" Nullable="false" />
+          <Property Name="name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="description" Type="String" Nullable="false" MaxLength="300" Unicode="false" FixedLength="false" />
+          <Property Name="url" Type="String" Nullable="false" MaxLength="150" Unicode="false" FixedLength="false" />
+          <Property Name="reportRead" Type="Boolean" />
+          <Property Name="date" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="UserProfile" Relationship="Es.Udc.DotNet.WebMovies.Model.FK_Link_UsrId" FromRole="Link" ToRole="UserProfile" />
+          <NavigationProperty Name="Labels" Relationship="Es.Udc.DotNet.WebMovies.Model.LinkLabel" FromRole="Link" ToRole="Label" />
+          <NavigationProperty Name="Ratings" Relationship="Es.Udc.DotNet.WebMovies.Model.FK_Rating_LinkId" FromRole="Link" ToRole="Rating" />
+          <NavigationProperty Name="Comments" Relationship="Es.Udc.DotNet.WebMovies.Model.FK_Comment_LinkId" FromRole="Link" ToRole="Comment" />
+          <NavigationProperty Name="Favorites" Relationship="Es.Udc.DotNet.WebMovies.Model.FK_Favorite_LinkId" FromRole="Link" ToRole="Favorite" />
+        </EntityType>
+        <EntityType Name="Rating">
+          <Key>
+            <PropertyRef Name="ratingId" />
+          </Key>
+          <Property Name="ratingId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="userId" Type="Int64" Nullable="false" />
+          <Property Name="linkId" Type="Int64" Nullable="false" />
+          <Property Name="value" Type="Int32" Nullable="false" />
+          <Property Name="date" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="UserProfile" Relationship="Es.Udc.DotNet.WebMovies.Model.FK_Rating_UsrId" FromRole="Rating" ToRole="UserProfile" />
+          <NavigationProperty Name="Link" Relationship="Es.Udc.DotNet.WebMovies.Model.FK_Rating_LinkId" FromRole="Rating" ToRole="Link" />
+        </EntityType>
+        <EntityType Name="UserProfile">
+          <Key>
+            <PropertyRef Name="userId" />
+          </Key>
+          <Property Name="userId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="userLogin" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="password" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="firstName" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="lastName" Type="String" Nullable="false" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="email" Type="String" Nullable="false" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="languageCode" Type="String" Nullable="false" MaxLength="2" Unicode="true" FixedLength="true" />
+          <Property Name="countryCode" Type="String" Nullable="false" MaxLength="2" Unicode="true" FixedLength="true" />
+          <NavigationProperty Name="Country" Relationship="Es.Udc.DotNet.WebMovies.Model.FK_UserProfile_Country" FromRole="UserProfile" ToRole="Country" />
+          <NavigationProperty Name="Language" Relationship="Es.Udc.DotNet.WebMovies.Model.FK_UserProfile_Language" FromRole="UserProfile" ToRole="Language" />
+          <NavigationProperty Name="Links" Relationship="Es.Udc.DotNet.WebMovies.Model.FK_Link_UsrId" FromRole="UserProfile" ToRole="Link" />
+          <NavigationProperty Name="Ratings" Relationship="Es.Udc.DotNet.WebMovies.Model.FK_Rating_UsrId" FromRole="UserProfile" ToRole="Rating" />
+          <NavigationProperty Name="Comments" Relationship="Es.Udc.DotNet.WebMovies.Model.FK_Comment_UsrId" FromRole="UserProfile" ToRole="Comment" />
+          <NavigationProperty Name="Favorites" Relationship="Es.Udc.DotNet.WebMovies.Model.FK_Favorite_UsrId" FromRole="UserProfile" ToRole="Favorite" />
+        </EntityType>
+        <Association Name="LinkLabel">
+          <End Type="Es.Udc.DotNet.WebMovies.Model.Label" Role="Label" Multiplicity="*" />
+          <End Type="Es.Udc.DotNet.WebMovies.Model.Link" Role="Link" Multiplicity="*" />
+        </Association>
+        <Association Name="FK_Comment_LinkId">
+          <End Type="Es.Udc.DotNet.WebMovies.Model.Link" Role="Link" Multiplicity="1" />
+          <End Type="Es.Udc.DotNet.WebMovies.Model.Comment" Role="Comment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Link">
+              <PropertyRef Name="linkId" />
+            </Principal>
+            <Dependent Role="Comment">
+              <PropertyRef Name="linkId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Comment_UsrId">
+          <End Type="Es.Udc.DotNet.WebMovies.Model.UserProfile" Role="UserProfile" Multiplicity="1" />
+          <End Type="Es.Udc.DotNet.WebMovies.Model.Comment" Role="Comment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserProfile">
+              <PropertyRef Name="userId" />
+            </Principal>
+            <Dependent Role="Comment">
+              <PropertyRef Name="userId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Favorite_LinkId">
+          <End Type="Es.Udc.DotNet.WebMovies.Model.Link" Role="Link" Multiplicity="1" >
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="Es.Udc.DotNet.WebMovies.Model.Favorite" Role="Favorite" Multiplicity="*" >
+          </End>
+          <ReferentialConstraint>
+            <Principal Role="Link">
+              <PropertyRef Name="linkId" />
+            </Principal>
+            <Dependent Role="Favorite">
+              <PropertyRef Name="linkId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Favorite_UsrId">
+          <End Type="Es.Udc.DotNet.WebMovies.Model.UserProfile" Role="UserProfile" Multiplicity="1" >
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="Es.Udc.DotNet.WebMovies.Model.Favorite" Role="Favorite" Multiplicity="*" >
+          </End>
+          <ReferentialConstraint>
+            <Principal Role="UserProfile">
+              <PropertyRef Name="userId" />
+            </Principal>
+            <Dependent Role="Favorite">
+              <PropertyRef Name="userId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Link_UsrId">
+          <End Type="Es.Udc.DotNet.WebMovies.Model.UserProfile" Role="UserProfile" Multiplicity="1" />
+          <End Type="Es.Udc.DotNet.WebMovies.Model.Link" Role="Link" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserProfile">
+              <PropertyRef Name="userId" />
+            </Principal>
+            <Dependent Role="Link">
+              <PropertyRef Name="userId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Rating_LinkId">
+          <End Type="Es.Udc.DotNet.WebMovies.Model.Link" Role="Link" Multiplicity="1" />
+          <End Type="Es.Udc.DotNet.WebMovies.Model.Rating" Role="Rating" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Link">
+              <PropertyRef Name="linkId" />
+            </Principal>
+            <Dependent Role="Rating">
+              <PropertyRef Name="linkId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Rating_UsrId">
+          <End Type="Es.Udc.DotNet.WebMovies.Model.UserProfile" Role="UserProfile" Multiplicity="1" />
+          <End Type="Es.Udc.DotNet.WebMovies.Model.Rating" Role="Rating" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserProfile">
+              <PropertyRef Name="userId" />
+            </Principal>
+            <Dependent Role="Rating">
+              <PropertyRef Name="userId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="LanguageCountry">
+          <End Type="Es.Udc.DotNet.WebMovies.Model.Country" Role="Country" Multiplicity="*" />
+          <End Type="Es.Udc.DotNet.WebMovies.Model.Language" Role="Language" Multiplicity="*" />
+        </Association>
+        <Association Name="FK_UserProfile_Country">
+          <End Type="Es.Udc.DotNet.WebMovies.Model.Country" Role="Country" Multiplicity="1" />
+          <End Type="Es.Udc.DotNet.WebMovies.Model.UserProfile" Role="UserProfile" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Country">
+              <PropertyRef Name="countryCode" />
+            </Principal>
+            <Dependent Role="UserProfile">
+              <PropertyRef Name="countryCode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserProfile_Language">
+          <End Type="Es.Udc.DotNet.WebMovies.Model.Language" Role="Language" Multiplicity="1" />
+          <End Type="Es.Udc.DotNet.WebMovies.Model.UserProfile" Role="UserProfile" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Language">
+              <PropertyRef Name="languageCode" />
+            </Principal>
+            <Dependent Role="UserProfile">
+              <PropertyRef Name="languageCode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="WebMoviesEntityDataModelStoreContainer" CdmEntityContainer="WebMoviesEntities">
+          <EntitySetMapping Name="Comment"><EntityTypeMapping TypeName="Es.Udc.DotNet.WebMovies.Model.Comment"><MappingFragment StoreEntitySet="Comment">
+                <ScalarProperty Name="text" ColumnName="commentText" />
+                <ScalarProperty Name="userId" ColumnName="usrId" />
+                <ScalarProperty Name="commentId" ColumnName="commentId" />
+            <ScalarProperty Name="linkId" ColumnName="linkId" />
+            <ScalarProperty Name="date" ColumnName="date" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Country"><EntityTypeMapping TypeName="Es.Udc.DotNet.WebMovies.Model.Country"><MappingFragment StoreEntitySet="Country">
+            <ScalarProperty Name="countryCode" ColumnName="countryCode" />
+            <ScalarProperty Name="countryName" ColumnName="countryName" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Favorite"><EntityTypeMapping TypeName="Es.Udc.DotNet.WebMovies.Model.Favorite"><MappingFragment StoreEntitySet="Favorite">
+                <ScalarProperty Name="userId" ColumnName="usrId" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="favoriteId" ColumnName="favoriteId" />
+            <ScalarProperty Name="linkId" ColumnName="linkId" />
+            <ScalarProperty Name="description" ColumnName="description" />
+            <ScalarProperty Name="date" ColumnName="date" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Label"><EntityTypeMapping TypeName="Es.Udc.DotNet.WebMovies.Model.Label"><MappingFragment StoreEntitySet="Label">
+                <ScalarProperty Name="text" ColumnName="labelText" />
+                <ScalarProperty Name="labelId" ColumnName="labelId" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Language"><EntityTypeMapping TypeName="Es.Udc.DotNet.WebMovies.Model.Language"><MappingFragment StoreEntitySet="Language">
+            <ScalarProperty Name="languageCode" ColumnName="languageCode" />
+            <ScalarProperty Name="languageName" ColumnName="languageName" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Link"><EntityTypeMapping TypeName="Es.Udc.DotNet.WebMovies.Model.Link"><MappingFragment StoreEntitySet="Link">
+                <ScalarProperty Name="reportRead" ColumnName="reportRead" />
+                <ScalarProperty Name="userId" ColumnName="usrId" />
+                <ScalarProperty Name="linkId" ColumnName="linkId" />
+            <ScalarProperty Name="movieId" ColumnName="movieId" />
+            <ScalarProperty Name="name" ColumnName="name" />
+            <ScalarProperty Name="url" ColumnName="url" />
+            <ScalarProperty Name="description" ColumnName="description" />
+            <ScalarProperty Name="date" ColumnName="date" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Rating"><EntityTypeMapping TypeName="Es.Udc.DotNet.WebMovies.Model.Rating"><MappingFragment StoreEntitySet="Rating">
+                <ScalarProperty Name="userId" ColumnName="usrId" />
+                <ScalarProperty Name="ratingId" ColumnName="ratingId" />
+            <ScalarProperty Name="linkId" ColumnName="linkId" />
+            <ScalarProperty Name="value" ColumnName="value" />
+            <ScalarProperty Name="date" ColumnName="date" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="UserProfile"><EntityTypeMapping TypeName="Es.Udc.DotNet.WebMovies.Model.UserProfile"><MappingFragment StoreEntitySet="UserProfile">
+            <ScalarProperty Name="userLogin" ColumnName="usrlogin" />
+                <ScalarProperty Name="userId" ColumnName="usrId" />
+                <ScalarProperty Name="password" ColumnName="enPassword" />
+            <ScalarProperty Name="firstName" ColumnName="firstName" />
+            <ScalarProperty Name="lastName" ColumnName="lastName" />
+            <ScalarProperty Name="email" ColumnName="email" />
+            <ScalarProperty Name="languageCode" ColumnName="language" />
+            <ScalarProperty Name="countryCode" ColumnName="country" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <AssociationSetMapping Name="LinkLabel" TypeName="Es.Udc.DotNet.WebMovies.Model.LinkLabel" StoreEntitySet="LinkLabel">
+            <EndProperty Name="Link">
+              <ScalarProperty Name="linkId" ColumnName="linkId" />
+            </EndProperty>
+            <EndProperty Name="Label">
+              <ScalarProperty Name="labelId" ColumnName="labelId" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="LanguageCountry" TypeName="Es.Udc.DotNet.WebMovies.Model.LanguageCountry" StoreEntitySet="LanguageCountry">
+            <EndProperty Name="Language">
+              <ScalarProperty Name="languageCode" ColumnName="languageCode" />
+            </EndProperty>
+            <EndProperty Name="Country">
+              <ScalarProperty Name="countryCode" ColumnName="countryCode" />
+            </EndProperty>
+          </AssociationSetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="WebMoviesEntityDataModel" ZoomLevel="75">
+        <EntityTypeShape EntityType="Es.Udc.DotNet.WebMovies.Model.Comment" Width="1.5" PointX="0.625" PointY="3.875" Height="2.3648893229166674" IsExpanded="true" />
+        <EntityTypeShape EntityType="Es.Udc.DotNet.WebMovies.Model.Country" Width="1.5" PointX="10" PointY="0.5" Height="1.7879850260416657" IsExpanded="true" />
+        <EntityTypeShape EntityType="Es.Udc.DotNet.WebMovies.Model.Favorite" Width="1.5" PointX="5" PointY="3.75" Height="2.5571907552083335" IsExpanded="true" />
+        <EntityTypeShape EntityType="Es.Udc.DotNet.WebMovies.Model.Label" Width="1.5" PointX="10" PointY="6.25" Height="1.5956835937499996" IsExpanded="true" />
+        <EntityTypeShape EntityType="Es.Udc.DotNet.WebMovies.Model.Language" Width="1.5" PointX="10" PointY="3" Height="1.7879850260416657" IsExpanded="true" />
+        <EntityTypeShape EntityType="Es.Udc.DotNet.WebMovies.Model.Link" Width="1.5" PointX="7.625" PointY="5.25" Height="3.5186979166666656" IsExpanded="true" />
+        <EntityTypeShape EntityType="Es.Udc.DotNet.WebMovies.Model.Rating" Width="1.5" PointX="2.875" PointY="3.875" Height="2.3648893229166674" IsExpanded="true" />
+        <EntityTypeShape EntityType="Es.Udc.DotNet.WebMovies.Model.UserProfile" Width="1.5" PointX="7.625" PointY="0.75" Height="3.7109993489583326" IsExpanded="true" />
+        <AssociationConnector Association="Es.Udc.DotNet.WebMovies.Model.LinkLabel" >
+          <ConnectorPoint PointX="10" PointY="7.047841796875" />
+          <ConnectorPoint PointX="9.125" PointY="7.047841796875" />
+        </AssociationConnector>
+        <AssociationConnector Association="Es.Udc.DotNet.WebMovies.Model.FK_Comment_LinkId" >
+          <ConnectorPoint PointX="7.625" PointY="7.9334354947916665" />
+          <ConnectorPoint PointX="1.375" PointY="7.9334354947916665" />
+          <ConnectorPoint PointX="1.375" PointY="6.2398893229166674" />
+        </AssociationConnector>
+        <AssociationConnector Association="Es.Udc.DotNet.WebMovies.Model.FK_Comment_UsrId" >
+          <ConnectorPoint PointX="7.625" PointY="1.9229081964817183" />
+          <ConnectorPoint PointX="1.375" PointY="1.9229081964817183" />
+          <ConnectorPoint PointX="1.375" PointY="3.875" />
+        </AssociationConnector>
+        <AssociationConnector Association="Es.Udc.DotNet.WebMovies.Model.FK_Favorite_LinkId" >
+          <ConnectorPoint PointX="7.625" PointY="5.7785953776041667" />
+          <ConnectorPoint PointX="6.5" PointY="5.7785953776041667" />
+        </AssociationConnector>
+        <AssociationConnector Association="Es.Udc.DotNet.WebMovies.Model.FK_Favorite_UsrId" >
+          <ConnectorPoint PointX="7.625" PointY="4.1054996744791659" />
+          <ConnectorPoint PointX="6.5" PointY="4.1054996744791659" />
+        </AssociationConnector>
+        <AssociationConnector Association="Es.Udc.DotNet.WebMovies.Model.FK_Link_UsrId" >
+          <ConnectorPoint PointX="8.375" PointY="4.4609993489583326" />
+          <ConnectorPoint PointX="8.375" PointY="5.25" />
+        </AssociationConnector>
+        <AssociationConnector Association="Es.Udc.DotNet.WebMovies.Model.FK_Rating_LinkId" >
+          <ConnectorPoint PointX="7.625" PointY="7.1539613411458323" />
+          <ConnectorPoint PointX="3.625" PointY="7.1539613411458323" />
+          <ConnectorPoint PointX="3.625" PointY="6.2398893229166674" />
+        </AssociationConnector>
+        <AssociationConnector Association="Es.Udc.DotNet.WebMovies.Model.FK_Rating_UsrId" >
+          <ConnectorPoint PointX="7.625" PointY="2.6936087522644927" />
+          <ConnectorPoint PointX="3.625" PointY="2.6936087522644927" />
+          <ConnectorPoint PointX="3.625" PointY="3.875" />
+        </AssociationConnector>
+        <AssociationConnector Association="Es.Udc.DotNet.WebMovies.Model.LanguageCountry" >
+          <ConnectorPoint PointX="10.75" PointY="2.2879850260416656" />
+          <ConnectorPoint PointX="10.75" PointY="3" />
+        </AssociationConnector>
+        <AssociationConnector Association="Es.Udc.DotNet.WebMovies.Model.FK_UserProfile_Country" >
+          <ConnectorPoint PointX="10" PointY="1.5189925130208328" />
+          <ConnectorPoint PointX="9.125" PointY="1.5189925130208328" />
+        </AssociationConnector>
+        <AssociationConnector Association="Es.Udc.DotNet.WebMovies.Model.FK_UserProfile_Language" >
+          <ConnectorPoint PointX="10" PointY="3.7304996744791663" />
+          <ConnectorPoint PointX="9.125" PointY="3.7304996744791663" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

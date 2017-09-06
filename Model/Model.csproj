@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{441E8F10-4A13-4914-AABB-6A7830717D69}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Es.Udc.DotNet.WebMovies.Model</RootNamespace>
+    <AssemblyName>WebMovies.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.ObjectBuilder2, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.Unity, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.Unity.Interception, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.Unity.Interception.Configuration, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="ModelUtil, Version=2.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\ModelUtil.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entities\Comment.cs" />
+    <Compile Include="Daos\CommentDao\CommentDaoEntityFramework.cs" />
+    <Compile Include="Daos\CommentDao\ICommentDao.cs" />
+    <Compile Include="Services\CommentService\CommentDetails.cs" />
+    <Compile Include="Daos\CountryDao\CountryDaoEntityFramework.cs" />
+    <Compile Include="Daos\CountryDao\ICountryDao.cs" />
+    <Compile Include="Entities\Favorite.cs" />
+    <Compile Include="Daos\FavoriteDao\FavoriteDaoEntityFramework.cs" />
+    <Compile Include="Daos\FavoriteDao\IFavoriteDao.cs" />
+    <Compile Include="Entities\Label.cs" />
+    <Compile Include="Daos\LabelDao\ILabelDao.cs" />
+    <Compile Include="Daos\LabelDao\LabelDaoEntityFramework.cs" />
+    <Compile Include="Daos\LanguageDao\LanguageDaoEntityFramework.cs" />
+    <Compile Include="Entities\Link.cs" />
+    <Compile Include="Daos\LinkDao\ILinkDao.cs" />
+    <Compile Include="Daos\LinkDao\LinkDaoEntityFramework.cs" />
+    <Compile Include="Services\CommentService\CommentService.cs" />
+    <Compile Include="Daos\LanguageDao\ILanguageDao.cs" />
+    <Compile Include="Services\LocalizationService\ILocalizationService.cs" />
+    <Compile Include="Services\RatingService\RatingDetails.cs" />
+    <Compile Include="Util\Collections\SortedListBlock.cs" />
+    <Compile Include="Util\Exceptions\InternalErrorException.cs" />
+    <Compile Include="Util\Exceptions\NetworkException.cs" />
+    <Compile Include="Util\Exceptions\XmlErrorException.cs" />
+    <Compile Include="Util\Locale.cs" />
+    <Compile Include="Services\LocalizationService\LocalizationService.cs" />
+    <Compile Include="Daos\MovieProxy\MovieProxy.cs" />
+    <Compile Include="Daos\MovieProxy\IMovieProxy.cs" />
+    <Compile Include="Services\MovieService\IMovieService.cs" />
+    <Compile Include="Services\MovieService\MovieDetails.cs" />
+    <Compile Include="Services\MovieService\MovieService.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Services\RatingService\RatingService.cs" />
+    <Compile Include="Services\LabelService\LabelService.cs" />
+    <Compile Include="Services\LinkService\LinkService.cs" />
+    <Compile Include="Services\RatingService\IRatingService.cs" />
+    <Compile Include="Services\CommentService\ICommentService.cs" />
+    <Compile Include="Services\LinkService\ILinkService.cs" />
+    <Compile Include="Services\LabelService\ILabelService.cs" />
+    <Compile Include="Services\FavoriteService\FavoriteService.cs" />
+    <Compile Include="Services\FavoriteService\IFavoriteService.cs" />
+    <Compile Include="Util\Dao\GenericDaoEntityFramework.cs" />
+    <Compile Include="Util\Dao\IGenericDao.cs" />
+    <Compile Include="Util\Collections\DictionaryBlock.cs" />
+    <Compile Include="Util\Exceptions\NoMoreItemsException.cs" />
+    <Compile Include="Util\Exceptions\DuplicateInstanceException.cs" />
+    <Compile Include="Util\Exceptions\InstanceNotFoundException.cs" />
+    <Compile Include="Util\Exceptions\UserNotAuthorizedException.cs" />
+    <Compile Include="Services\FavoriteService\FavoriteDetails.cs" />
+    <Compile Include="Services\LinkService\LinkDetails.cs" />
+    <Compile Include="Entities\Rating.cs" />
+    <Compile Include="Daos\RatingDao\IRatingDao.cs" />
+    <Compile Include="Daos\RatingDao\RatingDaoEntityFramework.cs" />
+    <Compile Include="Entities\UserProfile.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Daos\UserProfileDao\IUserProfileDao.cs" />
+    <Compile Include="Daos\UserProfileDao\UserProfileDaoEntityFramework.cs" />
+    <Compile Include="Services\UserService\UserService.cs" />
+    <Compile Include="Services\UserService\UserProfileDetails.cs" />
+    <Compile Include="Services\UserService\LoginResult.cs" />
+    <Compile Include="Util\Exceptions\IncorrectPasswordException.cs" />
+    <Compile Include="Services\UserService\IUserService.cs" />
+    <Compile Include="Util\PasswordEncrypter.cs" />
+    <Compile Include="Util\Collections\ListBlock.cs" />
+    <Compile Include="Util\Property.cs" />
+    <Compile Include="WebMoviesEntityDataModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WebMoviesEntityDataModel.edmx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Sql\SqlServerPopulateForIntegrationTest.sql" />
+    <Content Include="Sql\SqlServerInitializeDatabase.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <EntityDeploy Include="WebMoviesEntityDataModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>WebMoviesEntityDataModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Diagrams\CommentService Class Diagram.cd" />
+    <None Include="Diagrams\LabelService Class Diagram.cd" />
+    <None Include="Diagrams\LabelDao Class Diagram.cd" />
+    <None Include="Diagrams\FavoriteService Class Diagram.cd" />
+    <None Include="Diagrams\LinkService Class Diagram.cd" />
+    <None Include="Properties\DataSources\WebMoviesEntities.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

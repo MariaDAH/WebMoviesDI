@@ -1,0 +1,318 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Es.Udc.DotNet.WebMovies.Test.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="userLogin" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">login</Value>
+    </Setting>
+    <Setting Name="userPassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">password</Value>
+    </Setting>
+    <Setting Name="userName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Name</Value>
+    </Setting>
+    <Setting Name="userLastName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Surname</Value>
+    </Setting>
+    <Setting Name="userEmail" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">email@domain.com</Value>
+    </Setting>
+    <Setting Name="userLanguage" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">es</Value>
+    </Setting>
+    <Setting Name="userCountry" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ES</Value>
+    </Setting>
+    <Setting Name="linkName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Link</Value>
+    </Setting>
+    <Setting Name="linkDescription" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">This is a link.</Value>
+    </Setting>
+    <Setting Name="linkUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://www.url.com/</Value>
+    </Setting>
+    <Setting Name="commentText" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Text for a comment.</Value>
+    </Setting>
+    <Setting Name="movie2Id" Type="System.Int64" Scope="Application">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="nonExistentUserId" Type="System.Int64" Scope="Application">
+      <Value Profile="(Default)">-1</Value>
+    </Setting>
+    <Setting Name="nonExistentMovieId" Type="System.Int64" Scope="Application">
+      <Value Profile="(Default)">-1</Value>
+    </Setting>
+    <Setting Name="nonExistentLinkId" Type="System.Int64" Scope="Application">
+      <Value Profile="(Default)">-1</Value>
+    </Setting>
+    <Setting Name="nonExistentCommentId" Type="System.Int64" Scope="Application">
+      <Value Profile="(Default)">-1</Value>
+    </Setting>
+    <Setting Name="nonExistentRatingId" Type="System.Int64" Scope="Application">
+      <Value Profile="(Default)">-1</Value>
+    </Setting>
+    <Setting Name="nonExistentFavoriteId" Type="System.Int64" Scope="Application">
+      <Value Profile="(Default)">-1</Value>
+    </Setting>
+    <Setting Name="favoriteName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Favorite</Value>
+    </Setting>
+    <Setting Name="favoriteDescription" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">This is a favorite.</Value>
+    </Setting>
+    <Setting Name="link100Name" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">IMDB</Value>
+    </Setting>
+    <Setting Name="link100Description" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Link to the page on IMDb for the movie</Value>
+    </Setting>
+    <Setting Name="link100Url" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://www.imdb.com/title/tt0110357/</Value>
+    </Setting>
+    <Setting Name="favorite100Name" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Lion King (IMDb)</Value>
+    </Setting>
+    <Setting Name="favorite100Description" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Lion King IMDb page</Value>
+    </Setting>
+    <Setting Name="commentText2" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Updated text for a comment.</Value>
+    </Setting>
+    <Setting Name="comment2Text" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Text for another comment.</Value>
+    </Setting>
+    <Setting Name="comment0Text" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Text for a previous comment.</Value>
+    </Setting>
+    <Setting Name="comment3Text" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Text for even another comment.</Value>
+    </Setting>
+    <Setting Name="link2Description" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">This is a second link.</Value>
+    </Setting>
+    <Setting Name="link2Name" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Link 2</Value>
+    </Setting>
+    <Setting Name="link2Url" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://www.url2.org/</Value>
+    </Setting>
+    <Setting Name="favorite2Name" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">2nd favorite</Value>
+    </Setting>
+    <Setting Name="favorite2Description" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">This is another favorite.</Value>
+    </Setting>
+    <Setting Name="movie2Title" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">The Intouchables</Value>
+    </Setting>
+    <Setting Name="movie3Title" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Black Swan</Value>
+    </Setting>
+    <Setting Name="movie3Id" Type="System.Int64" Scope="Application">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="movie4Id" Type="System.Int64" Scope="Application">
+      <Value Profile="(Default)">4</Value>
+    </Setting>
+    <Setting Name="movie4Title" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Sin City</Value>
+    </Setting>
+    <Setting Name="favorite3Name" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">3rd favorite</Value>
+    </Setting>
+    <Setting Name="favorite3Description" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Another favorite more.</Value>
+    </Setting>
+    <Setting Name="link3Name" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Link 3</Value>
+    </Setting>
+    <Setting Name="link3Description" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">This is a third link.</Value>
+    </Setting>
+    <Setting Name="link3Url" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://three.url3.net/</Value>
+    </Setting>
+    <Setting Name="user2Country" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">FR</Value>
+    </Setting>
+    <Setting Name="user3Country" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ES</Value>
+    </Setting>
+    <Setting Name="user2Email" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">second@email.org</Value>
+    </Setting>
+    <Setting Name="user3Email" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">user3@udc.es</Value>
+    </Setting>
+    <Setting Name="user2Language" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">fr</Value>
+    </Setting>
+    <Setting Name="user3Language" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">gl</Value>
+    </Setting>
+    <Setting Name="user2LastName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Secondname</Value>
+    </Setting>
+    <Setting Name="user3LastName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">III</Value>
+    </Setting>
+    <Setting Name="user2Login" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">user2</Value>
+    </Setting>
+    <Setting Name="user3Login" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">user3</Value>
+    </Setting>
+    <Setting Name="user2Name" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Firstname</Value>
+    </Setting>
+    <Setting Name="user3Name" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Person</Value>
+    </Setting>
+    <Setting Name="user2Password" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">p455w0rd</Value>
+    </Setting>
+    <Setting Name="user3Password" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">33333333</Value>
+    </Setting>
+    <Setting Name="favoriteName2" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Favorite (edited)</Value>
+    </Setting>
+    <Setting Name="favoriteDescription2" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">This is a favorite edited.</Value>
+    </Setting>
+    <Setting Name="labelText" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="label2Text" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="label3Text" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="nonExistentLabelId" Type="System.Int64" Scope="Application">
+      <Value Profile="(Default)">-1</Value>
+    </Setting>
+    <Setting Name="user4Country" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">US</Value>
+    </Setting>
+    <Setting Name="user4Email" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">four@foursquare.com</Value>
+    </Setting>
+    <Setting Name="user4Language" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">en</Value>
+    </Setting>
+    <Setting Name="user4LastName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Fourson</Value>
+    </Setting>
+    <Setting Name="user4Login" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">user4</Value>
+    </Setting>
+    <Setting Name="user4Name" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Four</Value>
+    </Setting>
+    <Setting Name="user4Password" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">fourfour</Value>
+    </Setting>
+    <Setting Name="comment100Text" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Amazing</Value>
+    </Setting>
+    <Setting Name="comment101Text" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">This movie isn't worth watching</Value>
+    </Setting>
+    <Setting Name="linkName2" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Edited link</Value>
+    </Setting>
+    <Setting Name="linkDescription2" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">This is an *edited* link.</Value>
+    </Setting>
+    <Setting Name="userPasswordEncrypted" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">XohImNooBHFR0OVvjcYpJ3NgPQ1qq73WKhHvch0VQtg=</Value>
+    </Setting>
+    <Setting Name="userPassword2" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">password2</Value>
+    </Setting>
+    <Setting Name="userPassword2Encrypted" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">bPYV1byqx3g1Ko8fM2DSPwLzTsGC4lmJf9bOSF14cNQ=</Value>
+    </Setting>
+    <Setting Name="userCountry2" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">GB</Value>
+    </Setting>
+    <Setting Name="userEmail2" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">email2@domain.com</Value>
+    </Setting>
+    <Setting Name="userLanguage2" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">en</Value>
+    </Setting>
+    <Setting Name="userLastName2" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Surnameson</Value>
+    </Setting>
+    <Setting Name="userName2" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Named</Value>
+    </Setting>
+    <Setting Name="movie1Id" Type="System.Int64" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="movie1Title" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">The Artist</Value>
+    </Setting>
+    <Setting Name="movie1Price" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">50.5</Value>
+    </Setting>
+    <Setting Name="movie2Price" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">59.99</Value>
+    </Setting>
+    <Setting Name="movie3Price" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">59.99</Value>
+    </Setting>
+    <Setting Name="movie4Price" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">59.99</Value>
+    </Setting>
+    <Setting Name="movie5Price" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">59.99</Value>
+    </Setting>
+    <Setting Name="movie6Price" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">59.99</Value>
+    </Setting>
+    <Setting Name="movie6Title" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Inception</Value>
+    </Setting>
+    <Setting Name="movie5Title" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Memento</Value>
+    </Setting>
+    <Setting Name="movie5Id" Type="System.Int64" Scope="Application">
+      <Value Profile="(Default)">5</Value>
+    </Setting>
+    <Setting Name="movie6Id" Type="System.Int64" Scope="Application">
+      <Value Profile="(Default)">6</Value>
+    </Setting>
+    <Setting Name="movie1Description" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Silent movie star George Valentin bemoans the coming era of talking pictures and fades into oblivion and self-destruction, but finds sparks with Peppy Miller, a young dancer lighting up talkies like no one else.</Value>
+    </Setting>
+    <Setting Name="movie2Description" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">After he becomes a quadriplegic from a paragliding accident, an aristocrat hires a young man from the projects to be his caretaker.</Value>
+    </Setting>
+    <Setting Name="movie3Description" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">A ballet dancer wins the lead in 'Swan Lake' and is perfect for the role of the delicate White Swan - Princess Odette - but slowly loses her mind as she becomes more and more like Odile, the Black Swan.</Value>
+    </Setting>
+    <Setting Name="movie4Description" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">A film that explores the dark and miserable town, Basin City, and tells the story of three different people, all caught up in violent corruption.</Value>
+    </Setting>
+    <Setting Name="movie5Description" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">A man, suffering from short-term memory loss, uses notes and tattoos to hunt for the man he thinks killed his wife.</Value>
+    </Setting>
+    <Setting Name="movie6Description" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">In a world where technology exists to enter the human mind through dream invasion, a highly skilled thief is given a final chance at redemption which involves executing his toughest job to date: Inception.</Value>
+    </Setting>
+    <Setting Name="nonExistentMovieTitle" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Non existent movie title</Value>
+    </Setting>
+    <Setting Name="movie1And2CommonKeyword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">the</Value>
+    </Setting>
+    <Setting Name="linkReportThreshold" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">-1</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

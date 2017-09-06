@@ -1,0 +1,9 @@
+﻿// Notas de María
+FindMovieTest()
+Puse el innerXml porque estoy probando con el debug los distintos campos del XmlDocument no funciona porque algo es diferente en los campos de xmlDocument Assert.AreEqual(test,response);
+
+// Notas de Yago
+Los tests ahora se apoyan en una clase TestUtil que tiene todos los métodos habituales para crear y comprar entidades y detalles de entidades.
+Los DAOs ahora están dentro de esa clase y es ésta al que los maneja, sin embargo quedan accesibles para usarlos directamente.
+Los datos de prueba en vez de estar contenidos en cada clase ahora están como propiedades del proyecto.
+[CORREGIDO] En estos momentos no funcionan si se ejecutan todos a la vez porque hay que trasladar lo de las transacciones a esa clase y aún no me ha dado tiempo. De uno en uno sí van.

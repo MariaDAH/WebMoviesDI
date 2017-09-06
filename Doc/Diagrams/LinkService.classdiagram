@@ -1,0 +1,2515 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="6a47fdc7-b665-413b-afc6-0360d46b93c5" name="LinkService" linkedPackageId="260a449a-b522-4b8f-a1ab-73090130d69b" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <packageHasNamedElement>
+      <referencedType Id="4ae0343f-418b-460b-b52e-4fd8ab085bb2" name="DateTime" isAbstract="false" isLeaf="false" cachedFullName="DateTime">
+        <elementDefinition Id="90deff15-44ff-437e-8795-5658878082d8" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="7b386e5f-ff5e-40f4-9273-58bcd6554b43" name="string" isAbstract="false" isLeaf="false" cachedFullName="string">
+        <elementDefinition Id="51c6d471-7c22-4880-8304-88a646175803" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" name="long" isAbstract="false" isLeaf="false" cachedFullName="long">
+        <elementDefinition Id="234c3e39-7dec-4d71-8232-e6017005d9d3" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="8997301f-1c06-42f5-9b74-ded9aff597e3" name="long" isAbstract="false" isLeaf="false" cachedFullName="long">
+        <elementDefinition Id="234c3e39-7dec-4d71-8232-e6017005d9d3" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="40a9416c-10ce-4ffc-ac89-5a52bbb16283" name="string" isAbstract="false" isLeaf="false" cachedFullName="string">
+        <elementDefinition Id="51c6d471-7c22-4880-8304-88a646175803" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="c9e4980a-b3de-48f4-9149-4a63409ec812" name="long" isAbstract="false" isLeaf="false" cachedFullName="long">
+        <elementDefinition Id="234c3e39-7dec-4d71-8232-e6017005d9d3" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="7307b850-4c80-402f-a021-88042dab9f00" name="string" isAbstract="false" isLeaf="false" cachedFullName="string">
+        <elementDefinition Id="51c6d471-7c22-4880-8304-88a646175803" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="cf8f1d76-cedb-4290-ad4c-dc8050f8b550" name="long" isAbstract="false" isLeaf="false" cachedFullName="long">
+        <elementDefinition Id="234c3e39-7dec-4d71-8232-e6017005d9d3" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="c814248c-75b5-4d7d-b0fb-ef775c61025d" name="string" isAbstract="false" isLeaf="false" cachedFullName="string">
+        <elementDefinition Id="51c6d471-7c22-4880-8304-88a646175803" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="df570082-fcbd-489c-8511-d0d9fc514329" name="bool" isAbstract="false" isLeaf="false" cachedFullName="bool">
+        <elementDefinition Id="87a3269a-d265-4c4c-bc60-e7d6373182bc" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="386cff82-fa06-4789-ae34-a651e91eb7d8" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="5266ec5b-35a4-4d54-b7d9-a326e88dbc10" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="7f70a1bc-3a46-4328-85cc-e5807f30da34" name="string" isAbstract="false" isLeaf="false" cachedFullName="string">
+        <elementDefinition Id="51c6d471-7c22-4880-8304-88a646175803" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="eab66dbf-d08c-43f3-960c-c6a5210882ca" name="object" isAbstract="false" isLeaf="false" cachedFullName="object">
+        <elementDefinition Id="f6c066e0-2978-47e3-972d-6b247e7510e6" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="24bd5524-6d1e-490d-ae45-82b76fc57347" name="void" isAbstract="false" isLeaf="false" cachedFullName="void">
+        <elementDefinition Id="2318a295-4899-43e4-aad6-3583b800199d" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f1dc87d5-4ffe-447e-a53a-d65278160e82" name="IUserProfileDao" isAbstract="false" isLeaf="false" cachedFullName="UML::Es.Udc.DotNet.WebMovies.Model.LinkService::IUserProfileDao">
+        <elementDefinition Id="1bbfc03c-448c-4ba3-9594-764472e227c2" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="16227b4e-dae6-4ed6-9f79-6da4cfab33d5" name="ILinkDao" isAbstract="false" isLeaf="false" cachedFullName="UML::Es.Udc.DotNet.WebMovies.Model.LinkService::ILinkDao">
+        <elementDefinition Id="4e5c1e03-38f2-47b8-b3f9-0e6bf366d877" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="8c0c47e2-cc33-4fe3-b999-05631dfc64be" name="bool" isAbstract="false" isLeaf="false" cachedFullName="bool">
+        <elementDefinition Id="87a3269a-d265-4c4c-bc60-e7d6373182bc" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="e099e456-d0dc-46c1-88bf-222a2d3c62ca" name="long" isAbstract="false" isLeaf="false" cachedFullName="long">
+        <elementDefinition Id="234c3e39-7dec-4d71-8232-e6017005d9d3" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="5ffb51e0-565b-4254-a049-9f3d9ff348fa" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="5266ec5b-35a4-4d54-b7d9-a326e88dbc10" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="0da4a58a-a3f0-4fd2-804d-8e88697acfdf" name="LinkDetails" isAbstract="false" isLeaf="false" cachedFullName="UML::Es.Udc.DotNet.WebMovies.Model.LinkService::LinkDetails">
+        <elementDefinition Id="7c421788-5de7-4db0-8cb6-f362b3a2e476" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="4ed96175-b07f-409d-bee1-9d839910c4bf" name="List&lt;LinkDetails&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;LinkDetails&gt;">
+        <elementDefinition Id="fbb0186e-b740-4d4e-be0a-48d3e00f2a1a" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="939344fb-ac2c-4f45-9a1b-abf351e16a7a" name="void" isAbstract="false" isLeaf="false" cachedFullName="void">
+        <elementDefinition Id="2318a295-4899-43e4-aad6-3583b800199d" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="8f15e12d-d8e1-4a47-8163-c2a12ae05f50" name="void" isAbstract="false" isLeaf="false" cachedFullName="void">
+        <elementDefinition Id="2318a295-4899-43e4-aad6-3583b800199d" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="85408790-9f0c-44bc-8062-92398db4423c" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="5266ec5b-35a4-4d54-b7d9-a326e88dbc10" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="a131c114-33b1-4284-a1d1-8778a70b9fce" name="bool" isAbstract="false" isLeaf="false" cachedFullName="bool">
+        <elementDefinition Id="87a3269a-d265-4c4c-bc60-e7d6373182bc" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="3f533b50-0096-436b-a487-0ee1183f2027" name="bool" isAbstract="false" isLeaf="false" cachedFullName="bool">
+        <elementDefinition Id="87a3269a-d265-4c4c-bc60-e7d6373182bc" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="5287ad8f-667e-402a-959b-7f0decc0983d" name="bool" isAbstract="false" isLeaf="false" cachedFullName="bool">
+        <elementDefinition Id="87a3269a-d265-4c4c-bc60-e7d6373182bc" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="e5868d23-9be9-470f-a957-c1ab90bb5b46" name="bool" isAbstract="false" isLeaf="false" cachedFullName="bool">
+        <elementDefinition Id="87a3269a-d265-4c4c-bc60-e7d6373182bc" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="25f9245b-9edd-4264-8f62-f7f256ea6bed" name="ListBlock&lt;Link&gt;" isAbstract="false" isLeaf="false" cachedFullName="ListBlock&lt;Link&gt;">
+        <elementDefinition Id="e9cc882a-1314-4c2d-9e80-adb26fb905a7" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="742629a2-ea1c-45a9-81d4-f0fac19be510" name="ListBlock&lt;Link&gt;" isAbstract="false" isLeaf="false" cachedFullName="ListBlock&lt;Link&gt;">
+        <elementDefinition Id="e9cc882a-1314-4c2d-9e80-adb26fb905a7" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="8cafb529-5ce2-420e-8e72-3dcfe4abebc8" name="ListBlock&lt;Link&gt;" isAbstract="false" isLeaf="false" cachedFullName="ListBlock&lt;Link&gt;">
+        <elementDefinition Id="e9cc882a-1314-4c2d-9e80-adb26fb905a7" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="091f91f3-91f9-4793-a34c-ce67e9dca94a" name="ListBlock&lt;Link&gt;" isAbstract="false" isLeaf="false" cachedFullName="ListBlock&lt;Link&gt;">
+        <elementDefinition Id="e9cc882a-1314-4c2d-9e80-adb26fb905a7" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="729e1ff8-9e0e-44fb-8402-c42514825de9" name="Es.Udc.DotNet.WebMovies.Model.LinkService">
+        <elementDefinition Id="f4436df4-e75c-44bf-93e3-c7f081f047fd" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="45acd98e-44de-46c4-928e-800fd56286f9" name="LinkDetails" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="7c421788-5de7-4db0-8cb6-f362b3a2e476" />
+              <ownedAttributesInternal>
+                <property Id="962cdfe1-5b71-4ebf-ab57-838d27393c77" name="Date" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="701618bf-337c-4260-9d8f-85c7c8fdfdae" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4ae0343f-418b-460b-b52e-4fd8ab085bb2" LastKnownName="DateTime" />
+                  </type_NamedElement>
+                </property>
+                <property Id="d7d7a463-1f09-4bbd-b02d-832acef2cca1" name="Description" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="dd753dd6-b608-4581-b51a-b4be1a36af7c" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="7b386e5f-ff5e-40f4-9273-58bcd6554b43" LastKnownName="string" />
+                  </type_NamedElement>
+                </property>
+                <property Id="2ce9672e-365d-4178-be66-b598fc6138b0" name="LinkId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="825f9e04-c5f6-4a2d-9e16-8ce37c5afe74" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                  </type_NamedElement>
+                </property>
+                <property Id="39dbf664-1359-4aae-bd09-7fe161a46430" name="MovieId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2382bdf9-ebea-4304-9083-1005c328725a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="8997301f-1c06-42f5-9b74-ded9aff597e3" LastKnownName="long" />
+                  </type_NamedElement>
+                </property>
+                <property Id="9dfd3906-9620-44a1-b5d7-59b08873d191" name="Rating" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="fb71c6a4-2040-4d1f-b622-4eaca41d3574" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="c9e4980a-b3de-48f4-9149-4a63409ec812" LastKnownName="long" />
+                  </type_NamedElement>
+                </property>
+                <property Id="f4f8763b-cf05-4c3e-9a85-d950c040a879" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3d71e623-45f2-4ce8-9644-f8084e20e36a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="40a9416c-10ce-4ffc-ac89-5a52bbb16283" LastKnownName="string" />
+                  </type_NamedElement>
+                </property>
+                <property Id="fdf38a18-0996-43b1-8943-4532f1491fea" name="Url" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3ce4a9a6-687c-4359-899e-375e414e16f4" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="7307b850-4c80-402f-a021-88042dab9f00" LastKnownName="string" />
+                  </type_NamedElement>
+                </property>
+                <property Id="28221b61-f0ca-4022-b895-2187b466a998" name="UserId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c439aec3-c82c-4fe3-80a7-0d22fa65bd71" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="cf8f1d76-cedb-4290-ad4c-dc8050f8b550" LastKnownName="long" />
+                  </type_NamedElement>
+                </property>
+                <property Id="4520a12e-dae6-4409-80ad-d4812d1a20c6" name="UserName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9862a534-d80f-44d2-8e4b-e097605adb43" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="c814248c-75b5-4d7d-b0fb-ef775c61025d" LastKnownName="string" />
+                  </type_NamedElement>
+                </property>
+                <property Id="3f367308-9d29-4bfe-8571-4fe5bd0c52f3" name="ReportedRead" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6f004c70-c764-4d6c-97fb-2d25c91e7d72" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="df570082-fcbd-489c-8511-d0d9fc514329" LastKnownName="bool" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="9cf631df-90d1-4dd2-ac0b-493802e3caa0" name="Equals" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="aed97092-3ab4-4605-bc37-8bf97478db38" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="5255ca2b-bd23-4ff8-9fdd-6193c9fa2a07" direction="Return">
+                        <elementDefinition Id="fc7869af-a272-4d47-b6e5-30fa37cd8da4" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="df570082-fcbd-489c-8511-d0d9fc514329" LastKnownName="bool" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="339d114a-c3ce-486d-a3da-4873f73a2190" name="o" direction="In" isUnique="false">
+                        <elementDefinition Id="7fbaa89a-5cfe-4b5f-a617-7cfa4b9c53cc" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="eab66dbf-d08c-43f3-960c-c6a5210882ca" LastKnownName="object" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="217ebcdf-6d95-470f-88d6-a3ed2d366e1b" name="GetHashCode" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="c2a9171a-029a-4ea4-b124-40975d13d752" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="4fb29d48-fab4-4333-91e2-181e2c487c89" direction="Return">
+                        <elementDefinition Id="13026980-3038-412a-925e-30087877caa0" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="386cff82-fa06-4789-ae34-a651e91eb7d8" LastKnownName="int" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="be05fc2b-9a25-408e-9385-1cb08bf1b2ab" name="LinkDetails" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="75b0e1dc-86cb-448e-9385-3abc848d8880" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="c4940170-5514-4e0a-b470-1d53960e949a" direction="Return">
+                        <elementDefinition Id="bd643145-f2dc-4ee0-89f4-0f8b3127042a" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="24bd5524-6d1e-490d-ae45-82b76fc57347" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="6a4abc29-266a-46ec-a78b-52babc48ced3" name="linkId" direction="In">
+                        <elementDefinition Id="f9f6023d-45d4-4d3b-9d2c-481cdf3fa44e" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="6f2ba44b-9d1e-4e67-90db-32f5e9575709" name="userId" direction="In">
+                        <elementDefinition Id="eba250e1-c4a9-4f2a-bf43-222e5c568756" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="8e8bcdf4-6bce-4594-bf45-4b39ab518dae" name="userName" direction="In">
+                        <elementDefinition Id="ce4696d3-6019-4724-bf19-7bc42b74869f" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="7b386e5f-ff5e-40f4-9273-58bcd6554b43" LastKnownName="string" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="4eebc2c3-1f7d-4750-afa7-6cbe302a81f1" name="movieId" direction="In">
+                        <elementDefinition Id="c9937c3e-a534-490c-93b6-36e459d6dd4e" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="f576a96b-31db-4c81-af38-186dd1a10997" name="name" direction="In">
+                        <elementDefinition Id="7e59593e-e256-4b80-a329-f730cdb19fb4" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="7b386e5f-ff5e-40f4-9273-58bcd6554b43" LastKnownName="string" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="38d27024-c835-4bf3-a0cb-d5901edf7dbf" name="description" direction="In">
+                        <elementDefinition Id="04e20a59-e36c-44d4-96aa-5764b20f1887" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="7b386e5f-ff5e-40f4-9273-58bcd6554b43" LastKnownName="string" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="11165819-ae94-4054-a49b-cbed38aeb842" name="url" direction="In">
+                        <elementDefinition Id="4d9788f1-4549-4b79-9c1c-48450bdbf122" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="7b386e5f-ff5e-40f4-9273-58bcd6554b43" LastKnownName="string" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="71bd3827-f915-4e58-a561-9b0f6ea8d17c" name="Rating" direction="In">
+                        <elementDefinition Id="bb6aad06-baea-4956-918d-7c4600c594d8" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="c1ce50e7-d56c-4c6e-a7a6-f977ad64b2d0" name="date" direction="In">
+                        <elementDefinition Id="db7366d1-4394-463e-ab20-e719339b414f" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="4ae0343f-418b-460b-b52e-4fd8ab085bb2" LastKnownName="DateTime" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="59542daa-7030-4e47-8781-881cb5c88e22" name="ToString" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="91eab814-0c34-4dff-92cd-64a02ee19bfc" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="e294dc44-cdc6-41a5-b2b9-3c1059d5a789" direction="Return">
+                        <elementDefinition Id="a2d45e6b-cd1e-4a26-8228-cf22dc2acba0" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="7f70a1bc-3a46-4328-85cc-e5807f30da34" LastKnownName="string" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="3f0d0bf1-4610-453b-a28c-cb4098ae379d" name="LinkService" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="8a2c70f5-e4f2-47bb-a87d-d5d7c1695fd9" />
+              <suppliersInternal>
+                <interfaceRealization Id="e7167897-aaa5-4775-8ff9-88b560e90e7c">
+                  <interfaceMoniker Id="4f0a1bb9-9f16-4777-b557-2c430896d518" LastKnownName="IlinkService" />
+                  <elementDefinition Id="9d5ee5ba-d6cf-46e8-a169-ff2dd37135a5" />
+                </interfaceRealization>
+              </suppliersInternal>
+              <targetEnds>
+                <association Id="c36af6c8-c8ce-482f-a940-e0085cf42fc9" isDerived="false" sourceEndRoleName="" targetEndRoleName="UserProfileDao" isLeaf="false" isAbstract="false">
+                  <interfaceMoniker Id="f1a8a984-7d52-456d-8019-08ff817757ca" LastKnownName="IUserProfileDao" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="2d842d10-8dfe-4bce-9e15-cef5e832e2d7" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <lowerValueInternal>
+                          <literalString Id="b23198c7-4775-4ad2-b6f1-eb8620944442" name="Lower" value="1">
+                            <elementDefinition Id="1698da6e-a021-4b96-8795-c205de25a0b7" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="6672f60a-583c-4617-8c6c-432eb0c9c5ad" name="Upper" value="1">
+                            <elementDefinition Id="27cbfce2-61cb-4d92-8798-af481e6a982c" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="51e5ee2f-c8af-4aea-937a-d1136166c17c" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="d2fa5e03-6eda-4f75-a7b5-8eff6e574890" name="UserProfileDao" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="f96cd028-39a7-4c27-bf39-79b56a783aef" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="50ec842b-092d-4a8c-b780-f2579303a8bb" />
+                </association>
+                <association Id="b22cd73f-79bd-4c54-9b21-2705eafce5f1" isDerived="false" sourceEndRoleName="" targetEndRoleName="LinkDao" isLeaf="false" isAbstract="false">
+                  <interfaceMoniker Id="aa836b00-545b-4e18-bdf6-76298e930afe" LastKnownName="ILinkDao" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="4cdd1c05-dfdc-43c8-bfa2-93f90d32fed5" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="f7af6dcd-a07f-43ce-baa6-6132a63a721a" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="afb05c8c-726d-4030-87e2-4ca248721865" name="LinkDao" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="ff0ecf01-78f5-4178-8547-c1436157be86" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="144bab9b-9cb8-459b-adff-af71446eb9cb" />
+                </association>
+              </targetEnds>
+              <ownedAttributesInternal>
+                <property Id="c6ae4cb2-c08d-40fa-b576-f9a5a6b09efa" name="ratingDao" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="70e01c32-3dd3-4619-98f0-f6b5a76fbed5" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="cdf97b82-6dea-4d78-ab52-e8c23d8bcc95" LastKnownName="IRatingDao" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="ff55b74a-3454-4eef-8b46-ca7f52701d0e" name="AddLink" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="910fa3a7-583f-4407-a13c-2782f5f3ef62" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="b6919a83-87cc-41f6-b2b7-1511020052b9" name="userId" direction="In" isUnique="false">
+                        <elementDefinition Id="6143bc32-1cce-4d42-b193-cdcccd06ffdd" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="404a046e-4e1b-4f55-8dd0-6c1dd1908c93" LastKnownName="Long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="036b3a56-987f-4397-8e19-8b25800987db" direction="Return" isUnique="false">
+                        <elementDefinition Id="be758ad9-0440-404b-9599-cda957f53b75" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="f9ef6553-d10d-4ebb-9054-b1b35d416f22" name="movieId" direction="In" isUnique="false">
+                        <elementDefinition Id="30fecd7e-4190-49d8-a743-d6471eb717ee" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="7b386e5f-ff5e-40f4-9273-58bcd6554b43" LastKnownName="string" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="4ab2e3ce-9da2-4dff-85b0-979e135bf5a2" name="name" direction="In" isUnique="false">
+                        <elementDefinition Id="dac74c53-6eeb-454b-95a1-1faa4a77d81a" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="49993605-912c-44fa-9ff2-e3d5924ea13f" name="description " direction="In" isUnique="false">
+                        <elementDefinition Id="ddc1b187-15eb-4d89-bb56-0f92cc8f7a68" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="7b386e5f-ff5e-40f4-9273-58bcd6554b43" LastKnownName="string" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="e86b053c-b60d-438a-b7d7-a0f1b3723663" name="description" direction="In" isUnique="false">
+                        <elementDefinition Id="d66a9ae8-d6b7-4992-ab8f-f3c3b32d94ce" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="7b386e5f-ff5e-40f4-9273-58bcd6554b43" LastKnownName="string" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="4a711ee8-8f10-4dc1-add7-0f416e8ae2e0" name="CountListForMovie" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="3f0a6f33-eb40-40d6-af68-488b27b0f37d" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="fddb031e-8405-49d6-8284-b4c03e149d8a" direction="Return">
+                        <elementDefinition Id="cdedc218-181b-4c30-a668-78f957cff3c4" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="386cff82-fa06-4789-ae34-a651e91eb7d8" LastKnownName="int" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="a581d842-3429-441b-b27e-1bc55bf3a413" name="movieId" direction="In" isUnique="false">
+                        <elementDefinition Id="e003eecb-06ae-418e-a5a9-fd397b12e0a3" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="ad0a3571-e05e-4846-bc79-7abc2a762b47" name="GetLink" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="c9ae6b7b-6ecb-441d-9f9a-c0f6bd7d803f" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="d8ed7b92-0d84-4922-a926-2c351567ce8b" direction="Return" isUnique="false">
+                        <elementDefinition Id="1442ed63-b4f9-43cd-b296-b1ea14b18ca3" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="0da4a58a-a3f0-4fd2-804d-8e88697acfdf" LastKnownName="LinkDetails" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="293a4698-9636-4f62-844f-cbb19b93b961" name="linkId" direction="In" isUnique="false">
+                        <elementDefinition Id="a2df663a-3d1c-4159-b98b-17941fc9df20" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="9cea7669-3cf0-4043-bb89-3f8caee0d8d0" name="GetLinksForMovie" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="b8ce5516-aee8-4699-ab85-d6bd3aab1db1" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="0c1c3c17-deb2-48c5-ab99-b4f287ae899a" direction="Return" isUnique="false">
+                        <elementDefinition Id="1f86b521-3419-45a9-98d8-56fb1fa14dae" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="4ed96175-b07f-409d-bee1-9d839910c4bf" LastKnownName="List&lt;LinkDetails&gt;" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="5ea1384c-d830-4592-973e-e2ea7ac9c950" name="movieId" direction="In" isUnique="false">
+                        <elementDefinition Id="1dd28011-23d6-46de-ae92-f4a948a149db" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="25a9facc-a92e-4132-9774-cd296591531a" name="startIndex" direction="In">
+                        <elementDefinition Id="3d3d5ac9-1518-47f1-bba8-b4ae9d79f9f4" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="386cff82-fa06-4789-ae34-a651e91eb7d8" LastKnownName="int" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="137c28de-750c-4053-9d51-81db6158bd3a" name="count" direction="In">
+                        <elementDefinition Id="eda1fed9-3bd1-4d31-b03c-5fc87d64aced" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="386cff82-fa06-4789-ae34-a651e91eb7d8" LastKnownName="int" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="b5a6e58a-9b0e-4972-adec-63f973de3e4c" name="RemoveLink" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="403f8c6b-c203-4946-886c-b5b866a3ba58" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="b69a5255-51ed-4654-b5b9-d563358130ce" name="userId" direction="In" isUnique="false">
+                        <elementDefinition Id="b5cb6c17-2591-4c89-b424-47aec1162f06" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="f6e1166d-be5d-4890-be17-b2807675a22a" name="movieId" direction="In">
+                        <elementDefinition Id="2d9ad6c3-9ebf-429a-8a04-aee7ac37bb81" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="2c0a5642-aa05-4dbb-9147-b3923d8d7fb3" direction="Return">
+                        <elementDefinition Id="de9d7478-0106-4415-ada4-d53d755af184" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="24bd5524-6d1e-490d-ae45-82b76fc57347" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="8601d27a-261e-490a-8838-4d64893f7e17" name="UpdateLink" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="04df978b-992c-4a32-942b-c3a7ebc56c64" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="857e3991-53ab-43b6-8be5-41ca8af4b92f" name="userId" direction="In">
+                        <elementDefinition Id="0c2e6bb3-3202-4201-92ac-c8cdc1a6a2be" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="bea2e514-8fe0-4fbd-9c1c-827d082a0591" name="movieId" direction="In">
+                        <elementDefinition Id="f0574e13-6579-435f-b7b6-df3b4ed667f9" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="7b386e5f-ff5e-40f4-9273-58bcd6554b43" LastKnownName="string" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="d3b05b57-c8b4-4199-ac79-34944a02da34" name="description" direction="In">
+                        <elementDefinition Id="a649395c-d335-4e5f-bbda-9c50851cdeb0" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="7b386e5f-ff5e-40f4-9273-58bcd6554b43" LastKnownName="string" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="23934d3d-8bc7-4345-be86-d4f79d508506" name="name" direction="In">
+                        <elementDefinition Id="2684f4ed-e3ef-499e-846e-2b23fe16b29a" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="7b386e5f-ff5e-40f4-9273-58bcd6554b43" LastKnownName="string" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="6e2ed9f3-e45c-4576-8ce2-c6d0c0ae97c6" direction="Return">
+                        <elementDefinition Id="1fc92bcc-f856-4ad6-bcd5-25ee072c3aee" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="24bd5524-6d1e-490d-ae45-82b76fc57347" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="74bf73b5-456f-460d-828b-4154b2ed3492" name="CountListForLabel" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="36208159-9c0a-4088-92a4-cf3ea1b7e6f6" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="712fd60a-bf49-4a21-a3d5-2bc8466936e4" direction="Return" isUnique="false">
+                        <elementDefinition Id="beff98aa-2e45-4bdb-8fac-3be056e5250f" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="386cff82-fa06-4789-ae34-a651e91eb7d8" LastKnownName="int" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="6036f60d-53f8-453c-807b-72f0a963a46a" name="label" direction="In" isUnique="false">
+                        <elementDefinition Id="ab2c7ee0-c656-4825-a961-20759ab49c3d" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="7b386e5f-ff5e-40f4-9273-58bcd6554b43" LastKnownName="string" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="60912a11-e612-491b-b958-dc51117b35eb" name="CountForUserId" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="941bdadc-a450-4639-8b56-7103f9976311" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="ad61242d-6415-4547-afa7-4aba081aa021" name="userId" direction="In" isUnique="false">
+                        <elementDefinition Id="88cb8b49-cd6f-4754-874e-afb9fe5221a1" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="9957f5b7-af66-4f3d-8ebd-0305269d9aff" direction="Return" isUnique="false">
+                        <elementDefinition Id="cf3ba47f-a29e-4dea-94cd-cb8253c1cef5" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="386cff82-fa06-4789-ae34-a651e91eb7d8" LastKnownName="int" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="1ba63109-56a2-42d9-b06b-e484209b6197" name="CountReportedLinksForUser" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="1a8ba9b7-b677-415a-98a0-8001f6f24e32" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="a69e5bce-bd51-46b4-84b8-985e5b55d1b6" name="userId" direction="In" isUnique="false">
+                        <elementDefinition Id="3e21ec5c-b569-41de-960d-84bc8aab9a17" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="935f9dac-993f-473d-9463-36326aa13036" name="treshold" direction="In" isUnique="false">
+                        <elementDefinition Id="307c362a-2e06-4a44-9c0b-74ae0f12c0db" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="386cff82-fa06-4789-ae34-a651e91eb7d8" LastKnownName="int" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="1eed7555-b996-4b7a-bafa-a656d42b8a9a" direction="Return" isUnique="false">
+                        <elementDefinition Id="d3d36a94-cab8-4500-9b20-3587a654f617" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="386cff82-fa06-4789-ae34-a651e91eb7d8" LastKnownName="int" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="26807b8c-49b8-4bb7-aa50-d74cad0f43ab" name="GetLinksForLabel" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="d0cbf52c-b58d-41ee-a51f-52c6e0227d6c" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="b734a2c7-a008-448e-8ba1-bfb58bcba59b" direction="Return" isUnique="false">
+                        <elementDefinition Id="d8262b92-7071-44c2-a6c5-78a0b5da3c68" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="de284499-28e3-4c85-8fa8-0a9af176fcba" LastKnownName="ListBlock&lt;LinkDetails&gt;" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="ab6ae4f6-4230-44bc-b537-f99c1fc72ea7" name="string label" direction="In" isUnique="false">
+                        <elementDefinition Id="6fb3130d-fb11-43d2-8ff1-cef9fcf8a4ff" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="191a4dd3-ee1c-4e94-bcd4-03d9308b34a8" name="int startIndex" direction="In" isUnique="false">
+                        <elementDefinition Id="c31e4475-f188-45b2-9dbb-cfa46bdef58d" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="4c62f66d-5b0e-410d-8a58-e8e546bfa05b" name="int count" direction="In" isUnique="false">
+                        <elementDefinition Id="367e38fb-ee60-42ed-a8c7-7377d671a9b9" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="65d84d91-f63c-4661-8451-8cdf169ebaa1" name="GetMostValuedLinksForLabel" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="61b43547-64b4-4599-a72b-83577c8d0356" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="3bc36f0a-4e00-4b5d-87a8-2b71d201e7be" name="string label" direction="In" isUnique="false">
+                        <elementDefinition Id="52ae523c-e449-40cf-a466-7a4ef2672b88" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="932fb5d9-1e6b-4afb-9282-de4059df3610" name="int startIndex" direction="In" isUnique="false">
+                        <elementDefinition Id="1cb87d18-f926-4c4d-9801-4ff803c4e57e" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="8674b62d-4274-46e6-9e46-8311ee90a59d" name="int count" direction="In" isUnique="false">
+                        <elementDefinition Id="2ce95737-99c0-4093-8e38-a26f6ad3de23" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="c41f5e53-cdd0-4102-87b7-0ec9179b89c1" direction="Return" isUnique="false">
+                        <elementDefinition Id="3b112004-2bcc-48f9-ade6-ea57d8218a36" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="de284499-28e3-4c85-8fa8-0a9af176fcba" LastKnownName="ListBlock&lt;LinkDetails&gt;" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="d1dc5d95-5430-45d5-99b8-b225cde1f725" name="GetLinksForUser" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="41910e99-941e-4c93-a0d4-b8108f128388" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="657ef351-bae5-446d-a2cb-b87508d4045f" name="long userId" direction="In" isUnique="false">
+                        <elementDefinition Id="661cdede-4421-444d-982e-84deac016b5e" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="f19fd68f-44b5-4b15-a1a0-ff17154a3b1a" name="int startIndex" direction="In" isUnique="false">
+                        <elementDefinition Id="1f9cf2ae-7ae2-4bb1-9734-0985f9656ccc" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="c16bff9e-7e80-4e92-ab14-5dd5fc9aa6e9" name="int count" direction="In" isUnique="false">
+                        <elementDefinition Id="260c46a7-5033-406e-b828-5669e9a7612e" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="4d3e1c26-5f2e-49ea-96f4-46c42c4a1d6c" direction="Return" isUnique="false">
+                        <elementDefinition Id="57255b93-32a0-4856-acb2-ce80cf16ea1e" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="de284499-28e3-4c85-8fa8-0a9af176fcba" LastKnownName="ListBlock&lt;LinkDetails&gt;" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="f06693b5-ed5f-424a-8489-ec53a7afb378" name="GetMostValuedLinksForMovie" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="f782bc04-e5fb-4555-9b12-9758d49d4d30" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="2299c472-f48b-4bfc-9115-48e258ad8f82" name="long movieId" direction="In" isUnique="false">
+                        <elementDefinition Id="329f4378-578d-44f6-8db9-6d45f7d7a781" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="7a6acf66-59d4-4320-b35e-fd8b17712f45" name="int startIndex" direction="In" isUnique="false">
+                        <elementDefinition Id="21c112f4-2646-4e8e-bbcb-d970d4f48948" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="c814fc4a-7c91-4b7d-a0f6-852e65fd85b2" name="int count" direction="In" isUnique="false">
+                        <elementDefinition Id="16317c19-079c-4044-a582-2e5e133df438" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="2d19758c-b0a3-4779-b3a7-5d7efd826503" direction="Return" isUnique="false">
+                        <elementDefinition Id="e3e1fb7d-5813-4d6f-98b9-627f38ff0534" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="de284499-28e3-4c85-8fa8-0a9af176fcba" LastKnownName="ListBlock&lt;LinkDetails&gt;" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="bd6a991c-e6c8-4bbc-ae96-042ea4baf0ba" name="GetMostValuedLinksForUser" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="d8d3adb8-ee1a-4104-a323-21aaf6a050ee" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="865871ae-2891-4917-a64d-5f77bc305aa9" name="long userId" direction="In" isUnique="false">
+                        <elementDefinition Id="5cf0f8f0-88c1-4e6f-b68f-55aaeb885dd2" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="e83819e1-6459-4d5e-8ff0-dd76a89a4d5d" name="int startIndex" direction="In" isUnique="false">
+                        <elementDefinition Id="f72fb81e-cc73-4ffe-9b4a-280de0863dbf" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="e4576714-c195-4929-8c75-2c6c2da7c455" name="int count" direction="In" isUnique="false">
+                        <elementDefinition Id="fd77ea2e-7744-4c98-98fb-b02143bcf2ca" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="b4c27aaa-836b-4708-b9b9-d06e79ca1192" direction="Return" isUnique="false">
+                        <elementDefinition Id="7c938d4e-3a92-4f46-8011-0f058dd6decb" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="de284499-28e3-4c85-8fa8-0a9af176fcba" LastKnownName="ListBlock&lt;LinkDetails&gt;" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="dc50ad7e-48e7-46f4-80f8-0a7fea589db2" name="GetReportedLinksForUser" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="3fa7622d-fdb1-462e-a5b0-877342a1dc2b" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="a413dcbc-7179-4e49-8f87-b5a03c9b5836" name="long userId" direction="In" isUnique="false">
+                        <elementDefinition Id="f233f4a5-2ffa-4f8b-a5d7-dc9035494cd1" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="11a1f259-49d7-4baa-9c0e-dc17018a565e" name="int threshold" direction="In" isUnique="false">
+                        <elementDefinition Id="ac85caac-1302-4fe5-9347-18204ac3bba8" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="8b4239a1-5e3e-42ac-9245-f2fdcaaa2226" name="int startIndex" direction="In" isUnique="false">
+                        <elementDefinition Id="979055d5-3510-4931-97fe-d6d8e77f87a9" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="d370c88b-7461-46d6-b47b-a5abbb61197a" name="int count" direction="In" isUnique="false">
+                        <elementDefinition Id="fbbd426d-784e-42ec-9776-6c2402e49a70" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="b87da561-4eaf-44f9-bc71-3b2d8b408983" direction="Return" isUnique="false">
+                        <elementDefinition Id="9ab24741-1654-4f43-98c9-308497695e66" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="de284499-28e3-4c85-8fa8-0a9af176fcba" LastKnownName="ListBlock&lt;LinkDetails&gt;" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="a514ef57-1a21-474e-8ceb-948b4e621c08" name="SetReportedLinkAsRead" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="adca8423-1043-4ebd-bb68-23a6802098fc" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="45dce8e6-bc01-45f0-8d31-ed016820fe84" name="long userId" direction="In" isUnique="false">
+                        <elementDefinition Id="5a188d4a-52b5-43e8-a7be-49e7d74c7aca" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="3381d3b1-d65d-4888-988a-911f5626ed0a" name="long linkId" direction="In" isUnique="false">
+                        <elementDefinition Id="212067b8-03a4-42ca-bb0c-fb862b7b385e" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="c08bd0d9-21c7-4da0-8b4c-045e3bae74e2" direction="Return" isUnique="false">
+                        <elementDefinition Id="8aa1a5dc-abaa-49c9-b550-8162723f622a" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="24bd5524-6d1e-490d-ae45-82b76fc57347" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <Interface Id="aa836b00-545b-4e18-bdf6-76298e930afe" name="ILinkDao" isAbstract="false" isLeaf="false">
+              <elementDefinition Id="4e5c1e03-38f2-47b8-b3f9-0e6bf366d877" />
+              <ownedOperations>
+                <operation Id="98745b05-2824-4f5f-b390-4cca47ff589d" name="CountForUser" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="ae35c0b4-83e5-4444-8fd5-517c3306becd" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="2899ac8e-0e64-4fe2-acec-5aa19d6e897c" direction="Return" isUnique="false">
+                        <elementDefinition Id="efccd1e9-7ac8-4a55-ac9f-18ee515f8d2e" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="85408790-9f0c-44bc-8062-92398db4423c" LastKnownName="int" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="1aa53456-fd06-42bd-9218-eb48dcf97f88" name="userId" direction="In" isUnique="false">
+                        <elementDefinition Id="34d7a197-a127-42bd-8fbc-45af9c18dc6b" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="f5d0c649-b9b4-40ed-aeea-b1eb225ca075" name="ExistForMovieAndLink" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="11b0e626-48a6-4518-bb24-d5eca83efb0e" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="bef0e3a7-f841-4773-8d2b-fc41c81bf367" direction="Return">
+                        <elementDefinition Id="f89ea071-b7d8-411f-b1e1-b797ee407767" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="a131c114-33b1-4284-a1d1-8778a70b9fce" LastKnownName="bool" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="66f2a627-4b34-431b-b674-cb4dbd0a52ab" name="movieId" direction="In">
+                        <elementDefinition Id="7b16fb3a-ac6c-4b95-927c-32dc3d2bca71" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="7a3beff5-e2b0-4667-87f1-af62c78b452b" name="linkId" direction="In">
+                        <elementDefinition Id="48157608-7ba3-4d00-ba16-dce83578f021" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="b537a19b-5564-47b8-83fd-162575a1bff2" name="ExistForMovieAndName" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="9d2bc188-edba-4437-91d3-edf5e3ff5fe8" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="d04f31c5-7a62-4125-80f4-42432b31c222" direction="Return">
+                        <elementDefinition Id="53d2a65e-bb96-4fcd-a832-43cd19cb63e4" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="3f533b50-0096-436b-a487-0ee1183f2027" LastKnownName="bool" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="ad3abb46-e8b3-470e-a963-7db28c033314" name="movieId" direction="In">
+                        <elementDefinition Id="45e33eaa-13e0-4f0c-9153-da7fc8af792d" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="a96c78e4-b1e0-4e0f-9ebf-6b28c6775ed5" name="name" direction="In">
+                        <elementDefinition Id="e97c24c7-a6c6-446e-99f0-b708d42d5ffc" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="7b386e5f-ff5e-40f4-9273-58bcd6554b43" LastKnownName="string" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="fdb1c0e8-6567-4518-9a62-cd96e6e29b7c" name="ExistForMovieAndUrl" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="03a1430a-b866-4244-a4f0-7547d8842e5d" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="6f9a62a5-5fbd-4859-a145-f0bbfc0015f2" direction="Return">
+                        <elementDefinition Id="0338e2eb-df4b-453c-934e-247cdec5873c" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="5287ad8f-667e-402a-959b-7f0decc0983d" LastKnownName="bool" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="a4ae1a3a-966b-4a66-b314-80f4a9234011" name="movieId" direction="In">
+                        <elementDefinition Id="d7c97eb3-e4f9-4347-8318-a869c1253e9e" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="290a009f-cae9-41b3-9f3f-f1da2aed46c1" name="url" direction="In">
+                        <elementDefinition Id="8f747ec8-67ee-4ec6-9369-d66271a6cb38" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="7b386e5f-ff5e-40f4-9273-58bcd6554b43" LastKnownName="string" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="bc2bcf8b-d5d7-4482-9312-515250dda45b" name="ExistForUserAndLink" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="485ea278-6198-4bd4-9587-89d7e66f72da" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="44693eca-59a9-4019-9754-27b181503a28" direction="Return">
+                        <elementDefinition Id="310d3032-0c70-4117-9516-63c9119ba33e" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="e5868d23-9be9-470f-a957-c1ab90bb5b46" LastKnownName="bool" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="4ce7cb3e-b132-4d85-a850-3e29c00f52c0" name="userId" direction="In">
+                        <elementDefinition Id="fdc630e8-ffc9-4699-a72e-971f15576ca3" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="905bfbc0-f7a9-4a40-9296-b4bcb007a8f6" name="linkId" direction="In">
+                        <elementDefinition Id="03689e87-1a5c-4dac-86db-93d1f165825b" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="84291ab7-7ce7-4078-9581-0c48e7bae69b" name="ListForLabel" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="fcf63c30-0f61-4cac-84f1-84f6719c6753" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="1c46b1b3-860e-4b27-a678-de71f046d5ad" direction="Return">
+                        <elementDefinition Id="fa3d8425-614a-4c17-b2d6-7041eba697dc" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="25f9245b-9edd-4264-8f62-f7f256ea6bed" LastKnownName="ListBlock&lt;Link&gt;" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="30af7b83-5801-40d8-abed-8d4ea4e4784e" name="labelId" direction="In">
+                        <elementDefinition Id="8e7dbc01-d529-4689-8cdc-12e73b4680f8" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="4c3039a8-552d-4ed9-9107-a71e99cb8ee5" name="startIndex" direction="In">
+                        <elementDefinition Id="e1be850f-0295-44ce-a5bc-17f8cc6583f0" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="386cff82-fa06-4789-ae34-a651e91eb7d8" LastKnownName="int" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="e9e3391c-d4e6-49f0-a510-6af8e04093a8" name="count" direction="In">
+                        <elementDefinition Id="b0f6a8ff-e415-4d68-94de-17528cc3c572" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="386cff82-fa06-4789-ae34-a651e91eb7d8" LastKnownName="int" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="674dd32c-007d-4444-a22a-a5d32ce0e496" name="ListForMovie" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="bb5e5437-301c-4643-909b-54d2c869052d" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="352585f3-d183-4445-9b0d-fb4684e39b94" direction="Return">
+                        <elementDefinition Id="6b4d41ef-2e57-4b93-bb29-f9d30548ad74" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="742629a2-ea1c-45a9-81d4-f0fac19be510" LastKnownName="ListBlock&lt;Link&gt;" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="103896c7-48cf-4dae-8d1e-b7d256939efd" name="movieId" direction="In">
+                        <elementDefinition Id="8829e664-cd12-4c0f-9acb-c1e11a5f72fe" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="7893ecbc-c94c-408b-b051-d1849242fe9b" name="startIndex" direction="In">
+                        <elementDefinition Id="cc1b89c0-013f-4a33-ac5d-af9f4ffe7988" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="386cff82-fa06-4789-ae34-a651e91eb7d8" LastKnownName="int" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="5b27a713-38fc-404a-b156-74a2a9137b2c" name="count" direction="In">
+                        <elementDefinition Id="0077166d-626a-41c3-8427-11aa7fa71272" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="386cff82-fa06-4789-ae34-a651e91eb7d8" LastKnownName="int" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="7171fe99-6c8a-4aab-aead-8d891caf3adf" name="ListForMovieRated" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="b5e39f34-88bd-46ab-a5a3-c098062bbea4" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="4e8083c9-6ba6-4b17-b623-eaf4b0848108" direction="Return">
+                        <elementDefinition Id="8f362efd-8e5e-4422-a99a-869aefe60911" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="8cafb529-5ce2-420e-8e72-3dcfe4abebc8" LastKnownName="ListBlock&lt;Link&gt;" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="c6475252-135c-4ea4-bd46-dcecba72ad9e" name="movieId" direction="In">
+                        <elementDefinition Id="d1ce90a4-fdfa-4652-bf9b-3b8bc133bb1f" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="875a1888-e228-48f7-abeb-54705bfeeb57" name="startIndex" direction="In">
+                        <elementDefinition Id="0076f838-e150-48ca-a9fd-6de18a6576cf" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="386cff82-fa06-4789-ae34-a651e91eb7d8" LastKnownName="int" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="c6f844a4-3153-4f94-8025-0be34c24851a" name="count" direction="In">
+                        <elementDefinition Id="36afa771-a185-4699-8290-4038026bcbb9" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="386cff82-fa06-4789-ae34-a651e91eb7d8" LastKnownName="int" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="0b47780d-16cd-4189-bae6-a4b9208f75be" name="ListForUserAndMovie" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="d7a2c59b-708b-4136-9eaf-6ee536b3c6d4" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="0c383da9-79b0-42f7-bfc5-7fa1cddfbf44" direction="Return">
+                        <elementDefinition Id="fd3b085d-912c-49e8-ae17-9d720d81ca14" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="091f91f3-91f9-4793-a34c-ce67e9dca94a" LastKnownName="ListBlock&lt;Link&gt;" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="b335db5f-738a-4096-ab1a-6faae5e4bf4e" name="userId" direction="In">
+                        <elementDefinition Id="23ac6b32-4aa8-4a54-b2bc-2e240fe6798d" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="0dcc8df4-89c1-45a3-a822-5a6ffbf38111" name="startIndex" direction="In">
+                        <elementDefinition Id="25a4de85-4e97-48fe-8e4a-1cff125f6068" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="386cff82-fa06-4789-ae34-a651e91eb7d8" LastKnownName="int" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="2ffa099c-7553-4709-89b0-49701d2fd8c4" name="count" direction="In">
+                        <elementDefinition Id="f51d86ba-6253-4aae-b095-29070b4d8013" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="386cff82-fa06-4789-ae34-a651e91eb7d8" LastKnownName="int" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="9a808b3a-1bc2-4c7a-8310-6fc2a083861d" name="CountForLabel" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="694c50e0-0a58-448c-bd7c-5d51e6d0a9c1" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="423815ce-9bfd-4174-b6b2-e088237c8d66" direction="Return" isUnique="false">
+                        <elementDefinition Id="abb338e5-9532-40c1-9953-3fea2a5aac51" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="386cff82-fa06-4789-ae34-a651e91eb7d8" LastKnownName="int" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="4f65588c-82fa-4ce5-a456-3134fab6f964" name="label" direction="In" isUnique="false">
+                        <elementDefinition Id="5521d8a6-2e53-44e4-8536-f20f5e8f985e" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="7b386e5f-ff5e-40f4-9273-58bcd6554b43" LastKnownName="string" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="e65952d4-d8ec-4af8-936c-8d8d36f158b6" name="CountForMovie" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="989fe8aa-74ed-46a0-8d50-3fb84f7851d3" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="a40b6b98-b65a-483d-ad7a-a33be21a3f27" direction="Return" isUnique="false">
+                        <elementDefinition Id="cd3ed47c-31b1-4882-aa61-d6c16d3cba95" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="386cff82-fa06-4789-ae34-a651e91eb7d8" LastKnownName="int" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="74a55720-16e4-49bd-9222-001b6794db31" name="movieId" direction="In" isUnique="false">
+                        <elementDefinition Id="53c3dd09-d48e-48fc-a796-f9858c80545a" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="801ad28e-ea63-4e2b-b40f-fe93dae7a515" name="CountForUserReported" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="d1705ef8-793a-4bb7-aa68-ccb737583085" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="5fc97431-a5da-4c72-bd0c-db8d933357e8" direction="Return" isUnique="false">
+                        <elementDefinition Id="842aa00f-04bf-4378-8ed9-f46a3caab689" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="386cff82-fa06-4789-ae34-a651e91eb7d8" LastKnownName="int" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="8706c251-f9ea-4834-92eb-0d1ef705365b" name="userId" direction="In" isUnique="false">
+                        <elementDefinition Id="00de2c75-53bf-45e7-906a-1df14014a982" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="ac56db48-a459-42ea-9602-5fcad860d836" name="treshold" direction="In" isUnique="false">
+                        <elementDefinition Id="06fdfaeb-388f-45cc-85fc-31a59c2c93ed" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="386cff82-fa06-4789-ae34-a651e91eb7d8" LastKnownName="int" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="6699d49d-3125-4576-86e7-5d6c9796f70d" name="ListForLabelRated" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="94750d75-ad60-43aa-94ae-c5d843865397" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="d3f163f4-e4d2-4ec4-a166-0672148b6ee8" direction="Return" isUnique="false">
+                        <elementDefinition Id="354acde7-dc6b-471d-bfc2-7ede09d820b7" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="25f9245b-9edd-4264-8f62-f7f256ea6bed" LastKnownName="ListBlock&lt;Link&gt;" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="c2d1ab40-f0e0-4e88-ad13-e4e8ff6cc329" name="string label" direction="In" isUnique="false">
+                        <elementDefinition Id="e19b79b0-46b5-4194-9c56-2f1a68399d1a" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="56f09243-5a74-4836-b640-f3bc5a3ab99a" name="int startIndex" direction="In" isUnique="false">
+                        <elementDefinition Id="e0bbfa26-16ba-4563-a9b1-cc9d76afad9f" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="d726f973-8cc8-4327-9fe0-b8c501c83164" name="int count" direction="In" isUnique="false">
+                        <elementDefinition Id="f41fb831-cfab-4b11-bd1d-cfdb1f9315c5" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="c0b8afd1-79ff-4865-9ad9-7be8ca35f44b" name="ListForUser" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="248cc45a-fd26-4f3c-8189-12a4b396e0ce" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="59cc92b6-ac98-4a82-b8fa-f9cf690acc8b" direction="Return" isUnique="false">
+                        <elementDefinition Id="6cb01887-4f9b-4e19-a9d7-5baeafb9932d" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="25f9245b-9edd-4264-8f62-f7f256ea6bed" LastKnownName="ListBlock&lt;Link&gt;" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="bf67f09c-1e07-4a2e-a15f-548169426a8f" name="userId" direction="In" isUnique="false">
+                        <elementDefinition Id="17963d6b-98ad-4f2e-9529-b54d168927d4" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="cf47607b-1973-4d9e-90f5-cf1d4e68b656" name="startIndex" direction="In" isUnique="false">
+                        <elementDefinition Id="d5de9db2-c1a1-484b-9135-5ef47775fdb4" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="386cff82-fa06-4789-ae34-a651e91eb7d8" LastKnownName="int" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="0a2b946d-ca8c-4968-ac0f-78e8e948c765" name="count" direction="In" isUnique="false">
+                        <elementDefinition Id="54f082c2-8e99-4c59-95d0-d1f606ce0373" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="386cff82-fa06-4789-ae34-a651e91eb7d8" LastKnownName="int" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="5a8b16e3-5627-4309-b76b-76b0775da096" name="ListForUserReported" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="1f43e80e-4ddd-4717-96a6-927b8c5b45fb" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="7476de53-e375-42fe-8d08-c072df10c79d" name="long userId" direction="In" isUnique="false">
+                        <elementDefinition Id="dd1fcc48-7d5b-4f2e-967d-2e5343a539a6" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="a76970ee-f816-468a-bbd0-f7b907147bad" name="int threshold" direction="In" isUnique="false">
+                        <elementDefinition Id="41b6babc-a215-42f2-99ee-60419952a2ec" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="0169ca39-780c-4f5a-862b-698214509d09" name="int startIndex" direction="In" isUnique="false">
+                        <elementDefinition Id="ce15c6b9-0b57-4005-bcbd-9906aa6024e4" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="33125aef-6b72-44dd-8267-3bbfca7c6fdb" name="int count" direction="In" isUnique="false">
+                        <elementDefinition Id="f20cde6e-988d-4af5-bb05-4a85b6e4e1f9" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="b8084527-f9b8-466e-9660-74a00fe62969" direction="Return" isUnique="false">
+                        <elementDefinition Id="baf1648d-5323-4b35-ab22-7cc314a18a70" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="25f9245b-9edd-4264-8f62-f7f256ea6bed" LastKnownName="ListBlock&lt;Link&gt;" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="04451701-ce80-450c-9c38-d7c2f7b16b8c" name="ListForUserRated" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="b0bd5555-ab9e-4d2a-b852-7bc5af3ad5f7" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="ab087aed-50eb-494e-b57e-61d77a4a947c" name="long userId" direction="In" isUnique="false">
+                        <elementDefinition Id="d4c8c476-079e-4d29-bfe0-e31184dfa83c" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="5a305b85-736f-4d51-9aad-5e83a1ecc694" name="int startIndex" direction="In" isUnique="false">
+                        <elementDefinition Id="8acf4984-5e24-43d0-a170-5a01818f90ff" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="89d6cdc0-81f4-42f8-be5d-df9f6f87f187" name="int count" direction="In" isUnique="false">
+                        <elementDefinition Id="e140e149-025e-4a2d-9ba9-26b209f84ba9" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="da9f554b-69ff-4028-89a9-9f0e8c5f012b" direction="Return" isUnique="false">
+                        <elementDefinition Id="7c2254f4-9e56-451d-9a0a-92a2c6ea44c3" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="25f9245b-9edd-4264-8f62-f7f256ea6bed" LastKnownName="ListBlock&lt;Link&gt;" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperations>
+            </Interface>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="57eba710-0bde-42a7-9cd6-8248ff09fb64" name="LinkDao" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="2ba061a4-9757-47c5-969e-2d3b8f10a239" />
+              <suppliersInternal>
+                <interfaceRealization Id="631ed8d6-b720-45c5-a024-47926ff828bc">
+                  <interfaceMoniker Id="aa836b00-545b-4e18-bdf6-76298e930afe" LastKnownName="ILinkDao" />
+                  <elementDefinition Id="ab2ebd74-b028-4bb5-901e-ed852303cfaf" />
+                </interfaceRealization>
+              </suppliersInternal>
+              <ownedOperationsInternal>
+                <operation Id="fd28676d-72dc-4c48-8512-853a9e91a74a" name="CountForUser" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="53ad24cf-cc66-4c25-9a9e-86bee126ed63" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="0ec049d8-1ae5-4fb1-b3db-c569d46b4ec9" name="movieId" direction="In" isUnique="false">
+                        <elementDefinition Id="93b3d23d-ec74-4e78-8717-0f1d34ebc44a" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="16991240-ae3e-4797-8b60-fed70cb7fe73" direction="Return" isUnique="false">
+                        <elementDefinition Id="da8197a2-497c-406e-a9b0-525e50757eb3" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="386cff82-fa06-4789-ae34-a651e91eb7d8" LastKnownName="int" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="98eda348-b0e9-4dd4-9c91-16ceacdf0aac" name="ExistForMovieAndLink" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="f43dce64-c665-4c76-aea4-06711e43bf45" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="ac4703b3-1a96-4c8f-a0ca-d185220ec800" name="movieId" direction="In">
+                        <elementDefinition Id="f0d9d334-9b3e-4f6a-9bed-77c9adf136f0" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="eedd4578-a1db-4fc9-bd08-d8ae85ff22a3" name="linkId" direction="In">
+                        <elementDefinition Id="0037e2ed-76ab-4c6b-bcf2-2f77e25fcf31" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="997d3e7c-006e-42dd-95c1-248bbcb637e9" direction="Return">
+                        <elementDefinition Id="9c32f641-973a-4499-9841-3b2d9bdc1dfa" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="df570082-fcbd-489c-8511-d0d9fc514329" LastKnownName="bool" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="3f892ce2-b873-4ac0-b878-b1770725d3a1" name="ExistForMovieAndName" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="361709f5-c7cc-416c-8e56-cf2552cbf358" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="7f2135ff-ed1f-4cc9-b371-a02f9de43d2c" name="movieId" direction="In">
+                        <elementDefinition Id="64b34497-23cc-47a3-916b-87d5f0cfa132" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="574691a4-570d-4e38-8056-2c40432c249c" name="name" direction="In">
+                        <elementDefinition Id="fe47d70a-f5a7-4481-a4d4-e1409d014235" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="7b386e5f-ff5e-40f4-9273-58bcd6554b43" LastKnownName="string" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="f6280cc8-baef-4161-8d5b-530289a76552" direction="Return">
+                        <elementDefinition Id="4967981e-9394-402d-9747-636ba96ce43f" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="df570082-fcbd-489c-8511-d0d9fc514329" LastKnownName="bool" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="58ac7fca-7e9b-492b-9e21-cddacc69f2ed" name="ExistForMovieAndUrl" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="bf66f189-f989-4f6a-a37d-0735f3917ea4" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="97db8dc4-2f7f-48dd-9300-8ee54f145cd8" name="movieId" direction="In">
+                        <elementDefinition Id="b99b0f44-b5ed-48f0-8d34-3ae2e87e8590" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="371c1ddf-cde2-47e5-90c7-48b74c10c891" name="url" direction="In">
+                        <elementDefinition Id="91c9eca8-afdc-4bc8-9525-5f1cb6c17b7c" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="7b386e5f-ff5e-40f4-9273-58bcd6554b43" LastKnownName="string" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="b4268486-0d8e-4a7a-bc16-f8ab8bf34cc5" direction="Return">
+                        <elementDefinition Id="784d7485-b5c0-4447-b0bb-5ed545c86c8d" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="df570082-fcbd-489c-8511-d0d9fc514329" LastKnownName="bool" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="10856295-d150-4185-b761-13432c7fe3f0" name="ExistForUserAndLink" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="0b632b45-c3a5-461e-ba80-ab0cb4583237" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="6a7c252a-384d-4dc9-8148-0d2c359f5c41" name="userId" direction="In">
+                        <elementDefinition Id="9b40c876-f771-4509-8b3e-ac3bb37e07ea" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="314a0873-0a63-4a6f-a4fc-192ebfd295e3" name="linkId" direction="In">
+                        <elementDefinition Id="2db68fcc-9e2a-454f-a6d5-93025a1d1953" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="dfb5a897-91f6-4ddc-ac2c-8b03a6ca31eb" direction="Return">
+                        <elementDefinition Id="25033b22-9e68-4eb8-b850-9ef1c8f03352" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="df570082-fcbd-489c-8511-d0d9fc514329" LastKnownName="bool" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="7c5366de-85a8-4b2b-b282-04334732cc7b" name="ListForLabel" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="176228e2-d407-4969-b069-e716022bd7a7" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="01ea685f-5e61-4fc4-83da-0af803087ede" name="labelId" direction="In">
+                        <elementDefinition Id="1c95d00e-bdce-4052-8423-97e39a29d2a1" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="51e7f35d-b8ea-4131-930d-f1167532f304" name="startIndex" direction="In">
+                        <elementDefinition Id="9654628d-588a-4714-996b-1cb1859a6f19" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="386cff82-fa06-4789-ae34-a651e91eb7d8" LastKnownName="int" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="a3bf9118-90f4-4e55-9639-cea2ca80c033" name="count" direction="In">
+                        <elementDefinition Id="007cb46d-42ae-465d-8fea-de9d1d47df10" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="386cff82-fa06-4789-ae34-a651e91eb7d8" LastKnownName="int" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="4798a831-f061-4f8b-b97a-72af966b4238" direction="Return">
+                        <elementDefinition Id="9b981635-e9d7-49dd-a8b8-0808a8d22ec1" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="25f9245b-9edd-4264-8f62-f7f256ea6bed" LastKnownName="ListBlock&lt;Link&gt;" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="5ee0aaf3-bf93-4221-b9b0-ddc2cc0307c5" name="ListForMovie" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="8f778809-7825-43af-8593-039ecfc2f519" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="5d14e4f0-af60-49b9-be66-3b101c6bfa97" name="movieId" direction="In">
+                        <elementDefinition Id="8378297c-a224-4592-b5dc-58808c83b657" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="31e66108-58e1-4273-8896-c07d038b4d76" name="startIndex" direction="In">
+                        <elementDefinition Id="c66825f3-f577-4127-bc0c-fef023455279" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="386cff82-fa06-4789-ae34-a651e91eb7d8" LastKnownName="int" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="b6969c96-b6d9-4d29-8651-02bc3b298433" name="count" direction="In">
+                        <elementDefinition Id="7a086048-e4f7-4cb1-b666-e0359fb33586" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="386cff82-fa06-4789-ae34-a651e91eb7d8" LastKnownName="int" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="fcfdf84e-481f-4d6c-99f5-cb94e5094f17" direction="Return">
+                        <elementDefinition Id="644d2278-af50-4504-b887-dc0d9a6877ed" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="25f9245b-9edd-4264-8f62-f7f256ea6bed" LastKnownName="ListBlock&lt;Link&gt;" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="b9c3c501-57e2-4202-85d1-99a5b1636f5a" name="ListForMovieRated" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="c4ca51ac-8ca1-41de-9278-c49716b4ac4f" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="f73d90a4-4458-4963-a523-0170e6c436bb" name="movieId" direction="In">
+                        <elementDefinition Id="1800d38b-6972-45ff-8d90-9511c4c7b82a" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="fca5e90e-c553-4252-aeef-6ee4d26ebe75" name="startIndex" direction="In">
+                        <elementDefinition Id="012f72e3-4b20-4ad6-914b-8ada2ef4106f" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="386cff82-fa06-4789-ae34-a651e91eb7d8" LastKnownName="int" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="75ebd00f-3b95-4a4c-9a97-0baba143bae6" name="count" direction="In">
+                        <elementDefinition Id="dc098d46-6d2d-46c9-8fe4-60885eac65bd" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="386cff82-fa06-4789-ae34-a651e91eb7d8" LastKnownName="int" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="68b9ee5d-f7cd-42e7-8559-5ea7974401db" direction="Return">
+                        <elementDefinition Id="d656341b-cc65-4792-8e2c-da9827d661fd" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="25f9245b-9edd-4264-8f62-f7f256ea6bed" LastKnownName="ListBlock&lt;Link&gt;" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="1265f8fa-7254-496b-9d17-79a4dbb1b0c2" name="ListForUserAndMovie" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="0ff16d71-6bc6-4e0d-9217-322be99972c2" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="c0c958c3-e39f-4498-a929-31d32d246820" name="userId" direction="In">
+                        <elementDefinition Id="db1ede0f-758b-424e-a425-9953d4d21069" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="103ae861-5aa9-4cbc-8442-c7e989445585" name="startIndex" direction="In">
+                        <elementDefinition Id="50406ea5-79ab-488f-b914-897636929ac3" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="386cff82-fa06-4789-ae34-a651e91eb7d8" LastKnownName="int" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="d1b84b95-7934-4b8b-ba84-ff8c2bdfa874" name="count" direction="In">
+                        <elementDefinition Id="04b032a9-e56d-465b-8466-dbe3368718b7" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="386cff82-fa06-4789-ae34-a651e91eb7d8" LastKnownName="int" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="d00844c2-10b0-4ab7-a535-5d6f2de8138d" direction="Return">
+                        <elementDefinition Id="019e9bc9-398a-49e0-8282-e09f4b18c353" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="25f9245b-9edd-4264-8f62-f7f256ea6bed" LastKnownName="ListBlock&lt;Link&gt;" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="73b1b8a4-2628-47f0-ab08-51c159ba673e" name="CountForLabel" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="6d361044-8702-4f21-8599-6405ecce97ba" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="3b8ee3d9-43e3-4797-89bb-8061e52ff104" name="string label" direction="In" isUnique="false">
+                        <elementDefinition Id="0a52032b-0066-4ba4-b861-20a79f8dc9d7" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="7b386e5f-ff5e-40f4-9273-58bcd6554b43" LastKnownName="string" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="cfe43b46-9dba-45f7-a716-c6bf02f9624b" direction="Return" isUnique="false">
+                        <elementDefinition Id="9f58dc61-9f5c-4463-8abb-7a3f82a37b59" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="386cff82-fa06-4789-ae34-a651e91eb7d8" LastKnownName="int" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="e5224be3-d5d7-4bdd-806e-aa5d8cf32829" name="CountForMovie" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="300d0a5d-be4c-4ceb-a728-d332d170f904" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="2bd99f29-01ca-48d9-ac13-4418c8a6b386" name="long MovieId" direction="In" isUnique="false">
+                        <elementDefinition Id="d1025346-8e40-440f-a05f-c54acd67af5e" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="04d8ae19-744e-4f36-8d92-d10f5f3718b4" direction="Return" isUnique="false">
+                        <elementDefinition Id="b0af1512-06ea-4190-a671-bd0ec6269a25" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="386cff82-fa06-4789-ae34-a651e91eb7d8" LastKnownName="int" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="175f13ce-9d4d-449d-8b74-ab50bd72d623" name="CountForUserReported" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="563a2714-2e8a-476e-b9c4-04e11998e837" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="b82cd8cc-59af-4e8d-88e1-e23aaadddd36" name="userId" direction="In" isUnique="false">
+                        <elementDefinition Id="32a0030c-1dc1-48d5-8871-2b8185b59d51" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="4611ac7d-c92f-473c-8906-f3f9d2571bd2" direction="Return" isUnique="false">
+                        <elementDefinition Id="c1951cdb-a66e-4cb6-8047-dcbdded3307e" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="386cff82-fa06-4789-ae34-a651e91eb7d8" LastKnownName="int" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="7ff5ebc0-43ea-4251-8fc1-09c1a4cc565b" name="treshold" direction="In" isUnique="false">
+                        <elementDefinition Id="8dbc609a-cee9-42fa-843a-9f4ea6d51b3e" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="386cff82-fa06-4789-ae34-a651e91eb7d8" LastKnownName="int" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="524666f0-fc59-42a2-91ed-76ce409a67bf" name="ListForLabelRated" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="1ea1c42e-c8a7-490d-820d-a26f0a1b412e" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="d0acd4b1-a1fb-44e5-91f5-05a7b1fcea89" direction="Return" isUnique="false">
+                        <elementDefinition Id="5fa11ffb-1659-45ba-82d2-41dbf00b0045" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="25f9245b-9edd-4264-8f62-f7f256ea6bed" LastKnownName="ListBlock&lt;Link&gt;" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="d48be8f0-ed3f-4957-868e-f5a3a8ac12d9" name="string label" direction="In" isUnique="false">
+                        <elementDefinition Id="61b27920-602f-4087-843d-35781f059853" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="6312c8ef-b464-4cb3-ab7b-876ae9ca552c" name="int startIndex" direction="In" isUnique="false">
+                        <elementDefinition Id="d49d2eae-bdbf-47e4-9eed-b21305c66524" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="a5ed408c-4991-43a7-adb1-74c7647cd931" name="int count" direction="In" isUnique="false">
+                        <elementDefinition Id="985e0690-8b3e-4015-bda2-b0073059f8a3" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="b2605c39-2468-4620-9842-d0fce73e8634" name="ListForUser" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="e5d8c29b-1755-4041-95b6-edd95ef94b75" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="29d54c7d-92a4-4fe7-9e1a-9d4ca979a463" name="userId" direction="In" isUnique="false">
+                        <elementDefinition Id="dd6b378d-188f-42c0-beec-3aada5536523" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="f3c8cd96-8d94-4f48-9524-40260264b42d" name="startIndex" direction="In" isUnique="false">
+                        <elementDefinition Id="d0432a5e-71bb-4e79-9128-93f8529cc35e" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="386cff82-fa06-4789-ae34-a651e91eb7d8" LastKnownName="int" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="829604fc-aaf9-46fa-bd7a-5301b785aed5" name="startIndex" direction="In" isUnique="false">
+                        <elementDefinition Id="67cf0e3c-714f-4cf7-8f0e-bf0e498a7961" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="386cff82-fa06-4789-ae34-a651e91eb7d8" LastKnownName="int" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="841f5722-4ebd-4163-a79e-79252cc1ed64" direction="Return" isUnique="false">
+                        <elementDefinition Id="091e7d0c-9ad0-4286-a823-7199fcc1d5ac" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="25f9245b-9edd-4264-8f62-f7f256ea6bed" LastKnownName="ListBlock&lt;Link&gt;" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="4d5d5c21-0a1d-44a4-904f-0777fac5bc88" name="ListForUserReported" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="e17e57d3-c4c4-4bc4-9610-fd6fc67cf159" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="dcbfecca-e991-4446-b283-d115e049fd07" name="long userId" direction="In" isUnique="false">
+                        <elementDefinition Id="8749640f-5ec6-4435-86d2-b732b4b6b6f9" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="314f56a9-6029-4436-9e3a-9866d06e69cf" name="int threshold" direction="In" isUnique="false">
+                        <elementDefinition Id="da9bc259-dbda-4c3c-b9d6-d1663b400a38" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="112a8f99-08dc-46ba-ba8e-26cbae93179a" name="int startIndex" direction="In" isUnique="false">
+                        <elementDefinition Id="15a9bbf3-ab53-42b1-bd1d-cb6745088d38" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="d6a65029-5dba-4172-a424-b1405bef6908" name="int count" direction="In" isUnique="false">
+                        <elementDefinition Id="37ebdbbf-d8b9-4f52-b042-82236d865fba" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="c254245e-2c32-441a-a945-4b7446219ff3" direction="Return" isUnique="false">
+                        <elementDefinition Id="91105ba0-edbb-45a5-b256-b24be5249cb8" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="25f9245b-9edd-4264-8f62-f7f256ea6bed" LastKnownName="ListBlock&lt;Link&gt;" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="66f694e4-8131-4339-80b7-112e098379ea" name="ListForUserRated" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="e5f8ff57-c8b2-493a-a857-cd1a990c3f39" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="b2b0f4f8-712c-451d-a260-25a13d7b61fe" name="long userId" direction="In" isUnique="false">
+                        <elementDefinition Id="322907f4-51e3-4474-9242-5e8894910e17" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="fa57426b-3499-4bae-8fea-5d3257be56b5" name="int startIndex" direction="In" isUnique="false">
+                        <elementDefinition Id="c259ef8d-957c-485b-8935-80c6bde4a0d0" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="10cb4bf1-8be6-49ed-a96e-0a138b92fe37" name="int count" direction="In" isUnique="false">
+                        <elementDefinition Id="f5d5482b-0b44-4c0b-bd2a-ac63a18dd8fc" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="5e83376c-e64f-4f0b-87bf-cb375906a301" direction="Return" isUnique="false">
+                        <elementDefinition Id="e2987535-ff94-45cb-880b-de07b247b422" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="25f9245b-9edd-4264-8f62-f7f256ea6bed" LastKnownName="ListBlock&lt;Link&gt;" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <Interface Id="4f0a1bb9-9f16-4777-b557-2c430896d518" name="IlinkService" isAbstract="false" isLeaf="false">
+              <elementDefinition Id="e82ade31-a627-4b55-946a-f3af03732ca3" />
+              <suppliersInternal>
+                <dependency Id="e1e65a08-3b17-4c55-8fac-990a47b5385a">
+                  <classMoniker Id="45acd98e-44de-46c4-928e-800fd56286f9" LastKnownName="LinkDetails" />
+                  <elementDefinition Id="285488b2-e662-432e-83bf-3eb59fc83845" />
+                </dependency>
+              </suppliersInternal>
+              <ownedAttributes>
+                <property Id="c66c5897-fe99-4fc6-87f1-b79595e4e631" name="linkDao" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ee7ea33d-9306-454c-a0e9-83cbfea70c0e" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f1dc87d5-4ffe-447e-a53a-d65278160e82" LastKnownName="IUserProfileDao" />
+                  </type_NamedElement>
+                </property>
+                <property Id="bee00be8-76bc-4cf1-890f-10d82a0455c4" name="userProfileDao" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="878f1aca-14fc-47be-96ae-6551e3c895b6" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="16227b4e-dae6-4ed6-9f79-6da4cfab33d5" LastKnownName="ILinkDao" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributes>
+              <ownedOperations>
+                <operation Id="b76b7b50-f898-4cda-808a-795897dd01a2" name="AddLink" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="2ec3698a-a1be-47c2-96ae-1042e356bdd9" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="d52c76ae-8765-4b07-b1b0-a922556df2ee" direction="Return" isUnique="false">
+                        <elementDefinition Id="5931f278-9182-4cf2-b20b-088fd7b2601f" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="e099e456-d0dc-46c1-88bf-222a2d3c62ca" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="1a6cf82b-20b1-409a-a3b0-7b4b0fc396a4" name="userId" direction="In" isUnique="false">
+                        <elementDefinition Id="15952568-c243-4a0a-8a8a-56136d906ba1" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="404a046e-4e1b-4f55-8dd0-6c1dd1908c93" LastKnownName="Long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="6bf0f376-5615-47a3-8b7d-ff1cab959500" name="url" direction="In" isUnique="false">
+                        <elementDefinition Id="3d0c728f-470d-4d45-af28-8b9d31645f98" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="7b386e5f-ff5e-40f4-9273-58bcd6554b43" LastKnownName="string" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="e59085b3-91b2-4963-94f2-c3209f528e29" name="movieId" direction="In" isUnique="false">
+                        <elementDefinition Id="a4da17e6-0b14-4289-96eb-c1ac3c630656" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="c5461802-f1d2-4c7b-9ca4-a3f16659130a" name="name" direction="In" isUnique="false">
+                        <elementDefinition Id="320be12a-0448-4743-adfa-4e77b12bbae3" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="7b386e5f-ff5e-40f4-9273-58bcd6554b43" LastKnownName="string" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="2c1a7e75-bf72-44d1-889f-be2f26aa9467" name="description" direction="In" isUnique="false">
+                        <elementDefinition Id="606ea9d1-0ba5-409b-80b9-5e629b9a011c" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="7b386e5f-ff5e-40f4-9273-58bcd6554b43" LastKnownName="string" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="bc7fedbb-d194-465a-a6ff-b31222a11ca4" name="CountListForMovie" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="587bd737-d11a-429f-a9ad-813dfe5d4516" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="1799c7c2-6e24-42c9-b88d-cbf846aec04d" direction="Return">
+                        <elementDefinition Id="e9d216cd-5e51-49da-968e-81d993324a86" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="5ffb51e0-565b-4254-a049-9f3d9ff348fa" LastKnownName="int" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="80dad6b9-f4f2-4a1e-a2c3-045e5af7af20" name="movieId" direction="In" isUnique="false">
+                        <elementDefinition Id="e1059761-5e41-4baf-af2b-fc02c8beced2" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="e0d26fb2-4f47-417d-b0db-06b88b6a8ba2" name="GetLink" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="7dbfb9be-316a-430f-b5d4-c9950e253fe2" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="d078f256-26bb-4d57-840c-515ddfbacc9a" direction="Return" isUnique="false">
+                        <elementDefinition Id="c06e509d-a6ba-497f-9faf-80758ebf81ac" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="0da4a58a-a3f0-4fd2-804d-8e88697acfdf" LastKnownName="LinkDetails" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="b55c8857-66a7-4d8c-85e1-6531bc8fabcf" name="linkId" direction="In" isUnique="false">
+                        <elementDefinition Id="43203441-52b0-41ec-a942-1969583f9297" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="9fc64ebc-ddc8-4533-a5b6-7a0d42eb84f6" name="GetLinksForMovie" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="e66e02ff-3291-4d11-91ac-b3819e6bda1e" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="446629cb-4e4b-4fe3-9161-23fb61545a0e" direction="Return" isUnique="false">
+                        <elementDefinition Id="395c24e2-a318-4a84-ab78-3b2231783445" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="4ed96175-b07f-409d-bee1-9d839910c4bf" LastKnownName="List&lt;LinkDetails&gt;" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="c2d9cff5-7799-4544-9b50-2a99bc876a4b" name="movieId" direction="In" isUnique="false">
+                        <elementDefinition Id="491b4baa-0b28-4d53-be94-8a81663a51d2" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="f2069a7a-3bef-4324-b866-322e135bb554" name="startIndex" direction="In">
+                        <elementDefinition Id="2d598299-e871-4ae7-9d17-30382f2e9f6b" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="386cff82-fa06-4789-ae34-a651e91eb7d8" LastKnownName="int" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="05e3ea90-4951-4bc8-8afc-ee0aae557bbd" name="count" direction="In">
+                        <elementDefinition Id="59570a34-9b15-456b-b56f-50785edc83de" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="386cff82-fa06-4789-ae34-a651e91eb7d8" LastKnownName="int" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="4fbed101-d946-413d-88fc-f2ba253f5b38" name="RemoveLink" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="89f83a7e-1da3-40aa-b69d-808e7ab1bce3" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="076fa5dc-2002-4196-afc0-e416375dae32" name="userId" direction="In" isUnique="false">
+                        <elementDefinition Id="69c282f9-7c37-43fb-bcce-2c3a73faa3d3" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="481fbe71-639c-41ab-9dd2-8e21da75d6e6" name="movieId" direction="In">
+                        <elementDefinition Id="c95cf567-ff8e-47e5-a329-9f3395b5d0db" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="7f1c078a-8768-44c9-84ae-b71b9848dd9b" direction="Return">
+                        <elementDefinition Id="08455f63-589f-4949-8aa1-1dc130edd394" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="939344fb-ac2c-4f45-9a1b-abf351e16a7a" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="c7499c8f-2198-4675-bd0f-74acf38dce99" name="UpdateLink" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="6ddc5502-9695-4129-a953-73461c94d018" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="9958d944-5d53-4008-8508-2df9d6867cf0" name="userId" direction="In">
+                        <elementDefinition Id="69a042be-5410-4272-9ec3-e91c8aa5f2ed" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="dc56bd7b-f36c-49ea-a844-44a1fafdb7cc" name="linkId" direction="In">
+                        <elementDefinition Id="627fadfa-8e82-4282-8f1a-240d4838b0f6" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="7b386e5f-ff5e-40f4-9273-58bcd6554b43" LastKnownName="string" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="26982e80-9e54-41af-888e-4ea6047fb6fc" name="name" direction="In">
+                        <elementDefinition Id="f4c00252-ed2b-4179-8660-2c8b5987e2f7" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="7b386e5f-ff5e-40f4-9273-58bcd6554b43" LastKnownName="string" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="7eee84da-6ea4-40c0-b115-bb2da7b47ed6" name="description" direction="In">
+                        <elementDefinition Id="23b89b3b-443b-4e48-a138-8d5e14c4391a" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="7b386e5f-ff5e-40f4-9273-58bcd6554b43" LastKnownName="string" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="7f532848-4725-4f38-9b53-7aef1ae97dbb" direction="Return">
+                        <elementDefinition Id="ce08ccc3-40e3-4906-ab43-bf9327a00534" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="8f15e12d-d8e1-4a47-8163-c2a12ae05f50" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="ebd827f9-e75f-4504-9da7-126a6952fead" name="CountListForLabel" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="b735e75e-cbce-401d-acfd-3ae52ea492ea" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="a3219e85-f580-4342-aec1-641406965150" direction="Return" isUnique="false">
+                        <elementDefinition Id="de0c2469-fd38-4da9-b86d-a1142dc2a358" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="386cff82-fa06-4789-ae34-a651e91eb7d8" LastKnownName="int" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="1c308a47-49f4-4ff1-ad37-aaab08fd6bac" name="label" direction="In" isUnique="false">
+                        <elementDefinition Id="2dfc6503-8c05-48ff-ac05-ab02694f95cd" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="7b386e5f-ff5e-40f4-9273-58bcd6554b43" LastKnownName="string" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="f02d22c5-e4e7-4c10-b129-d61886f7bd97" name="CountForUserId" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="e28601e1-de60-4fb0-bb17-6b2a3aa85000" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="f3c3e249-6f05-4590-8834-1c291a18fa2b" name="userId" direction="In" isUnique="false">
+                        <elementDefinition Id="7e2aa9b6-a74d-438a-9b55-1ea6d7648a0d" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="b0c4fc5b-0b56-4e4f-a9ed-1d8e4d02c9a5" direction="Return" isUnique="false">
+                        <elementDefinition Id="d4a138bd-a15d-4f9f-8038-a69675e2e0b2" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="386cff82-fa06-4789-ae34-a651e91eb7d8" LastKnownName="int" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="a3064d58-c8d6-4ae2-8fcc-dfa21b0e15d7" name="CountReportedLinksForUser" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="0cee791f-915e-4672-87fd-2bac1554e374" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="c39425b9-f2aa-4e16-8dd3-721e347db42b" name="userId" direction="In" isUnique="false">
+                        <elementDefinition Id="4c8a50ad-889f-4335-b9a9-35f62332d830" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d90269ae-e65c-428f-8adf-b1722cf92f0c" LastKnownName="long" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="a7fee164-aa9e-4c0d-8c6b-d1758f8a8db2" name="treshold" direction="In" isUnique="false">
+                        <elementDefinition Id="d01a1fe3-a620-484c-a140-426fa250098c" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="386cff82-fa06-4789-ae34-a651e91eb7d8" LastKnownName="int" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="8b3d14b4-9633-44bc-b32c-d70ee857153f" direction="Return" isUnique="false">
+                        <elementDefinition Id="4d1ca85e-9da4-4e1a-b31b-b7bf61db68f7" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="386cff82-fa06-4789-ae34-a651e91eb7d8" LastKnownName="int" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="cc9ec59f-d01c-4f88-a74e-7c56f3bd2ca7" name="GetLinksForLabel" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="38ff5dcf-9a85-4a5f-acaa-f0f237fbaa96" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="e316b6a7-a001-4df0-9648-038ef896f04a" direction="Return" isUnique="false">
+                        <elementDefinition Id="f8d3a3d7-f78f-4bff-8f0c-386dd5dd8561" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="de284499-28e3-4c85-8fa8-0a9af176fcba" LastKnownName="ListBlock&lt;LinkDetails&gt;" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="17251948-e64c-4c74-93ae-a06029d48fbf" name="string label" direction="In" isUnique="false">
+                        <elementDefinition Id="1eaa1ff0-e673-4986-b748-e2ad3253637a" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="3f503aca-1275-4477-b2d6-f03907449f8f" name="int startIndex" direction="In" isUnique="false">
+                        <elementDefinition Id="0e4f89b4-ed5d-4bfc-b881-32875d1e45ec" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="263d35bb-514c-4079-b93e-8670f08eda15" name="int count" direction="In" isUnique="false">
+                        <elementDefinition Id="fcdf1882-058c-47b8-b7d6-08fabb021a52" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="48bb1b77-4835-4281-a45c-ac2178e26a3c" name="GetMostValuedLinksForLabel" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="1a933a5c-cb92-4319-8b07-fe648c925713" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="728adf43-e27f-4650-9ba4-c0d8fc4701e0" direction="Return" isUnique="false">
+                        <elementDefinition Id="0c3b6ecf-76fa-466f-9b70-7d1a9a3b102c" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="de284499-28e3-4c85-8fa8-0a9af176fcba" LastKnownName="ListBlock&lt;LinkDetails&gt;" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="2629b8e7-455b-4b69-a6d6-f6efa5f09da0" name="string label" direction="In" isUnique="false">
+                        <elementDefinition Id="3f859689-9bf4-425f-8e57-41403710a955" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="1e11a1f3-6fed-4943-8c27-dfe0d7ef9db3" name="int startIndex" direction="In" isUnique="false">
+                        <elementDefinition Id="e97e136e-4642-4a42-b925-7a7ef1349bda" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="c8b04764-36f2-4d51-bfca-35639d925e74" name="int count" direction="In" isUnique="false">
+                        <elementDefinition Id="aea3b70c-7bd0-41de-8dc6-090431917546" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="1c356611-bcf6-4b65-b15b-fe5b81677dba" name="GetLinksForUser" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="eb7ceb91-aad4-43e0-b600-7dac50324fa3" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="a5196eeb-123d-45f9-acd8-ce48458b38c7" name="long userId" direction="In" isUnique="false">
+                        <elementDefinition Id="469142c3-11f5-464d-89ba-d0c575cca405" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="d46c48c9-d4e8-4707-adb9-c7fd18fe8b7e" name="int startIndex" direction="In" isUnique="false">
+                        <elementDefinition Id="4f7ee19f-b8c7-4edd-ab0d-f769e20f1026" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="ffb5f729-f5ef-47c7-9a77-d90bc490c916" name="int count" direction="In" isUnique="false">
+                        <elementDefinition Id="4599ddf9-aab6-450d-af7f-f57f3e9adffb" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="488f061c-1f37-4792-b568-317018373b55" direction="Return" isUnique="false">
+                        <elementDefinition Id="77fef1d3-7366-4ac0-8a96-8b471c0b0435" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="de284499-28e3-4c85-8fa8-0a9af176fcba" LastKnownName="ListBlock&lt;LinkDetails&gt;" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="77fe2985-d8a0-4829-8618-a96cf478bcab" name="GetMostValuedLinksForMovie" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="62d1bda6-b16d-43f1-863d-a1719ebe7a18" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="bd064f55-ea5f-4568-a6af-2040201555ad" name="long movieId" direction="In" isUnique="false">
+                        <elementDefinition Id="c80c10ab-cbff-4cb8-bd55-8341646eb0d2" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="a1332929-c2ae-4093-ac48-91d8a7076e91" name="int startIndex" direction="In" isUnique="false">
+                        <elementDefinition Id="c8cdfea7-dd04-45d6-922f-39e33094cb71" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="b00235f4-a13f-4625-9978-0983730fc373" name="int count" direction="In" isUnique="false">
+                        <elementDefinition Id="d69daa6d-2a86-4e47-a8d1-afde88c1b124" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="559d9a6e-75c7-44f7-bf75-88bd1a0a9385" direction="Return" isUnique="false">
+                        <elementDefinition Id="84d083be-bdae-4cd5-b4a0-0deb8081046b" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="de284499-28e3-4c85-8fa8-0a9af176fcba" LastKnownName="ListBlock&lt;LinkDetails&gt;" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="9c7d5562-cc16-43a1-ae3d-d119dca44366" name="GetMostValuedLinksForUser" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="58ca698d-f71f-473f-b059-25d979e678a2" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="fc649428-c43a-4a14-9070-57f12d6cffb2" name="long userId" direction="In" isUnique="false">
+                        <elementDefinition Id="ba3fbec5-b850-4b4e-8fd9-f98591c59bae" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="7b867bba-08b5-49c9-9538-efa6f54a7d70" name="int startIndex" direction="In" isUnique="false">
+                        <elementDefinition Id="e46f739b-85d4-45e4-a0d3-c6b8a056939c" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="df981fde-79dc-4da0-927e-e7bebbb34468" name="int count" direction="In" isUnique="false">
+                        <elementDefinition Id="ba7531da-1d34-425b-ba7e-1debea491c4f" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="02ad8661-b1a0-40e9-9eda-673a7eed8ecb" direction="Return" isUnique="false">
+                        <elementDefinition Id="1630482d-0348-457d-9e23-ac70139328fe" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="de284499-28e3-4c85-8fa8-0a9af176fcba" LastKnownName="ListBlock&lt;LinkDetails&gt;" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="1eae1db3-c467-4161-b63c-334f80c2c063" name="GetReportedLinksForUser" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="74053a78-bb2f-4a4f-9e81-7c8939831702" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="cd87f0df-0838-49f8-872f-5915eb0b5da3" name="long userId" direction="In" isUnique="false">
+                        <elementDefinition Id="785e68cc-566e-408c-8a3e-f5f0128a848c" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="3c5a65cc-2a2e-4d4a-b790-af6788376370" name="int threshold" direction="In" isUnique="false">
+                        <elementDefinition Id="3b0814ae-1d7d-47e1-aca2-687f1aaa3306" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="395b431d-aa69-4638-8e28-4962c129fac9" name="int startIndex" direction="In" isUnique="false">
+                        <elementDefinition Id="ab880c69-23f8-428f-889c-2d9c42696320" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="4419b72a-1486-4e8e-b71f-5057644db781" name="int count" direction="In" isUnique="false">
+                        <elementDefinition Id="e6b885c2-3bce-487b-a5a8-dcafe2e91c32" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="d8e08ae2-a6e0-4236-a688-7d66d1837b21" direction="Return" isUnique="false">
+                        <elementDefinition Id="07bde9b0-ca16-4425-835f-e9803378735c" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="de284499-28e3-4c85-8fa8-0a9af176fcba" LastKnownName="ListBlock&lt;LinkDetails&gt;" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="16b4ea6e-bb21-4cb9-952c-11593d6c8603" name="SetReportedLinkAsRead" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="8346b0a5-a80f-4597-b8f8-fe6cd3d30abb" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="3d80c7d0-f6a4-4309-b0cb-baf0952b56f7" name="long userId" direction="In" isUnique="false">
+                        <elementDefinition Id="f098c9c5-e627-4f29-bad1-51c22627747a" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="679fc23c-fb1a-4515-bb0a-15eb01bbe829" name="long linkId" direction="In" isUnique="false">
+                        <elementDefinition Id="5914ae71-13a4-4acd-9c57-b81d3c807f79" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="9a2e167e-064c-411e-a613-cf9cb781c02e" direction="Return" isUnique="false">
+                        <elementDefinition Id="d33ab878-d377-4bc1-8a87-346a2194ee11" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="24bd5524-6d1e-490d-ae45-82b76fc57347" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperations>
+            </Interface>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <Interface Id="f1a8a984-7d52-456d-8019-08ff817757ca" name="IUserProfileDao" visibility="Private" isAbstract="false" isLeaf="false">
+              <elementDefinition Id="1bbfc03c-448c-4ba3-9594-764472e227c2" />
+              <ownedOperations>
+                <operation Id="9e0cf7c5-075d-43fc-8f6c-08716220aa6a" name="ExistWithLoginName" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="5f9503fd-024d-4c43-907e-7ca0722d964b" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="1f4e22cc-44a3-49fd-bb3e-e7c0a35a54d4" name="loginName" direction="In" isUnique="false">
+                        <elementDefinition Id="721bdf76-8fb0-40b8-93d7-3f72635fc03f" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="7b386e5f-ff5e-40f4-9273-58bcd6554b43" LastKnownName="string" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="00e63e75-38ba-4b2c-8b39-05df3f496c7a" direction="Return">
+                        <elementDefinition Id="25ed9bc6-babd-4248-a248-64027abcc1ac" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="8c0c47e2-cc33-4fe3-b999-05631dfc64be" LastKnownName="bool" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="2258ac06-42d5-4e7a-aca8-791eb1fe058a" name="FindByLoginName" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="d874d2f2-2a5c-4da5-8998-9019972c3d6c" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="071b3189-926a-4593-87c8-6ecc15616128" name="loginName" direction="In" isUnique="false">
+                        <elementDefinition Id="2976e497-6b2e-46ab-a690-d94b3a70a16f" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="7b386e5f-ff5e-40f4-9273-58bcd6554b43" LastKnownName="string" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperations>
+            </Interface>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="c19962f0-53e4-4c6b-8781-c5ce5d66a62f" name="UserProfileDaoEntityFramework" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="95f43e84-a5d1-48b7-980c-af623b396e34" />
+              <suppliersInternal>
+                <interfaceRealization Id="8f0b75c2-9726-4390-8dd2-6952093f68ab">
+                  <interfaceMoniker Id="f1a8a984-7d52-456d-8019-08ff817757ca" LastKnownName="IUserProfileDao" />
+                  <elementDefinition Id="4b41b897-66fd-4108-ac23-78cb1bed2c5f" />
+                </interfaceRealization>
+              </suppliersInternal>
+              <ownedOperationsInternal>
+                <operation Id="7d1775a6-e00b-4b4e-92eb-5403d74ab7c7" name="ExistWithLoginName" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="4609de8f-d661-4ad8-b718-081bc77823a8" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="70f028d6-b107-4224-bc6c-9749b6ef00b8" name="loginName" direction="In" isUnique="false">
+                        <elementDefinition Id="314002ac-5906-4a78-a146-247a6a6c96bf" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="7b386e5f-ff5e-40f4-9273-58bcd6554b43" LastKnownName="string" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="1affc0ba-44e9-4128-8f1c-40c7d3c83713" direction="Return">
+                        <elementDefinition Id="9f71bd12-aaa9-46a5-8bfd-a1abb72d0dd8" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="df570082-fcbd-489c-8511-d0d9fc514329" LastKnownName="bool" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="7f35b14a-b2f8-45a4-aaef-114b41a66ef8" name="FindByLoginName" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="87066344-59ea-493b-aa91-7b22460804f3" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="81bf6261-9f06-43f2-b649-dabd9199d101" name="loginName" direction="In" isUnique="false">
+                        <elementDefinition Id="20a02f20-1bf1-4e69-95a4-69e49bbac5b3" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="7b386e5f-ff5e-40f4-9273-58bcd6554b43" LastKnownName="string" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <packageHasNamedElement>
+      <referencedType Id="cdf97b82-6dea-4d78-ab52-e8c23d8bcc95" name="IRatingDao" isAbstract="false" isLeaf="false" cachedFullName="IRatingDao">
+        <elementDefinition Id="9ff8f3b6-edfa-4ddd-a348-07b67b55fb04" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="404a046e-4e1b-4f55-8dd0-6c1dd1908c93" name="Long" isAbstract="false" isLeaf="false" cachedFullName="Long">
+        <elementDefinition Id="4ffd5e0e-0c5c-42a4-93e8-5bb4cecc149e" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="de284499-28e3-4c85-8fa8-0a9af176fcba" name="ListBlock&lt;LinkDetails&gt;" isAbstract="false" isLeaf="false" cachedFullName="ListBlock&lt;LinkDetails&gt;">
+        <elementDefinition Id="fa44bbfb-1cd6-4c26-a4c6-9a2003155606" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="260a449a-b522-4b8f-a1ab-73090130d69b" name="UML">
+    <elementDefinition Id="770a4bc5-84f3-47cf-8aa7-ec22bc44fb5b" />
+    <profileInstances>
+      <packageHasProfileInstances Id="70ed6499-4ffd-4176-ab55-216bb2647b31">
+        <profileInstance Id="073f7e89-d7e8-489f-a8c1-9fabfe6a72b2" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="f1061842-2699-4c39-8c9a-3b4f75dc5d2b">
+        <profileInstance Id="8773ad35-fed5-4d58-b366-39f7403dd0bd" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>
